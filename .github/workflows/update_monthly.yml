@@ -1,0 +1,38 @@
+name: Update Monthly Top10
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'   # 每月 1 号
+  workflow_dispatch:
+
+jobs:
+  fetch-monthly:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests urllib3
+      - name: Fetch monthly trending repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
+        run: python scripts/fetch_monthly.py
+      - name: Validate JSON
+        run: python scripts/validate_json.py docs/data/monthly.json
+      - name: Commit and push data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add docs/data/monthly.json docs/data/history.json
+          git commit -m "📅 更新月度 Top10 [$(date +'%Y-%m')]" || echo "No changes"
+          git push
+      - name: Generate RSS
+        run: python scripts/generate_rss.py
+      - name: Commit RSS
+        run: |
+          git add docs/feed.xml
+          git commit -m "📡 更新 RSS" || echo "No changes"
+          git push
