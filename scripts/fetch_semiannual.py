@@ -1,4 +1,4 @@
-import requests, json, os
+import requests, json, os, time
 from datetime import datetime, timedelta, timezone
 from collections import Counter
 from requests.adapters import HTTPAdapter
@@ -6,7 +6,14 @@ from urllib3.util.retry import Retry
 from record_history import record_history
 
 TOKEN = os.getenv("GITHUB_TOKEN")
-HEADERS = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
+# include recommended Accept and API version headers
+HEADERS = {
+    "Accept": "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28"
+}
+if TOKEN:
+    HEADERS["Authorization"] = f"token {TOKEN}"
+
 OUTPUT_PATH = "docs/data/semiannual.json"
 TOP_N = 20
 
@@ -55,20 +62,45 @@ queries = [
     "multimodal",
 ]
 
+
 def search_github(query):
     session = requests.Session()
     retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
     session.mount('https://', HTTPAdapter(max_retries=retries))
-    
+
     url = "https://api.github.com/search/repositories"
     full_query = f"{query} created:>={six_months_ago}"
     params = {"q": full_query, "sort": "stars", "order": "desc", "per_page": 10}
-    resp = session.get(url, headers=HEADERS, params=params)
+    try:
+        resp = session.get(url, headers=HEADERS, params=params, timeout=30)
+    except Exception as e:
+        print(f"Request exception for {query}: {e}")
+        return []
+
     if resp.status_code == 200:
         return resp.json().get("items", [])
     else:
+        # diagnostic logging for failures (especially 403 / rate-limit)
         print(f"Query failed: {query}, status {resp.status_code}")
+        try:
+            body = resp.json()
+        except Exception:
+            body = resp.text
+        print("Response body:", body)
+        # helpful headers
+        rate_rem = resp.headers.get("X-RateLimit-Remaining")
+        rate_reset = resp.headers.get("X-RateLimit-Reset")
+        if rate_rem is not None:
+            print(f"X-RateLimit-Remaining: {rate_rem}, X-RateLimit-Reset: {rate_reset}")
+            if rate_rem == "0":
+                print("Rate limit exhausted. Consider using a token with higher quota or spacing requests.")
+        if resp.status_code == 403:
+            if not TOKEN:
+                print("Warning: No GITHUB_TOKEN provided. Set GITHUB_TOKEN (preferably using the built-in secrets.GITHUB_TOKEN in Actions) to avoid 403s.")
+            else:
+                print("403 received despite token. Token may lack scopes or you're hitting abuse/rate limits.")
         return []
+
 
 all_repos = {}
 for q in queries:
@@ -85,6 +117,8 @@ for q in queries:
                 "created_at": repo["created_at"],
                 "topics": repo.get("topics", [])
             }
+    # small sleep to reduce chance of rate-limiting/abuse triggering
+    time.sleep(0.2)
 
 sorted_repos = sorted(all_repos.values(), key=lambda x: x["stars"], reverse=True)[:TOP_N]
 
