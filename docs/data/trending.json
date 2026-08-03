@@ -1,30 +1,5 @@
 [
   {
-    "id": 1315424242,
-    "name": "sqliteai/waste",
-    "url": "https://github.com/sqliteai/waste",
-    "description": "Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine.",
-    "stars": 1192,
-    "language": "C",
-    "created_at": "2026-07-28T20:56:00Z",
-    "topics": []
-  },
-  {
-    "id": 1314404827,
-    "name": "gavamedia/deltafin",
-    "url": "https://github.com/gavamedia/deltafin",
-    "description": "Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents.",
-    "stars": 628,
-    "language": "Rust",
-    "created_at": "2026-07-28T01:01:23Z",
-    "topics": [
-      "kimi",
-      "kimi-k3",
-      "local-ai",
-      "local-llm"
-    ]
-  },
-  {
     "id": 1315061605,
     "name": "0xwilliamortiz/ponytail-improved",
     "url": "https://github.com/0xwilliamortiz/ponytail-improved",
@@ -43,37 +18,15 @@
       "prompt-engineering",
       "prompt-optimization",
       "yagni"
-    ]
-  },
-  {
-    "id": 1318616860,
-    "name": "0xwilliamortiz/ratchet",
-    "url": "https://github.com/0xwilliamortiz/ratchet",
-    "description": "Your agent reads the rules. This checks whether it followed them.",
-    "stars": 412,
-    "language": "JavaScript",
-    "created_at": "2026-07-31T17:54:30Z",
-    "topics": [
-      "ai-agents",
-      "claude-code",
-      "claude-code-plugin",
-      "claude-skills",
-      "code-quality",
-      "developer-tools",
-      "hooks",
-      "llm",
-      "ratchet",
-      "rate-limiting",
-      "static-analysis",
-      "yagni"
-    ]
+    ],
+    "domain": "提示词工程"
   },
   {
     "id": 1319154759,
     "name": "FareedKhan-dev/kimi-k3-in-c",
     "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
     "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
-    "stars": 365,
+    "stars": 423,
     "language": "C",
     "created_at": "2026-08-01T09:29:38Z",
     "topics": [
@@ -97,7 +50,32 @@
       "systems-programming",
       "transformer",
       "zero-dependencies"
-    ]
+    ],
+    "domain": "大语言模型"
+  },
+  {
+    "id": 1318616860,
+    "name": "0xwilliamortiz/ratchet",
+    "url": "https://github.com/0xwilliamortiz/ratchet",
+    "description": "Your agent reads the rules. This checks whether it followed them.",
+    "stars": 412,
+    "language": "JavaScript",
+    "created_at": "2026-07-31T17:54:30Z",
+    "topics": [
+      "ai-agents",
+      "claude-code",
+      "claude-code-plugin",
+      "claude-skills",
+      "code-quality",
+      "developer-tools",
+      "hooks",
+      "llm",
+      "ratchet",
+      "rate-limiting",
+      "static-analysis",
+      "yagni"
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1319174653,
@@ -117,7 +95,8 @@
       "multimodal",
       "text-only-llm",
       "vision"
-    ]
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1315850048,
@@ -138,14 +117,41 @@
       "self-hosted",
       "seo",
       "seo-tools"
-    ]
+    ],
+    "domain": "大语言模型"
+  },
+  {
+    "id": 1314553634,
+    "name": "arcships/aimux",
+    "url": "https://github.com/arcships/aimux",
+    "description": "Unified LLM access layer in Rust — one API for 325 AI providers. 统一 LLM 服务接入层：一套 API 接入 325 家 AI 服务商。",
+    "stars": 147,
+    "language": "Rust",
+    "created_at": "2026-07-28T04:58:46Z",
+    "topics": [
+      "ai",
+      "c",
+      "flutter",
+      "go",
+      "java",
+      "kotlin",
+      "llm",
+      "llm-api",
+      "llm-providers",
+      "nodejs",
+      "openai-compatible",
+      "python",
+      "rust",
+      "swift"
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1319290417,
     "name": "juxhinr/bindwidth",
     "url": "https://github.com/juxhinr/bindwidth",
     "description": "Evidence-aware on-prem LLM inference sizing and TCO calculator",
-    "stars": 125,
+    "stars": 138,
     "language": "JavaScript",
     "created_at": "2026-08-01T12:50:09Z",
     "topics": [
@@ -157,14 +163,15 @@
       "on-prem",
       "sizing",
       "tco"
-    ]
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1314213737,
     "name": "hardrave/NIGHTRUN",
     "url": "https://github.com/hardrave/NIGHTRUN",
     "description": "Boot your PC straight into an LLM. Rust, UEFI-resident, no operating system underneath.",
-    "stars": 120,
+    "stars": 121,
     "language": "Rust",
     "created_at": "2026-07-27T19:37:52Z",
     "topics": [
@@ -175,14 +182,15 @@
       "ollama",
       "runtime",
       "vlm"
-    ]
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1316651150,
     "name": "simonlin1212/vibe-astock",
     "url": "https://github.com/simonlin1212/vibe-astock",
     "description": "A 股短线复盘看板：涨停池·连板梯队·龙虎榜·板块资金一屏看完，赚钱效应/晋级率/梯队断层/情绪周期等派生指标纯计算直出（不经过 AI），AI 只把数据串成能读的盘面研判。全本地运行，可用 Claude/Codex 订阅免 API key。| A-share short-term daily-review dashboard: derived sentiment metrics computed locally, AI only writes the narrative. No API key needed.",
-    "stars": 111,
+    "stars": 112,
     "language": "Python",
     "created_at": "2026-07-29T23:40:47Z",
     "topics": [
@@ -204,14 +212,34 @@
       "trading",
       "trading-dashboard",
       "typescript"
-    ]
+    ],
+    "domain": "大语言模型"
+  },
+  {
+    "id": 1320191889,
+    "name": "patchy631/time-to-first-token",
+    "url": "https://github.com/patchy631/time-to-first-token",
+    "description": "A 10-week, 30-minutes-a-day roadmap for LLM inference serving and optimization. vLLM, SGLang, quantization, speculative decoding, benchmarking.",
+    "stars": 82,
+    "language": "HTML",
+    "created_at": "2026-08-02T13:02:26Z",
+    "topics": [
+      "learning-resources",
+      "llm",
+      "llm-inference",
+      "mlops",
+      "roadmap",
+      "sglang",
+      "vllm"
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1316139230,
     "name": "bybit-exchange/kaas",
     "url": "https://github.com/bybit-exchange/kaas",
     "description": "Turn scattered notes, docs and transcripts into a queryable Markdown wiki — an LLM knowledge-base compiler with MCP access, no embeddings, self-hosted.",
-    "stars": 78,
+    "stars": 79,
     "language": "Python",
     "created_at": "2026-07-29T13:01:22Z",
     "topics": [
@@ -234,58 +262,8 @@
       "sqlite",
       "typescript",
       "wiki"
-    ]
-  },
-  {
-    "id": 1320191889,
-    "name": "patchy631/time-to-first-token",
-    "url": "https://github.com/patchy631/time-to-first-token",
-    "description": "A 10-week, 30-minutes-a-day roadmap for LLM inference serving and optimization. vLLM, SGLang, quantization, speculative decoding, benchmarking.",
-    "stars": 72,
-    "language": "HTML",
-    "created_at": "2026-08-02T13:02:26Z",
-    "topics": [
-      "learning-resources",
-      "llm",
-      "llm-inference",
-      "mlops",
-      "roadmap",
-      "sglang",
-      "vllm"
-    ]
-  },
-  {
-    "id": 1313844277,
-    "name": "codejunkie99/sageroute",
-    "url": "https://github.com/codejunkie99/sageroute",
-    "description": "Trajectory-aware model router. An OpenAI-compatible proxy that starts every task on a cheap model, watches what the agent actually does, and escalates on real execution evidence via the Levanto Sage API.",
-    "stars": 66,
-    "language": "TypeScript",
-    "created_at": "2026-07-27T12:55:18Z",
-    "topics": []
-  },
-  {
-    "id": 1318802395,
-    "name": "ArisuLoveASMR/ArisuLoveASMR",
-    "url": "https://github.com/ArisuLoveASMR/ArisuLoveASMR",
-    "description": "Ноутбук для Гугл коллаба, в котором вы сможете к абсолютно любому медиа добавить субтитры и автоматически их первести на любой язык",
-    "stars": 64,
-    "language": "Jupyter Notebook",
-    "created_at": "2026-07-31T22:45:44Z",
-    "topics": [
-      "anime",
-      "asmr",
-      "asmr-one",
-      "audio-processing",
-      "auto-translation",
-      "chinese-translation",
-      "deep-learning",
-      "japanese-translation",
-      "machine-translation",
-      "transformers",
-      "translation",
-      "video-processing"
-    ]
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1319312065,
@@ -308,45 +286,15 @@
       "llm",
       "prompt-engineering",
       "yagni"
-    ]
-  },
-  {
-    "id": 1319927892,
-    "name": "alikon-art/DeterminFlow",
-    "url": "https://github.com/alikon-art/DeterminFlow",
-    "description": "A production-oriented AI workflow runtime for building, validating, recovering, and shipping complex AI workflows as dependable services. 面向生产的 AI 工作流运行时：快速开发、验证和恢复复杂 AI 工作流，并将其稳定交付为服务。",
-    "stars": 61,
-    "language": "Python",
-    "created_at": "2026-08-02T07:40:51Z",
-    "topics": [
-      "agent-orchestration",
-      "ai-agents",
-      "ai-workflow",
-      "fastapi",
-      "llm",
-      "multi-agent",
-      "python",
-      "workflow-automation",
-      "workflow-engine",
-      "workflow-runtime"
-    ]
-  },
-  {
-    "id": 1314597444,
-    "name": "benchen4395/alpha_agentic_search",
-    "url": "https://github.com/benchen4395/alpha_agentic_search",
-    "description": "Alpha Agentic Search — 分层记忆 RAG 检索问答系统",
-    "stars": 59,
-    "language": "Python",
-    "created_at": "2026-07-28T05:58:28Z",
-    "topics": []
+    ],
+    "domain": "提示词工程"
   },
   {
     "id": 1316114472,
     "name": "CoordClaw/CoordClaw",
     "url": "https://github.com/CoordClaw/CoordClaw",
     "description": "CoordClaw: a multi-agent system that runs AI like a one-person company. Built on management & organizational theory — teams defined in natural language, collaboration driven by a message loop (not hard-coded DAGs). Auditable work logs, human god's-eye oversight.",
-    "stars": 53,
+    "stars": 57,
     "language": "TypeScript",
     "created_at": "2026-07-29T12:35:40Z",
     "topics": [
@@ -363,48 +311,8 @@
       "openclaw",
       "organization",
       "prompt-engineering"
-    ]
-  },
-  {
-    "id": 1318837166,
-    "name": "danielmillersr2593/3d-print-tools-editor",
-    "url": "https://github.com/danielmillersr2593/3d-print-tools-editor",
-    "description": "Client-side browser toolkit for viewing, editing, inspecting, and preparing common 3D-printing files, with support generation and toolpath visualization. Use the hosted version or serve a local checkout.",
-    "stars": 51,
-    "language": "HTML",
-    "created_at": "2026-08-01T00:03:03Z",
-    "topics": []
-  },
-  {
-    "id": 1314771915,
-    "name": "yu123-tqy/equipdoc-agent",
-    "url": "https://github.com/yu123-tqy/equipdoc-agent",
-    "description": "Auditable AI agent for electromechanical maintenance with LangGraph, RAG, fault diagnosis and human-in-the-loop review.",
-    "stars": 51,
-    "language": "Python",
-    "created_at": "2026-07-28T09:10:36Z",
-    "topics": []
-  },
-  {
-    "id": 1317902880,
-    "name": "Indhu27-pixel/Labour-Law-Violation-System",
-    "url": "https://github.com/Indhu27-pixel/Labour-Law-Violation-System",
-    "description": "AI-powered Labour Law Violation Detection System using Weak Supervision, BiLSTM, Graph Neural Networks (GNN), and Explainable AI to identify labour law violations.",
-    "stars": 50,
-    "language": "Python",
-    "created_at": "2026-07-31T03:48:42Z",
-    "topics": [
-      "artificial-intelligence",
-      "deep-learning",
-      "explainable-ai",
-      "flask",
-      "gnn",
-      "graph-neural-networks",
-      "labour-law",
-      "machine-learning",
-      "python",
-      "pytorch"
-    ]
+    ],
+    "domain": "提示词工程"
   },
   {
     "id": 1319474007,
@@ -420,7 +328,8 @@
       "image-generation",
       "photo-to-illustration",
       "prompt-engineering"
-    ]
+    ],
+    "domain": "图像生成"
   },
   {
     "id": 1319619796,
@@ -441,7 +350,8 @@
       "prompt-engineering",
       "qq-group",
       "shell"
-    ]
+    ],
+    "domain": "提示词工程"
   },
   {
     "id": 1314435335,
@@ -460,35 +370,8 @@
       "prompt-engineering",
       "tutorial",
       "vibe-coding"
-    ]
-  },
-  {
-    "id": 1318801695,
-    "name": "xbsheng/atguigu-note",
-    "url": "https://github.com/xbsheng/atguigu-note",
-    "description": "尚硅谷 AI 课程笔记",
-    "stars": 39,
-    "language": "Jupyter Notebook",
-    "created_at": "2026-07-31T22:44:26Z",
-    "topics": [
-      "agent",
-      "agents",
-      "ai",
-      "atguigu",
-      "langchain",
-      "langgraph",
-      "python"
-    ]
-  },
-  {
-    "id": 1319683713,
-    "name": "nathanoatzhughes3455/da728x-i2c-driver",
-    "url": "https://github.com/nathanoatzhughes3455/da728x-i2c-driver",
-    "description": "Asynchronous no_std Rust driver library for Renesas DA7280, DA7281, and DA7282 haptic controller ICs, using I2C communication for embedded hardware applications.",
-    "stars": 38,
-    "language": "HTML",
-    "created_at": "2026-08-01T23:22:22Z",
-    "topics": []
+    ],
+    "domain": "提示词工程"
   },
   {
     "id": 1315384578,
@@ -506,66 +389,1044 @@
       "llm-agent",
       "python",
       "typescript"
-    ]
+    ],
+    "domain": "Blender"
   },
   {
-    "id": 1320271414,
-    "name": "drpwchen/lecture-to-notes",
-    "url": "https://github.com/drpwchen/lecture-to-notes",
-    "description": "Lecture recordings → structured grounded notes + a synced HTML viewer: video, timestamped transcript and curated summary on one page. Local GPU pipeline (Whisper ASR · slide extraction · OCR · VLM signals · capture-time alignment). Claude Code skill + plain CLI.",
-    "stars": 32,
-    "language": "Python",
-    "created_at": "2026-08-02T14:38:46Z",
+    "id": 1316924477,
+    "name": "LiamGvchi/gc-still-image-motion-director",
+    "url": "https://github.com/LiamGvchi/gc-still-image-motion-director",
+    "description": "Codex skill for analyzing still images and writing restrained, image-specific motion prompts.",
+    "stars": 24,
+    "language": null,
+    "created_at": "2026-07-30T06:36:18Z",
     "topics": [
+      "codex",
+      "codex-skill",
+      "image-to-video",
+      "motion-design",
+      "prompt-engineering"
+    ],
+    "domain": "提示词工程"
+  },
+  {
+    "id": 1319753754,
+    "name": "noah-westza5105/comfyui-notes-guide",
+    "url": "https://github.com/noah-westza5105/comfyui-notes-guide",
+    "description": "Practical ComfyUI Notes for studying AI image generation workflows and Photoshop-based marketing-art production, with guidance on installation, usage, configuration, content updates, requirements, and common questions.",
+    "stars": 23,
+    "language": "HTML",
+    "created_at": "2026-08-02T02:24:47Z",
+    "topics": [],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1320472884,
+    "name": "sadekxD/cardstock-diorama-myth",
+    "url": "https://github.com/sadekxD/cardstock-diorama-myth",
+    "description": "Claude skill that turns a single request into a narrated mythic short film in a layered cut-paper diorama style — three-colour cardstock worlds, paper wipes, Unsora MCP + local ffmpeg, one assembled MP4.",
+    "stars": 21,
+    "language": "Python",
+    "created_at": "2026-08-02T18:17:40Z",
+    "topics": [
+      "ai-video",
+      "animation",
+      "claude",
       "claude-code",
-      "faster-whisper",
-      "lecture-notes",
-      "note-taking",
-      "obsidian",
-      "ocr",
-      "transcription",
-      "whisper"
-    ]
+      "claude-skill",
+      "claude-skills",
+      "generative-ai",
+      "mcp",
+      "papercraft",
+      "storytelling",
+      "text-to-video",
+      "unsora",
+      "unsora-mcp",
+      "video-generation"
+    ],
+    "domain": "视频生成"
   },
   {
-    "id": 1314300684,
-    "name": "lucidrains/robo_ttt",
-    "url": "https://github.com/lucidrains/robo_ttt",
-    "description": "Implementation of RoboTTT proposed by Yunfan Jiang et al. of Stanford and Nvidia",
-    "stars": 30,
-    "language": "Python",
-    "created_at": "2026-07-27T21:43:26Z",
+    "id": 1316983376,
+    "name": "zlbigger/immersive-poetry-page",
+    "url": "https://github.com/zlbigger/immersive-poetry-page",
+    "description": "Codex skill for turning classical Chinese poetry into cinematic, narrated, scroll-driven webpages · zlbigger.com",
+    "stars": 20,
+    "language": "TypeScript",
+    "created_at": "2026-07-30T07:41:25Z",
     "topics": [
-      "artificial-intelligence",
-      "deep-learning",
-      "robotics",
-      "test-time-training"
-    ]
+      "chinese-poetry",
+      "codex-skill",
+      "image-generation",
+      "immersive-web",
+      "vite"
+    ],
+    "domain": "图像生成"
   },
   {
-    "id": 1318832652,
-    "name": "artbyjazi/autoclip",
-    "url": "https://github.com/artbyjazi/autoclip",
-    "description": "Open-source, local-first AI video clipper. Long video in, caption-burned speaker-tracked 9:16 clips out. Fully offline with Whisper + Ollama, or bring your own API key.",
-    "stars": 30,
+    "id": 1313594931,
+    "name": "goehou/enterprise-kb-qa",
+    "url": "https://github.com/goehou/enterprise-kb-qa",
+    "description": "企业知识库智能问答系统:Qwen2.5 + vLLM + RAG + LangChain Agent + LoRA 微调,一个项目打通大模型应用全链路(部署/RAG/Agent/微调/容器化",
+    "stars": 19,
     "language": "Python",
-    "created_at": "2026-07-31T23:52:46Z",
+    "created_at": "2026-07-27T08:22:08Z",
+    "topics": [],
+    "domain": "LoRA/微调"
+  },
+  {
+    "id": 1314411582,
+    "name": "AgriciDaniel/anti-slop",
+    "url": "https://github.com/AgriciDaniel/anti-slop",
+    "description": "Find and repair substance defects in AI-assisted prose, code, docs, and agent output. Reports defects, never authorship. Structural tests over model judgement, because LLM judges agree with human slop labels at chance.",
+    "stars": 19,
+    "language": "Python",
+    "created_at": "2026-07-28T01:13:24Z",
     "topics": [
-      "ai",
-      "fastapi",
-      "ffmpeg",
+      "agent-skills",
+      "ai-slop",
+      "citation-verification",
+      "claude-code",
+      "code-quality",
+      "developer-tools",
+      "editorial-tools",
+      "knowledge-base",
       "llm",
-      "local-first",
-      "mediapipe",
-      "opusclip-alternative",
+      "obsidian",
+      "prompt-engineering",
+      "research-integrity",
+      "static-analysis",
+      "technical-writing",
+      "writing-quality"
+    ],
+    "domain": "提示词工程"
+  },
+  {
+    "id": 1315158321,
+    "name": "GeekatplayStudio/ComfyUI-Geekatplay-GameAssetMake",
+    "url": "https://github.com/GeekatplayStudio/ComfyUI-Geekatplay-GameAssetMake",
+    "description": null,
+    "stars": 18,
+    "language": "Python",
+    "created_at": "2026-07-28T15:48:07Z",
+    "topics": [],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1319540329,
+    "name": "HM-RunningHub/ComfyUI_RH_MinMaxH3",
+    "url": "https://github.com/HM-RunningHub/ComfyUI_RH_MinMaxH3",
+    "description": "This is a ComfyUI plug-in for MinMaxH3",
+    "stars": 17,
+    "language": "Python",
+    "created_at": "2026-08-01T18:36:12Z",
+    "topics": [],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1313669140,
+    "name": "Fictiverse/ComfyUI_Prompt_Manager",
+    "url": "https://github.com/Fictiverse/ComfyUI_Prompt_Manager",
+    "description": "Prompt Manager node for ComfyUI",
+    "stars": 17,
+    "language": "JavaScript",
+    "created_at": "2026-07-27T09:41:14Z",
+    "topics": [],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1319299763,
+    "name": "dinosn/security-research-orchestrator-prompt",
+    "url": "https://github.com/dinosn/security-research-orchestrator-prompt",
+    "description": "High-assurance, artifact-agnostic prompt for authorized security labs, exploit-chain research, PoC validation, and evidence-led reporting.",
+    "stars": 17,
+    "language": null,
+    "created_at": "2026-08-01T13:03:36Z",
+    "topics": [
+      "agentic-ai",
+      "application-security",
+      "cybersecurity",
+      "exploit-development",
+      "multi-agent",
+      "penetration-testing",
+      "prompt-engineering",
+      "proof-of-concept",
+      "red-team",
+      "security-research",
+      "training-labs",
+      "vulnerability-research"
+    ],
+    "domain": "提示词工程"
+  },
+  {
+    "id": 1320270455,
+    "name": "Evianis/travel-photo-abstraction",
+    "url": "https://github.com/Evianis/travel-photo-abstraction",
+    "description": "A source-available Codex skill for distilling photographs into sparse editorial abstractions.",
+    "stars": 16,
+    "language": "Python",
+    "created_at": "2026-08-02T14:37:39Z",
+    "topics": [
+      "codex",
+      "codex-skill",
+      "image-generation",
+      "visual-analysis"
+    ],
+    "domain": "图像生成"
+  },
+  {
+    "id": 1317822905,
+    "name": "Kent-Liu/meshtastic-firmware-zhtw",
+    "url": "https://github.com/Kent-Liu/meshtastic-firmware-zhtw",
+    "description": "Unofficial Meshtastic firmware with Traditional Chinese display and a Bopomofo input method",
+    "stars": 16,
+    "language": "C++",
+    "created_at": "2026-07-31T01:43:25Z",
+    "topics": [
+      "bopomofo",
+      "esp32s3",
+      "firmware",
+      "input-method",
+      "lora",
+      "meshtastic",
+      "nrf52840",
+      "traditional-chinese",
+      "zhuyin"
+    ],
+    "domain": "LoRA/微调"
+  },
+  {
+    "id": 1316327387,
+    "name": "lbouaraba/krea2edit-trainer",
+    "url": "https://github.com/lbouaraba/krea2edit-trainer",
+    "description": "Community ai-toolkit extension for training Krea 2 identity-edit LoRAs — the training code behind krea2-identity-edit, geometry-matched to the comfyui-krea2edit nodes. Not affiliated with Krea.ai.",
+    "stars": 14,
+    "language": "Python",
+    "created_at": "2026-07-29T16:09:18Z",
+    "topics": [],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1316673777,
+    "name": "filliptm/ComfyUI-FL-SeedVR2",
+    "url": "https://github.com/filliptm/ComfyUI-FL-SeedVR2",
+    "description": "SeedVR2 1.4B image restoration and upscaling nodes for ComfyUI",
+    "stars": 13,
+    "language": "Python",
+    "created_at": "2026-07-30T00:26:33Z",
+    "topics": [
+      "comfyui",
+      "comfyui-custom-node",
+      "image-upscaling",
+      "seedvr2"
+    ],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1316783029,
+    "name": "romanticamaj/promptasy",
+    "url": "https://github.com/romanticamaj/promptasy",
+    "description": "A browser game to learn prompt engineering by playing — explore a world and solve challenges by writing prompts. Techniques from OpenAI, Anthropic, Google & xAI, each cited.",
+    "stars": 13,
+    "language": "JavaScript",
+    "created_at": "2026-07-30T03:28:08Z",
+    "topics": [
+      "education",
+      "game",
+      "gamification",
+      "learn-prompting",
+      "llm",
+      "prompt-engineering",
+      "threejs",
+      "webgl"
+    ],
+    "domain": "提示词工程"
+  },
+  {
+    "id": 1315295209,
+    "name": "Vadim-Khristenko/awg-containers-and-tools",
+    "url": "https://github.com/Vadim-Khristenko/awg-containers-and-tools",
+    "description": "Unofficial self-hosted AmneziaWG 1.0/1.5/2.0/3.0 — container images plus a Rust CLI for parameter generation, SSH deployment and server management",
+    "stars": 12,
+    "language": "Rust",
+    "created_at": "2026-07-28T18:08:36Z",
+    "topics": [],
+    "domain": "图像生成"
+  },
+  {
+    "id": 1315558329,
+    "name": "non-npc/RetroStudio",
+    "url": "https://github.com/non-npc/RetroStudio",
+    "description": "Layer, animate, glitch, and generate retro visuals and demo scene art.",
+    "stars": 11,
+    "language": "Python",
+    "created_at": "2026-07-29T00:59:42Z",
+    "topics": [
+      "art",
+      "demoscene",
+      "image-generation",
+      "image-manipulation",
+      "image-processing",
+      "retro",
+      "retrocomputing",
+      "trending",
+      "trending-repositories"
+    ],
+    "domain": "图像生成"
+  },
+  {
+    "id": 1318289843,
+    "name": "BeatAPI/awesome-minimax-h3-prompts",
+    "url": "https://github.com/BeatAPI/awesome-minimax-h3-prompts",
+    "description": "🎬 Curated MiniMax H3 video generation prompts — cinematic, ads, anime, UGC, product videos, and more. Includes playable examples and creator attribution.",
+    "stars": 10,
+    "language": "JavaScript",
+    "created_at": "2026-07-31T11:45:07Z",
+    "topics": [
+      "ai-video",
+      "awesome-list",
+      "generative-ai",
+      "image-to-video",
+      "minimax-h3",
+      "multimodal-ai",
+      "prompt-gallery",
+      "text-to-video",
+      "video-prompts",
+      "webm"
+    ],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1315393798,
+    "name": "ScryptHunter/ComfyUI-PrunaVAED",
+    "url": "https://github.com/ScryptHunter/ComfyUI-PrunaVAED",
+    "description": "Native ComfyUI loader and benchmark nodes for the accelerated PrunaAI PrunaVAED LTX-2.3 video VAE.",
+    "stars": 9,
+    "language": "Python",
+    "created_at": "2026-07-28T20:10:44Z",
+    "topics": [
+      "comfyui",
+      "ltx-2",
+      "ltx-video",
+      "vae",
+      "video-generation"
+    ],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1317332721,
+    "name": "parkerryantnqn6495/tramsangtao-rest-api",
+    "url": "https://github.com/parkerryantnqn6495/tramsangtao-rest-api",
+    "description": "Tramsangtao API is a web-based REST service for AI media generation in 2026, supporting authenticated asynchronous jobs for images, videos, avatar media, and other generated content.",
+    "stars": 9,
+    "language": "HTML",
+    "created_at": "2026-07-30T14:02:20Z",
+    "topics": [],
+    "domain": "图像生成"
+  },
+  {
+    "id": 1319720221,
+    "name": "zackedwardsnxc4782/flask-image-recognition-tool",
+    "url": "https://github.com/zackedwardsnxc4782/flask-image-recognition-tool",
+    "description": "Python Flask computer vision web application for AI image recognition. Upload images to identify objects, read visible text, and view annotated results with confidence scores in a browser-based interface.",
+    "stars": 8,
+    "language": "HTML",
+    "created_at": "2026-08-02T00:59:05Z",
+    "topics": [],
+    "domain": "图像生成"
+  },
+  {
+    "id": 1317234451,
+    "name": "21omen/ComfyUI-ModelResolver",
+    "url": "https://github.com/21omen/ComfyUI-ModelResolver",
+    "description": "Detect and resolve missing models in ComfyUI workflows — active-graph analysis, multi-source resolution (Civitai / Hugging Face), and checksum-verified downloads.",
+    "stars": 7,
+    "language": "Python",
+    "created_at": "2026-07-30T12:16:16Z",
+    "topics": [
+      "civitai",
+      "comfyui",
+      "comfyui-custom-node",
+      "huggingface",
+      "model-management",
+      "stable-diffusion"
+    ],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1317497676,
+    "name": "JsonMatrixLab/matrix-power-nodes",
+    "url": "https://github.com/JsonMatrixLab/matrix-power-nodes",
+    "description": "Dataset Workflow V1: ComfyUI Custom API Nodes built specifically for a 25-shot WaveSpeed dataset workflow.",
+    "stars": 7,
+    "language": "Python",
+    "created_at": "2026-07-30T16:58:49Z",
+    "topics": [
+      "ai-dataset",
+      "comfyui",
+      "custom-nodes",
+      "image-generation",
       "python",
-      "react",
-      "reels",
-      "shorts",
-      "tiktok",
-      "video",
-      "video-editing",
-      "whisper"
-    ]
+      "wavespeed"
+    ],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1317976530,
+    "name": "exportAnything/ComfyUI-LTX-Reframe",
+    "url": "https://github.com/exportAnything/ComfyUI-LTX-Reframe",
+    "description": "Interactive LTX video reframing nodes for ComfyUI.",
+    "stars": 7,
+    "language": "Python",
+    "created_at": "2026-07-31T05:35:52Z",
+    "topics": [],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1314667526,
+    "name": "CheshireMew/ip-studio",
+    "url": "https://github.com/CheshireMew/ip-studio",
+    "description": "从零创建、锁定并长期复用 IP 角色，自动生成内容视觉与 Codex v2 桌宠",
+    "stars": 7,
+    "language": "Python",
+    "created_at": "2026-07-28T07:12:02Z",
+    "topics": [
+      "agent-skill",
+      "character-design",
+      "codex",
+      "desktop-pet",
+      "image-generation"
+    ],
+    "domain": "图像生成"
+  },
+  {
+    "id": 1319135487,
+    "name": "j128djsj/NoiseLoRA-SV",
+    "url": "https://github.com/j128djsj/NoiseLoRA-SV",
+    "description": "Official PyTorch implementation of NoiseLoRA-SV — hierarchical noise-conditioned adaptation for robust speaker verification.",
+    "stars": 7,
+    "language": "Python",
+    "created_at": "2026-08-01T09:00:58Z",
+    "topics": [
+      "interspeech-2026",
+      "lora",
+      "noise-robustness",
+      "pytorch",
+      "speaker-verification",
+      "speech-processing"
+    ],
+    "domain": "LoRA/微调"
+  },
+  {
+    "id": 1318894931,
+    "name": "GenshinmasterJinHang/Miku-Material-Converter-Blender-to-Unity-",
+    "url": "https://github.com/GenshinmasterJinHang/Miku-Material-Converter-Blender-to-Unity-",
+    "description": null,
+    "stars": 5,
+    "language": "Python",
+    "created_at": "2026-08-01T02:17:21Z",
+    "topics": [],
+    "domain": "Blender"
+  },
+  {
+    "id": 1314678393,
+    "name": "giri164/qwen-lora-finetuning",
+    "url": "https://github.com/giri164/qwen-lora-finetuning",
+    "description": null,
+    "stars": 5,
+    "language": "Python",
+    "created_at": "2026-07-28T07:24:24Z",
+    "topics": [],
+    "domain": "LoRA/微调"
+  },
+  {
+    "id": 1318837554,
+    "name": "daekeun-ml/sagemaker-finetune-serve-e2e",
+    "url": "https://github.com/daekeun-ml/sagemaker-finetune-serve-e2e",
+    "description": "Hands-on toolkit for fine-tuning Gemma 4 on Amazon SageMaker across 5 self-contained tracks: JSON extraction, intent classification, summarization, domain QA, and multimodal receipt parsing. Covers synthetic data, LoRA/QLoRA SFT with optional GRPO, vLLM/SGLang/LMI serving, held-out evaluation, and a Bedrock Claude agentic loop.",
+    "stars": 5,
+    "language": "Python",
+    "created_at": "2026-08-01T00:03:59Z",
+    "topics": [],
+    "domain": "LoRA/微调"
+  },
+  {
+    "id": 1314673307,
+    "name": "giri164/rag-chatbot-finetuned-embeddings",
+    "url": "https://github.com/giri164/rag-chatbot-finetuned-embeddings",
+    "description": null,
+    "stars": 5,
+    "language": "Python",
+    "created_at": "2026-07-28T07:18:39Z",
+    "topics": [],
+    "domain": "LoRA/微调"
+  },
+  {
+    "id": 1319516139,
+    "name": "idimetrix/voice-to-text",
+    "url": "https://github.com/idimetrix/voice-to-text",
+    "description": "Transcribe any audio or video to text offline with Whisper, then translate it automatically. Handles WhatsApp .opus voice notes, wrong extensions, folders, globs and URLs.",
+    "stars": 4,
+    "language": "Python",
+    "created_at": "2026-08-01T18:01:57Z",
+    "topics": [],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1318289840,
+    "name": "BeatAPI/awesome-seedance-2-5-prompts",
+    "url": "https://github.com/BeatAPI/awesome-seedance-2-5-prompts",
+    "description": "🎬 Curated Seedance 2.5 video generation prompts — cinematic, anime, UGC, ads, storytelling, and more. Includes playable examples and creator attribution.",
+    "stars": 4,
+    "language": "JavaScript",
+    "created_at": "2026-07-31T11:45:07Z",
+    "topics": [
+      "ai-video",
+      "awesome-list",
+      "generative-ai",
+      "image-to-video",
+      "prompt-gallery",
+      "seedance",
+      "seedance-2-5",
+      "text-to-video",
+      "video-prompts",
+      "webm"
+    ],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1315985399,
+    "name": "ok5tvr/esp32-lora-aprs-terminal",
+    "url": "https://github.com/ok5tvr/esp32-lora-aprs-terminal",
+    "description": "Touchscreen LoRa APRS terminal for the Waveshare ESP32 Touch LCD 3.5\" and SX1278. Includes GPS tracker, messaging, weather decoding, digipeater and receive-only APRS-IS iGate.  Doporučený název repozitáře:",
+    "stars": 4,
+    "language": "C++",
+    "created_at": "2026-07-29T10:14:59Z",
+    "topics": [],
+    "domain": "LoRA/微调"
+  },
+  {
+    "id": 1317084048,
+    "name": "kkennethlau12393/engram",
+    "url": "https://github.com/kkennethlau12393/engram",
+    "description": "A language model whose memory lives in its weights, not its context window. LoRA as mutable state: one gradient step per interaction, persisted, recall by forward pass.",
+    "stars": 4,
+    "language": "Python",
+    "created_at": "2026-07-30T09:24:19Z",
+    "topics": [],
+    "domain": "LoRA/微调"
+  },
+  {
+    "id": 1313713674,
+    "name": "Rinne414/lora-training-skill",
+    "url": "https://github.com/Rinne414/lora-training-skill",
+    "description": "Bring a folder of images, leave with a trained LoRA. Agent skills (SKILL.md) for quality-gated LoRA training: dataset doctor + safe fixer + one-confirmation training orchestration for SD-Trainer / lora-scripts-next. Anima-first, SD1.5/SDXL/Flux.",
+    "stars": 3,
+    "language": "Python",
+    "created_at": "2026-07-27T10:30:09Z",
+    "topics": [
+      "agent-skills",
+      "anima",
+      "civitai",
+      "claude-code",
+      "comfyui",
+      "dataset-tools",
+      "kohya",
+      "lora",
+      "lora-training",
+      "sd-trainer",
+      "skill-md",
+      "stable-diffusion"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1317387442,
+    "name": "Luixos/YTD-Tool",
+    "url": "https://github.com/Luixos/YTD-Tool",
+    "description": "Grand Theft Auto V YTD Texture Dictionary manager and exporter for Blender. This add-on enables seamless texture extraction, multi-YTD management, and CodeWalker/FiveM XML generation.",
+    "stars": 3,
+    "language": "Python",
+    "created_at": "2026-07-30T14:57:27Z",
+    "topics": [
+      "blender",
+      "blender-addon",
+      "game-modding-tool",
+      "grand-theft-auto"
+    ],
+    "domain": "Blender"
+  },
+  {
+    "id": 1319728475,
+    "name": "revfactory/MAICON-SIM",
+    "url": "https://github.com/revfactory/MAICON-SIM",
+    "description": "국방 AI 경진대회(MAICON) 본선 경기장 Blender 시뮬레이터 — UGV 자율주행 + 드론 화재정찰 데모. 씬 전체를 파이썬으로 결정적 생성.",
+    "stars": 3,
+    "language": "Python",
+    "created_at": "2026-08-02T01:20:49Z",
+    "topics": [],
+    "domain": "Blender"
+  },
+  {
+    "id": 1318166161,
+    "name": "AntonioCardenas/generate-nanobanana",
+    "url": "https://github.com/AntonioCardenas/generate-nanobanana",
+    "description": "Claude Code skill for AI image & video generation with Google Gemini — Nano Banana 2 Lite, Nano Banana Pro, Gemini Omni Flash. Cost gates before paid runs, real reference images, a prompt log beside every file.",
+    "stars": 3,
+    "language": null,
+    "created_at": "2026-07-31T09:16:55Z",
+    "topics": [],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1315909989,
+    "name": "KernelPhantom-010/ani_m8---Text-Animation-Studio",
+    "url": "https://github.com/KernelPhantom-010/ani_m8---Text-Animation-Studio",
+    "description": "A Flutter desktop application for Windows that lets users type in text, animate it with a variety of visual effects, and pair the animation with sound effects. Built with Flutter for the UI and designed to eventually support exporting animations as video files.",
+    "stars": 3,
+    "language": null,
+    "created_at": "2026-07-29T08:53:41Z",
+    "topics": [
+      "animation",
+      "dart",
+      "flutter",
+      "generator",
+      "text",
+      "text-animation",
+      "visualization"
+    ],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1318233396,
+    "name": "1756141021/tag-skill",
+    "url": "https://github.com/1756141021/tag-skill",
+    "description": "AI-image-prompt-TAG-skill",
+    "stars": 2,
+    "language": null,
+    "created_at": "2026-07-31T10:35:35Z",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "ai-art",
+      "anime",
+      "danbooru",
+      "image-generation",
+      "novelai",
+      "prompt-engineering",
+      "prompt-generator",
+      "stable-diffusion",
+      "tag-generator"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1319534344,
+    "name": "Cookiebubba/Blender-gradient-Engine",
+    "url": "https://github.com/Cookiebubba/Blender-gradient-Engine",
+    "description": null,
+    "stars": 2,
+    "language": "Python",
+    "created_at": "2026-08-01T18:28:24Z",
+    "topics": [],
+    "domain": "Blender"
+  },
+  {
+    "id": 1317351778,
+    "name": "Wanderson-Magalhaes/freedoom_for_blender_addon",
+    "url": "https://github.com/Wanderson-Magalhaes/freedoom_for_blender_addon",
+    "description": null,
+    "stars": 2,
+    "language": "Python",
+    "created_at": "2026-07-30T14:22:02Z",
+    "topics": [],
+    "domain": "Blender"
+  },
+  {
+    "id": 1315095895,
+    "name": "ObunagaLabs/Loomic",
+    "url": "https://github.com/ObunagaLabs/Loomic",
+    "description": "[AI/Design] Open-source AI canvas design agent — alternative to Lovart / CapCut Video Studio / Canva AI. Chat-driven image & video generation on an infinite canvas.",
+    "stars": 2,
+    "language": "TypeScript",
+    "created_at": "2026-07-28T14:46:45Z",
+    "topics": [],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1315935321,
+    "name": "step-into-ai/kie-media",
+    "url": "https://github.com/step-into-ai/kie-media",
+    "description": "Portable KIE.ai media agent — live model discovery, safe image/video generation, campaigns, cost profiles, review gates, and resumable runs.",
+    "stars": 2,
+    "language": "Python",
+    "created_at": "2026-07-29T09:20:37Z",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude-code",
+      "generative-ai",
+      "hermes-agent",
+      "image-generation",
+      "kie-ai",
+      "openai-codex",
+      "python",
+      "video-generation"
+    ],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1319698784,
+    "name": "Anil-matcha/seedance2.5-comfyui",
+    "url": "https://github.com/Anil-matcha/seedance2.5-comfyui",
+    "description": "Seedance 2.0 ComfyUI: custom nodes and workflows for ByteDance video generation via MuAPI — text-to-video, image-to-video, Omni Reference, consistent characters, and video extend.",
+    "stars": 2,
+    "language": "Python",
+    "created_at": "2026-08-02T00:02:19Z",
+    "topics": [],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1317999830,
+    "name": "Manraj10/promptbox",
+    "url": "https://github.com/Manraj10/promptbox",
+    "description": "A plain desktop app for local image generation. Type a prompt, get a picture.",
+    "stars": 1,
+    "language": "Python",
+    "created_at": "2026-07-31T06:08:27Z",
+    "topics": [
+      "comfyui",
+      "desktop-app",
+      "image-generation",
+      "python",
+      "sdxl",
+      "stable-diffusion"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1318781137,
+    "name": "redDwarf03/spz-mcp",
+    "url": "https://github.com/redDwarf03/spz-mcp",
+    "description": "MCP server for StableProjectorz — lets an LLM agent read app state, see the 3D viewport and trigger UI actions. Discovers its tool catalogue from the running app.",
+    "stars": 1,
+    "language": "Python",
+    "created_at": "2026-07-31T22:01:44Z",
+    "topics": [
+      "mcp",
+      "model-context-protocol",
+      "stable-diffusion",
+      "stableprojectorz",
+      "unity"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1317540081,
+    "name": "giancarlobrusca/local-img",
+    "url": "https://github.com/giancarlobrusca/local-img",
+    "description": "Local text-to-image generation on your own GPU. Prompt in a browser, PNG out. No API keys, no cloud, runs fully offline after the first weight download.",
+    "stars": 1,
+    "language": "Python",
+    "created_at": "2026-07-30T17:48:19Z",
+    "topics": [
+      "apple-silicon",
+      "diffusers",
+      "local-ai",
+      "mps",
+      "pytorch",
+      "sdxl",
+      "stable-diffusion",
+      "text-to-image"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1319824974,
+    "name": "Jit-Roy/weellm",
+    "url": "https://github.com/Jit-Roy/weellm",
+    "description": "WeeLLM is a layer-streaming inference engine for large diffusion models that runs on under 4GB VRAM with zero quantization, streaming one transformer layer at a time directly from Hugging Face safetensors files.",
+    "stars": 1,
+    "language": "Python",
+    "created_at": "2026-08-02T04:44:36Z",
+    "topics": [
+      "flux",
+      "gpu-computing",
+      "low-vram",
+      "stable-diffusion",
+      "text-to-image"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1318863538,
+    "name": "flipcyde101/CanvasForge",
+    "url": "https://github.com/flipcyde101/CanvasForge",
+    "description": "Private local AI photo editor powered by Stable Diffusion WebUI Forge",
+    "stars": 1,
+    "language": "JavaScript",
+    "created_at": "2026-08-01T01:05:26Z",
+    "topics": [],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1320174422,
+    "name": "Bithisarea2010/Helion-Vanguard",
+    "url": "https://github.com/Bithisarea2010/Helion-Vanguard",
+    "description": "Fast third-person space combat for macOS — built with Godot 4.7, Blender and a procedural asset pipeline.",
+    "stars": 1,
+    "language": "GDScript",
+    "created_at": "2026-08-02T12:38:42Z",
+    "topics": [
+      "apple-silicon",
+      "blender",
+      "gdscript",
+      "godot",
+      "godot-engine",
+      "indie-game",
+      "macos",
+      "procedural-generation",
+      "space-combat",
+      "space-game"
+    ],
+    "domain": "Blender"
+  },
+  {
+    "id": 1318696102,
+    "name": "pandrabox/Uchinoko",
+    "url": "https://github.com/pandrabox/Uchinoko",
+    "description": "Uchinoko for Palworld — unofficial fan tool that lets VRChatters play Palworld as their own VRM/avatar (local-only, MIT licensed)",
+    "stars": 1,
+    "language": "Python",
+    "created_at": "2026-07-31T19:39:52Z",
+    "topics": [
+      "avatar",
+      "avatar-converter",
+      "blender",
+      "csharp",
+      "game-mod",
+      "modding",
+      "palworld",
+      "unity",
+      "vrchat",
+      "vrm"
+    ],
+    "domain": "Blender"
+  },
+  {
+    "id": 1317459110,
+    "name": "frabcd/codex-ai-game-studio",
+    "url": "https://github.com/frabcd/codex-ai-game-studio",
+    "description": "Codex AI game studio: 85 skills, 163 curated tools, Unity/Godot/Unreal/Blender workflows, img2threejs, reversible automation, and visual QA.",
+    "stars": 1,
+    "language": "Python",
+    "created_at": "2026-07-30T16:14:46Z",
+    "topics": [
+      "3d-animation",
+      "agent-skills",
+      "ai-agents",
+      "ai-game-development",
+      "blender",
+      "codex-plugin",
+      "game-ai",
+      "game-development",
+      "gamedev",
+      "generative-ai",
+      "godot",
+      "model-context-protocol",
+      "openai-codex",
+      "procedural-generation",
+      "sprite-generation",
+      "text-to-3d",
+      "threejs",
+      "unity",
+      "unreal-engine",
+      "visual-regression-testing"
+    ],
+    "domain": "Blender"
+  },
+  {
+    "id": 1319723251,
+    "name": "ShamanAndrey/blender-terracotta",
+    "url": "https://github.com/ShamanAndrey/blender-terracotta",
+    "description": "Terracotta for Blender — AI 3D asset generation as a node graph. Tripo models, Gemini images, segment, rig, animate, export.",
+    "stars": 1,
+    "language": "Python",
+    "created_at": "2026-08-02T01:07:03Z",
+    "topics": [
+      "3d-generation",
+      "ai",
+      "blender",
+      "blender-addon",
+      "gemini",
+      "node-graph",
+      "tripo"
+    ],
+    "domain": "Blender"
+  },
+  {
+    "id": 1318421207,
+    "name": "Somokolon-Labs/smriti-restore",
+    "url": "https://github.com/Somokolon-Labs/smriti-restore",
+    "description": "Diffusion restoration for damaged photographs: region-targeted repair, denoise, colourisation, tiled super-resolution and face restoration, behind a fault-tolerant GPU job queue.",
+    "stars": 0,
+    "language": "Python",
+    "created_at": "2026-07-31T14:14:29Z",
+    "topics": [
+      "computer-vision",
+      "diffusion-models",
+      "fastapi",
+      "inpainting",
+      "mlops",
+      "nextjs",
+      "photo-restoration",
+      "stable-diffusion",
+      "super-resolution"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1316839012,
+    "name": "layerplague867/lora-training-skill",
+    "url": "https://github.com/layerplague867/lora-training-skill",
+    "description": "Automate LoRA model training with a guided pipeline for curation, tagging, and validation compatible with Claude Code and other agentic workflows.",
+    "stars": 0,
+    "language": "Python",
+    "created_at": "2026-07-30T04:46:35Z",
+    "topics": [
+      "agent-skills",
+      "anima",
+      "comfyui",
+      "dataset-preparation",
+      "dpo",
+      "fal",
+      "grpo",
+      "huggingface",
+      "kohya",
+      "lora",
+      "lora-training",
+      "portrait",
+      "python",
+      "sd-trainer",
+      "stable-diffusion",
+      "unsloth",
+      "wan-video"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1315591222,
+    "name": "holy-tree/sd3_controlnet",
+    "url": "https://github.com/holy-tree/sd3_controlnet",
+    "description": null,
+    "stars": 0,
+    "language": "Python",
+    "created_at": "2026-07-29T01:57:23Z",
+    "topics": [],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1319940271,
+    "name": "sravansundar20-droid/controlnet-pose-toolkit",
+    "url": "https://github.com/sravansundar20-droid/controlnet-pose-toolkit",
+    "description": null,
+    "stars": 0,
+    "language": null,
+    "created_at": "2026-08-02T08:01:28Z",
+    "topics": [],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1316831613,
+    "name": "komeiall14/controlnet-failure-analysis",
+    "url": "https://github.com/komeiall14/controlnet-failure-analysis",
+    "description": "ControlNet の制御が効かなくなる条件と、その機構 — 映像メディア学レポートの実験コード",
+    "stars": 0,
+    "language": "Python",
+    "created_at": "2026-07-30T04:36:52Z",
+    "topics": [],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1320415123,
+    "name": "uyoung-jeong/sd3.5_handpose_controlnet",
+    "url": "https://github.com/uyoung-jeong/sd3.5_handpose_controlnet",
+    "description": "Hand pose controlnet for SD3.5-large",
+    "stars": 0,
+    "language": "Python",
+    "created_at": "2026-08-02T17:15:59Z",
+    "topics": [
+      "controlnet",
+      "hand-pose",
+      "stable-diffusion",
+      "stable-diffusion-3-5"
+    ],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1318356853,
+    "name": "casper806/LORA_with_controlnet_fingerprint_v2",
+    "url": "https://github.com/casper806/LORA_with_controlnet_fingerprint_v2",
+    "description": null,
+    "stars": 0,
+    "language": "Python",
+    "created_at": "2026-07-31T13:02:09Z",
+    "topics": [],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1319176272,
+    "name": "yiiidiii/ControlNet-guided-Point-Voxel-Diffusion",
+    "url": "https://github.com/yiiidiii/ControlNet-guided-Point-Voxel-Diffusion",
+    "description": null,
+    "stars": 0,
+    "language": null,
+    "created_at": "2026-08-01T10:02:39Z",
+    "topics": [],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1319414615,
+    "name": "ibiseolsin/pose-image-tool",
+    "url": "https://github.com/ibiseolsin/pose-image-tool",
+    "description": "ControlNet Pose 조건으로 원하는 자세의 이미지를 만드는 도구 (모두의연구소 과제)",
+    "stars": 0,
+    "language": "Jupyter Notebook",
+    "created_at": "2026-08-01T15:43:21Z",
+    "topics": [],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1314381535,
+    "name": "mungbws1031/sketch-render-tool",
+    "url": "https://github.com/mungbws1031/sketch-render-tool",
+    "description": "로컬 스케치 → 포토리얼 렌더 툴 (Vizcom 대체, ComfyUI+SDXL+ControlNet 기반)",
+    "stars": 0,
+    "language": "Python",
+    "created_at": "2026-07-28T00:16:58Z",
+    "topics": [],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1319477500,
+    "name": "jessenine/floorplan-workflow",
+    "url": "https://github.com/jessenine/floorplan-workflow",
+    "description": "ComfyUI workflow for generating 2D floor plans using ControlNet Union Pro Max",
+    "stars": 0,
+    "language": "Python",
+    "created_at": "2026-08-01T17:11:18Z",
+    "topics": [],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1317152043,
+    "name": "risa02076-code/pose-image-tool",
+    "url": "https://github.com/risa02076-code/pose-image-tool",
+    "description": "참조 사진의 자세만 빌려 다른 인물/장면 이미지를 만드는 Colab 도구 (OpenPose + ControlNet)",
+    "stars": 0,
+    "language": "Jupyter Notebook",
+    "created_at": "2026-07-30T10:40:04Z",
+    "topics": [],
+    "domain": "ControlNet"
   }
 ]
