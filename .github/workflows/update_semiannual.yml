@@ -1,0 +1,33 @@
+name: Update Semi-Annual Top20
+
+on:
+  schedule:
+    - cron: '0 0 1 1,7 *'   # 1月1日和7月1日
+  workflow_dispatch:
+
+jobs:
+  fetch-semiannual:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests urllib3
+      - name: Fetch semi-annual trending repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
+        run: python scripts/fetch_semiannual.py
+      - name: Validate JSON
+        run: |
+          python scripts/validate_json.py docs/data/semiannual.json
+          python scripts/validate_json.py docs/data/summary.json
+      - name: Commit and push data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add docs/data/semiannual.json docs/data/summary.json docs/data/history.json docs/data/emerging_topics.json
+          git commit -m "📊 更新半年精选 [$(date +'%Y-%m')]" || echo "No changes"
+          git push
