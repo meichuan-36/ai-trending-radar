@@ -1,0 +1,33 @@
+{
+  "total_repos": 20,
+  "avg_stars": 38145.4,
+  "top_topics": [
+    [
+      "llm",
+      14
+    ],
+    [
+      "claude-code",
+      9
+    ],
+    [
+      "mcp",
+      7
+    ],
+    [
+      "claude",
+      7
+    ],
+    [
+      "ai-agents",
+      6
+    ]
+  ],
+  "languages": {
+    "Python": 10,
+    "TypeScript": 3,
+    "JavaScript": 2,
+    "Rust": 2,
+    "Go": 1
+  }
+}
