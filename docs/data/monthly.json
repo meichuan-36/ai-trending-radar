@@ -4,7 +4,7 @@
     "name": "drumih/turbo-fieldfare",
     "url": "https://github.com/drumih/turbo-fieldfare",
     "description": "Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook",
-    "stars": 4271,
+    "stars": 4290,
     "language": "Swift",
     "created_at": "2026-07-17T15:57:54Z",
     "topics": [
@@ -21,7 +21,8 @@
       "on-device-ai",
       "on-device-llm",
       "swift"
-    ]
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1291544092,
@@ -41,14 +42,15 @@
       "evaluation",
       "fable",
       "llm"
-    ]
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1296036886,
     "name": "AlephAITech/WorkBuddyGuide",
     "url": "https://github.com/AlephAITech/WorkBuddyGuide",
     "description": "A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。",
-    "stars": 1866,
+    "stars": 1868,
     "language": "Python",
     "created_at": "2026-07-10T04:13:51Z",
     "topics": [
@@ -56,14 +58,15 @@
       "guide",
       "llm",
       "workbuddy"
-    ]
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1289743790,
     "name": "simonlin1212/Vibe-Research",
     "url": "https://github.com/simonlin1212/Vibe-Research",
     "description": "Vibe-Research: Your Personal Trading Research Agent · A股/美股/港股 的个人投研 Agent：每日复盘、资讯雷达、个股数据、板块中心、我的持仓、研究记录。Vibe-Research 把数据和功能配齐，由你自己的 AI 驱动投资研究。",
-    "stars": 1746,
+    "stars": 1749,
     "language": "TypeScript",
     "created_at": "2026-07-05T06:30:55Z",
     "topics": [
@@ -81,14 +84,15 @@
       "stock-market",
       "trading",
       "us-stocks"
-    ]
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1309102418,
     "name": "makecindy/cindy",
     "url": "https://github.com/makecindy/cindy",
     "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-    "stars": 1509,
+    "stars": 1518,
     "language": "TypeScript",
     "created_at": "2026-07-22T17:49:34Z",
     "topics": [
@@ -105,39 +109,15 @@
       "react-native",
       "typescript",
       "windows"
-    ]
-  },
-  {
-    "id": 1315424242,
-    "name": "sqliteai/waste",
-    "url": "https://github.com/sqliteai/waste",
-    "description": "Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine.",
-    "stars": 1192,
-    "language": "C",
-    "created_at": "2026-07-28T20:56:00Z",
-    "topics": []
-  },
-  {
-    "id": 1289309191,
-    "name": "SmileLikeYe/agent-chief",
-    "url": "https://github.com/SmileLikeYe/agent-chief",
-    "description": "Attention is your scarcest resource. Chief is the local-first layer that guards it — turning every agent, alert, and feed into one honest call: interrupt, or not.",
-    "stars": 1016,
-    "language": "Python",
-    "created_at": "2026-07-04T15:28:56Z",
-    "topics": [
-      "harness",
-      "harness-engineering",
-      "llm",
-      "local-first"
-    ]
+    ],
+    "domain": "大语言模型"
   },
   {
     "id": 1296647613,
     "name": "Alisa0808/vox-director",
     "url": "https://github.com/Alisa0808/vox-director",
     "description": "Turn one topic into a finished Vox-style paper-collage explainer/ad video — automated end to end on Atlas Cloud + ffmpeg. An agent skill.",
-    "stars": 979,
+    "stars": 981,
     "language": "Python",
     "created_at": "2026-07-10T15:32:05Z",
     "topics": [
@@ -157,14 +137,15 @@
       "video",
       "video-generation",
       "vox"
-    ]
+    ],
+    "domain": "视频生成"
   },
   {
     "id": 1292406637,
     "name": "op7418/guizang-material-illustration",
     "url": "https://github.com/op7418/guizang-material-illustration",
     "description": "归藏的材质插画 skill：生成带字解释图、图表美化和参考辅助配图。",
-    "stars": 911,
+    "stars": 912,
     "language": null,
     "created_at": "2026-07-07T13:57:13Z",
     "topics": [
@@ -180,21 +161,572 @@
       "material-illustration",
       "skill",
       "social-media"
-    ]
+    ],
+    "domain": "图像生成"
   },
   {
-    "id": 1293670798,
-    "name": "Robbyant/lingbot-video",
-    "url": "https://github.com/Robbyant/lingbot-video",
-    "description": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
-    "stars": 899,
-    "language": "Python",
-    "created_at": "2026-07-08T13:52:08Z",
+    "id": 1296366949,
+    "name": "nexu-io/codex-slides",
+    "url": "https://github.com/nexu-io/codex-slides",
+    "description": "🎨 Open-source AI slide studio inside Codex: image-native decks, every slide a full visual canvas. ⚡ 10+ high-quality slides in ~4–5 minutes — Fast mode renders every page in parallel. 🔍 Watch the whole chain live: research → outline → style → render → edit → present → export PDF/PPTX. 🖥️ Browser-first · zero API keys · durable projects.",
+    "stars": 745,
+    "language": "TypeScript",
+    "created_at": "2026-07-10T10:14:34Z",
     "topics": [
-      "image-to-video",
-      "lingbot-video",
+      "agent-skills",
+      "ai-ppt",
+      "ai-presentation",
+      "ai-slides",
+      "codex",
+      "codex-plugin",
+      "coding-agents",
+      "deep-research",
+      "design-system",
+      "gamma-alternative",
+      "generative-ai",
+      "image-generation",
+      "mcp",
+      "nextjs",
+      "open-design",
+      "powerpoint",
+      "pptx",
+      "presentation-generator",
+      "slides",
+      "typescript"
+    ],
+    "domain": "图像生成"
+  },
+  {
+    "id": 1293371220,
+    "name": "Raymondhou0917/speak-human-tw",
+    "url": "https://github.com/Raymondhou0917/speak-human-tw",
+    "description": "「說人話」：繁體中文的去 AI 味改寫 skill。抓 38 種 AI 寫作痕跡，順手校正中國用語與半形標點，給 Claude Code / Codex / Cursor 用。",
+    "stars": 734,
+    "language": "Python",
+    "created_at": "2026-07-08T09:23:53Z",
+    "topics": [
+      "agent-skills",
+      "ai-writing",
+      "claude-code",
+      "codex",
+      "cursor",
+      "humanizer",
+      "prompt-engineering",
+      "traditional-chinese",
+      "writing-tools",
+      "zh-tw"
+    ],
+    "domain": "提示词工程"
+  },
+  {
+    "id": 1315061605,
+    "name": "0xwilliamortiz/ponytail-improved",
+    "url": "https://github.com/0xwilliamortiz/ponytail-improved",
+    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "stars": 580,
+    "language": "JavaScript",
+    "created_at": "2026-07-28T14:16:19Z",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "claude-code-plugin",
+      "claude-code-skill",
+      "claude-skills",
+      "cursor-rules",
+      "ponytail",
+      "prompt-engineering",
+      "prompt-optimization",
+      "yagni"
+    ],
+    "domain": "提示词工程"
+  },
+  {
+    "id": 1302986554,
+    "name": "worldwonderer/drama-skills",
+    "url": "https://github.com/worldwonderer/drama-skills",
+    "description": "AI 短剧/漫剧创作 skill 合集，覆盖剧本、资产、分镜、图片/视频提示词到独立审查全链路，适配 Claude Code 与 Codex。| An AI short-drama skill suite for Claude Code & Codex: scripts, assets, storyboards, image/video prompts, and independent review.",
+    "stars": 457,
+    "language": "Python",
+    "created_at": "2026-07-16T16:11:19Z",
+    "topics": [
+      "agent-skills",
+      "aigc",
+      "claude-code",
+      "codex",
+      "prompt-engineering",
+      "screenwriting",
+      "short-drama",
+      "storyboard"
+    ],
+    "domain": "提示词工程"
+  },
+  {
+    "id": 1305466278,
+    "name": "KinetiNode/claude-fable-5-system-prompt-clean",
+    "url": "https://github.com/KinetiNode/claude-fable-5-system-prompt-clean",
+    "description": "the optimized, token-efficient version of the leaked Claude Fable 5 / Mythos 5 system prompt. Re-engineered into clean Markdown for universal execution on Gemini 3.1 Pro, ChatGPT 5.6, and advanced LLM agents.",
+    "stars": 431,
+    "language": null,
+    "created_at": "2026-07-19T06:09:52Z",
+    "topics": [],
+    "domain": "提示词工程"
+  },
+  {
+    "id": 1292436887,
+    "name": "lbouaraba/comfyui-krea2edit",
+    "url": "https://github.com/lbouaraba/comfyui-krea2edit",
+    "description": "Instruction-based, identity-preserving image editing for Krea 2 in ComfyUI — nodes + workflows for the Krea 2 Identity Edit LoRA",
+    "stars": 394,
+    "language": "Python",
+    "created_at": "2026-07-07T14:23:26Z",
+    "topics": [],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1292505690,
+    "name": "zhouwei713/seedance-prompt",
+    "url": "https://github.com/zhouwei713/seedance-prompt",
+    "description": "Hermes skill for realistic AI video prompts for Seedance and text-to-video models.",
+    "stars": 281,
+    "language": null,
+    "created_at": "2026-07-07T15:25:02Z",
+    "topics": [],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1302709153,
+    "name": "PromptPartner/agentsmith",
+    "url": "https://github.com/PromptPartner/agentsmith",
+    "description": "Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini, …) — a lean core + work-type profiles assembled by one setup script.",
+    "stars": 254,
+    "language": "Shell",
+    "created_at": "2026-07-16T11:37:15Z",
+    "topics": [
+      "agentic-ai",
+      "agentic-coding",
+      "ai-agents",
+      "ai-tools",
+      "automation",
+      "claude",
+      "claude-code",
+      "codex",
+      "coding-agent",
+      "developer-tools",
+      "gemini",
+      "llm",
+      "llm-agents",
+      "open-source",
+      "prompt-engineering",
+      "vibe-coding"
+    ],
+    "domain": "提示词工程"
+  },
+  {
+    "id": 1291947423,
+    "name": "adriflex/autoremesher-blender-bridge",
+    "url": "https://github.com/adriflex/autoremesher-blender-bridge",
+    "description": "Blender bridge for AutoRemesher",
+    "stars": 253,
+    "language": "Python",
+    "created_at": "2026-07-07T07:36:26Z",
+    "topics": [
+      "autoremesher",
+      "blender",
+      "blender-addon",
+      "remeshing",
+      "retopology"
+    ],
+    "domain": "Blender"
+  },
+  {
+    "id": 1289275691,
+    "name": "ostris/ComfyUI-Krea2-Ostris-Edit",
+    "url": "https://github.com/ostris/ComfyUI-Krea2-Ostris-Edit",
+    "description": "Comfy UI Nodes for Krea 2 LoRAs trained with AI Toolkit Experimental Edit",
+    "stars": 246,
+    "language": "Python",
+    "created_at": "2026-07-04T14:40:54Z",
+    "topics": [],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1303516931,
+    "name": "flatkey-ai/flatkey-cli",
+    "url": "https://github.com/flatkey-ai/flatkey-cli",
+    "description": "Flatkey media generation CLI for images, videos, audio, text, credits, and model discovery.",
+    "stars": 223,
+    "language": "JavaScript",
+    "created_at": "2026-07-17T03:35:56Z",
+    "topics": [
+      "ai",
+      "audio-generation",
+      "cli",
+      "generative-ai",
+      "image-generation",
+      "media-generation",
+      "npm",
+      "video-generation"
+    ],
+    "domain": "图像生成"
+  },
+  {
+    "id": 1289447490,
+    "name": "BlackMixture/Mix-Studio",
+    "url": "https://github.com/BlackMixture/Mix-Studio",
+    "description": "The cleanest, responsive AI workspace. Run highly tuned image and video workflows flawlessly from your desktop or your phone. Built on ComfyUI.",
+    "stars": 216,
+    "language": "JavaScript",
+    "created_at": "2026-07-04T19:03:47Z",
+    "topics": [
+      "ai-art",
+      "comfyui",
+      "image-generation",
+      "lora",
+      "mixstudio",
+      "mobile-first",
+      "self-hosted",
+      "stable-diffusion",
+      "video-generation"
+    ],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1301161752,
+    "name": "k-telux/OpticalModeler",
+    "url": "https://github.com/k-telux/OpticalModeler",
+    "description": "Evidence-gated Agent Skill for reconstructing 2D photonics schematics as physically auditable Blender optical tables with CAD, beam-path, mechanics, and render proof.",
+    "stars": 212,
+    "language": "Python",
+    "created_at": "2026-07-15T03:33:08Z",
+    "topics": [
+      "agent-skills",
+      "blender",
+      "optical-design",
+      "optical-engineering",
+      "photonics",
+      "scientific-visualization",
+      "thorlabs"
+    ],
+    "domain": "Blender"
+  },
+  {
+    "id": 1296250451,
+    "name": "ucsandman/marketing-studio",
+    "url": "https://github.com/ucsandman/marketing-studio",
+    "description": "Agent-driven marketing studio for Claude Code: one /marketing command renders your product's full launch asset suite (logo reveal, demo, launch video, social clips, OG assets)",
+    "stars": 204,
+    "language": "JavaScript",
+    "created_at": "2026-07-10T08:00:22Z",
+    "topics": [
+      "ai-agents",
+      "blender",
+      "claude-code",
+      "marketing",
+      "remotion",
+      "video-generation"
+    ],
+    "domain": "Blender"
+  },
+  {
+    "id": 1290022584,
+    "name": "perfectgf/lora-dataset-studio",
+    "url": "https://github.com/perfectgf/lora-dataset-studio",
+    "description": "Self-hosted, one-tab workbench for the whole LoRA lifecycle: build Character / Concept / Style datasets (generate from a reference, scrape, or triage a huge dump in the Image Bank), curate, caption, clean watermarks, train locally or in the cloud across five model families, then rank checkpoints in a Test Studio. Free & local.",
+    "stars": 158,
+    "language": "Python",
+    "created_at": "2026-07-05T13:43:17Z",
+    "topics": [
+      "ai-toolkit",
+      "comfyui",
+      "dataset",
+      "flask",
+      "lora",
+      "react",
+      "stable-diffusion"
+    ],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1305115824,
+    "name": "Saivineeth147/lora-speedrun",
+    "url": "https://github.com/Saivineeth147/lora-speedrun",
+    "description": "Speedrunning LoRA fine-tuning: frozen task, frozen hardware, public wall-clock leaderboard. modded-nanogpt for fine-tuning.",
+    "stars": 144,
+    "language": "Python",
+    "created_at": "2026-07-18T17:53:03Z",
+    "topics": [
+      "benchmark",
+      "fine-tuning",
+      "leaderboard",
+      "llm",
+      "lora",
+      "peft",
+      "qlora",
+      "speedrun"
+    ],
+    "domain": "LoRA/微调"
+  },
+  {
+    "id": 1297116088,
+    "name": "calesthio/generative-media-skills",
+    "url": "https://github.com/calesthio/generative-media-skills",
+    "description": "Research-backed agent skills and tools for premium image, video, audio, voice, and generative media production across AI coding assistants.",
+    "stars": 112,
+    "language": "Python",
+    "created_at": "2026-07-11T04:16:24Z",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "ai",
+      "ai-audio",
+      "ai-video",
+      "claude",
+      "codex",
+      "copilot",
+      "cursor",
+      "generative-media",
+      "github-copilot",
+      "image-generation",
+      "open-source",
+      "openai",
+      "prompt-engineering",
+      "skill",
+      "text-to-speech",
+      "text-to-video",
       "video-generation",
-      "world-models"
-    ]
+      "video-production"
+    ],
+    "domain": "图像生成"
+  },
+  {
+    "id": 1293548427,
+    "name": "Blizaine/Maestro",
+    "url": "https://github.com/Blizaine/Maestro",
+    "description": "An all-in-one, 100% local AI video, image, and music studio. Director mode plans full music videos and short films from a single prompt. Built on the WanGP pipeline. Install via Pinokio.",
+    "stars": 103,
+    "language": "Python",
+    "created_at": "2026-07-08T12:02:05Z",
+    "topics": [
+      "ai",
+      "ai-video",
+      "image-generation",
+      "local-ai",
+      "ltx-video",
+      "music-generation",
+      "pinokio",
+      "text-to-video",
+      "video-generation",
+      "wan"
+    ],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1306864778,
+    "name": "DitchForeman/comfyui",
+    "url": "https://github.com/DitchForeman/comfyui",
+    "description": "ComfyUI",
+    "stars": 76,
+    "language": null,
+    "created_at": "2026-07-20T17:40:37Z",
+    "topics": [
+      "comfyui-easy-install",
+      "comfyui-node",
+      "comfyui-nodes"
+    ],
+    "domain": "ComfyUI"
+  },
+  {
+    "id": 1291421612,
+    "name": "gongnyang/reelforge",
+    "url": "https://github.com/gongnyang/reelforge",
+    "description": "Agent-native AI video factory: one brief → narrated, subtitled, scene-editable videos (shorts & long-form). Deterministic HTML rendering, free keyless stack, Korean-first.",
+    "stars": 74,
+    "language": "JavaScript",
+    "created_at": "2026-07-06T19:36:30Z",
+    "topics": [
+      "ai-video-generator",
+      "faceless-video",
+      "hyperframes",
+      "shorts-automation",
+      "text-to-video",
+      "video-agent"
+    ],
+    "domain": "视频生成"
+  },
+  {
+    "id": 1306863533,
+    "name": "SamuraiThrush/blender-addons",
+    "url": "https://github.com/SamuraiThrush/blender-addons",
+    "description": "Blender Addons",
+    "stars": 73,
+    "language": null,
+    "created_at": "2026-07-20T17:39:06Z",
+    "topics": [],
+    "domain": "Blender"
+  },
+  {
+    "id": 1306879509,
+    "name": "ChannelSlug61/stable-diffusion",
+    "url": "https://github.com/ChannelSlug61/stable-diffusion",
+    "description": "Stable Diffusion",
+    "stars": 71,
+    "language": null,
+    "created_at": "2026-07-20T17:58:16Z",
+    "topics": [
+      "a1111-stable-diffusion-webui",
+      "stable-diffusion",
+      "stable-diffusion-35-desktop",
+      "stable-diffusion-android",
+      "stable-diffusion-github",
+      "stable-diffusion-web-ui",
+      "stable-diffusion-xl",
+      "stablediffusion3"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1289817225,
+    "name": "arjun988/blender-skills",
+    "url": "https://github.com/arjun988/blender-skills",
+    "description": "94 specialist Blender skills for Cursor, Claude Code, Kiro & Codex -> MCP-powered production pipeline from blockout to engine export.",
+    "stars": 70,
+    "language": "TypeScript",
+    "created_at": "2026-07-05T08:36:06Z",
+    "topics": [
+      "3d-models",
+      "agent",
+      "agent-skills",
+      "blender",
+      "blender-addon",
+      "blender-mcp",
+      "claude-code",
+      "claude-skills",
+      "cursor-ai",
+      "game-development",
+      "mcp"
+    ],
+    "domain": "Blender"
+  },
+  {
+    "id": 1289579011,
+    "name": "GangOstrichCrimp/Stable-Diffusion-WebUI-Creative-Suite-Pro-Pack-Ultimate",
+    "url": "https://github.com/GangOstrichCrimp/Stable-Diffusion-WebUI-Creative-Suite-Pro-Pack-Ultimate",
+    "description": "Stable Diffusion WebUI Creative Suite Pro Pack Ultimate — creative workspace, export tools and production presets enabled for Windows desktop workflows. Windows setup guide — install steps, typical errors, and how to get Stable Diffusion WebUI Creative Suite Pro Pack Ultimate running on PC.",
+    "stars": 25,
+    "language": null,
+    "created_at": "2026-07-04T23:56:55Z",
+    "topics": [
+      "content-creation",
+      "creative-tools",
+      "export-tools",
+      "how-to-install-stable-diffusion",
+      "media-production",
+      "stable-diffusion",
+      "stable-diffusion-app",
+      "stable-diffusion-setup-failed-fix",
+      "stable-diffusion-windows",
+      "stable-diffusion-windows-setup",
+      "stable-diffusion-windows-setup-2026",
+      "windows-creative"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1298389464,
+    "name": "pixelpainter/comfyui-AI-prompt-editor",
+    "url": "https://github.com/pixelpainter/comfyui-AI-prompt-editor",
+    "description": "A full prompt-writing studio in a single ComfyUI node - AI editing, style targeting, prompt browsing, and wireless prompt injection, powered by your local Ollama models. No cloud, no keys.",
+    "stars": 24,
+    "language": "JavaScript",
+    "created_at": "2026-07-12T15:20:59Z",
+    "topics": [
+      "ai-prompt",
+      "comfyui",
+      "comfyui-custom-nodes",
+      "comfyui-manager",
+      "comfyui-nodes",
+      "custom-nodes",
+      "image-generation",
+      "llm",
+      "ollama",
+      "prompt",
+      "prompt-editor",
+      "prompt-engineering",
+      "stable-diffusion",
+      "text-to-image",
+      "workflow-tools"
+    ],
+    "domain": "Stable Diffusion"
+  },
+  {
+    "id": 1291411186,
+    "name": "Damkohler/JLC-Flux2-ControlNet",
+    "url": "https://github.com/Damkohler/JLC-Flux2-ControlNet",
+    "description": "A clean, ComfyUI-native FLUX.2 ControlNet implementation with non-recursive multi-ControlNet composition.",
+    "stars": 8,
+    "language": "Python",
+    "created_at": "2026-07-06T19:24:15Z",
+    "topics": [],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1297803748,
+    "name": "aeiouofficial/open_autopose",
+    "url": "https://github.com/aeiouofficial/open_autopose",
+    "description": "Local-first browser video control toolset for pose, silhouette, depth, and ControlNet-oriented workflows.",
+    "stars": 6,
+    "language": "HTML",
+    "created_at": "2026-07-11T21:49:25Z",
+    "topics": [
+      "controlnet",
+      "depth",
+      "editable-timeline",
+      "local",
+      "pose",
+      "silhuette",
+      "wasm"
+    ],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1301504854,
+    "name": "soylab-edu/ComfyUI-GNM",
+    "url": "https://github.com/soylab-edu/ComfyUI-GNM",
+    "description": "Google GNM parametric 3D head model as ComfyUI custom nodes (live 3D viewport, ControlNet-ready depth/normal outputs)",
+    "stars": 6,
+    "language": "Python",
+    "created_at": "2026-07-15T10:46:55Z",
+    "topics": [],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1307005039,
+    "name": "ozgursntrk/product-bg-replacement-pipeline",
+    "url": "https://github.com/ozgursntrk/product-bg-replacement-pipeline",
+    "description": "Background replacement for product photos: rembg segmentation + SD 1.5 ControlNet inpainting + IC-Light relighting, with structural-fidelity and CLIP metrics",
+    "stars": 3,
+    "language": "Jupyter Notebook",
+    "created_at": "2026-07-20T20:49:17Z",
+    "topics": [
+      "computer-vision",
+      "controlnet",
+      "diffusers",
+      "generative-ai",
+      "image-inpainting",
+      "segmentation",
+      "stable-diffusion"
+    ],
+    "domain": "ControlNet"
+  },
+  {
+    "id": 1308227991,
+    "name": "ectomia/Blender-to-Comfyui-Render-Passes-Addon",
+    "url": "https://github.com/ectomia/Blender-to-Comfyui-Render-Passes-Addon",
+    "description": "Useful script addon to create render passes for use with Comfyui Controlnet video control",
+    "stars": 2,
+    "language": null,
+    "created_at": "2026-07-22T00:20:32Z",
+    "topics": [],
+    "domain": "ControlNet"
   }
 ]
