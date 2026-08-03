@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">AI 开源项目热榜</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; margin: 40px auto; max-width: 900px; padding: 0 20px; transition: background 0.3s, color 0.3s; }
+        h1 { color: #58a6ff; }
+        .subtitle { color: #8b949e; margin-top: -10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .lang-btn, .rss-btn { background: #21262d; border: 1px solid #30363d; color: #c9d1d9; padding: 4px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .search-box { margin: 20px 0; }
+        .search-box input { width: 100%; padding: 10px 16px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; color: #c9d1d9; font-size: 16px; outline: none; box-sizing: border-box; }
+        .category-bar { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; }
+        .cat-btn { background: #21262d; border: 1px solid #30363d; color: #8b949e; padding: 4px 12px; border-radius: 20px; cursor: pointer; font-size: 14px; }
+        .cat-btn.active { background: #1f6feb; border-color: #1f6feb; color: white; }
+        .tab-bar { display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap; }
+        .tab-btn { background: #21262d; border: 1px solid #30363d; color: #c9d1d9; padding: 8px 20px; border-radius: 6px; cursor: pointer; font-size: 16px; }
+        .tab-btn.active { background: #1f6feb; border-color: #1f6feb; color: white; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; margin: 12px 0; transition: border-color 0.2s; position: relative; }
+        .card:hover { border-color: #58a6ff; }
+        .card a { color: #58a6ff; font-size: 1.2em; text-decoration: none; font-weight: 600; }
+        .card p { margin: 6px 0; }
+        .stars { color: #e3b341; font-weight: bold; }
+        .topics { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+        .topics span { background: #21262d; border-radius: 12px; padding: 2px 10px; font-size: 0.8em; color: #8b949e; }
+        .card-actions { position: absolute; top: 10px; right: 16px; display: flex; gap: 6px; }
+        .card-actions button { background: none; border: none; color: #8b949e; cursor: pointer; font-size: 16px; padding: 2px 4px; }
+        .card-actions button:hover { color: #58a6ff; }
+        mark { background: #f2cc60; color: #000; padding: 0 2px; border-radius: 2px; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 1000; }
+        .modal-content { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; max-width: 600px; width: 90%; position: relative; }
+        .modal-close { position: absolute; top: 10px; right: 16px; background: none; border: none; color: #c9d1d9; font-size: 24px; cursor: pointer; }
+        .collect-checkbox { display: none; margin-right: 10px; transform: scale(1.3); accent-color: #58a6ff; vertical-align: middle; }
+        .collect-mode .collect-checkbox { display: inline-block; }
+        .card.selected { border-color: #f2cc60; background: #1a1f2b; }
+        .export-modal { display: none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 1001; }
+        .export-modal-content { background: #161b22; border:1px solid #30363d; border-radius:12px; padding:24px; max-width:600px; width:90%; }
+        .export-modal textarea { width:100%; height:150px; background:#0d1117; color:#c9d1d9; border:1px solid #30363d; border-radius:8px; padding:8px; font-family: monospace; resize: vertical; }
+        body.light { background: #ffffff; color: #24292f; }
+        body.light h1 { color: #0969da; }
+        body.light .subtitle { color: #57606a; }
+        body.light .search-box input, body.light .modal-content, body.light .card { background: #f6f8fa; border-color: #d0d7de; color: #24292f; }
+        body.light .cat-btn, body.light .tab-btn, body.light .lang-btn, body.light .rss-btn { background: #eaeef2; border-color: #d0d7de; color: #24292f; }
+        body.light .card-actions button, body.light .topics span { color: #57606a; }
+        body.light mark { background: #ff0; }
+    </style>
+</head>
+<body>
+    <h1 id="mainTitle">🔥 AI 开源项目热榜</h1>
+    <div class="subtitle">
+        <span id="updateTime">⏱ ...</span>
+        <div class="toolbar">
+            <button class="rss-btn" onclick="openRSS()" title="RSS">📡 RSS</button>
+            <button class="lang-btn" onclick="toggleLang()">🌐 EN</button>
+            <button id="collectToggleBtn" class="rss-btn" onclick="toggleCollectMode()">📥 收藏模式</button>
+        </div>
+    </div>
+    
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="输入关键词搜索..." oninput="filterCards()">
+    </div>
+    <div class="category-bar" id="categoryBar"></div>
+    <div class="tab-bar" id="tabBar"></div>
+    <div id="app">加载中...</div>
+
+    <div class="modal" id="trendModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <h3 id="trendTitle">Stars 趋势</h3>
+            <canvas id="trendCanvas" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <div class="export-modal" id="exportModal">
+        <div class="export-modal-content">
+            <h3>📋 批量 Fork 脚本</h3>
+            <p>复制以下命令到终端执行（需安装 <a href="https://cli.github.com/" target="_blank">GitHub CLI</a> 并登录）</p>
+            <textarea id="scriptArea" readonly></textarea>
+            <div style="margin-top:10px; display:flex; gap:10px;">
+                <button onclick="copyScript()" class="rss-btn">📋 复制</button>
+                <button onclick="closeExportModal()" class="rss-btn">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./i18n.js"></script>
+    <script>
+        const dataFiles = {
+            weekly: './data/trending.json',
+            monthly: './data/monthly.json',
+            semiannual: './data/semiannual.json',
+            summary: './data/summary.json'
+        };
+        let currentRepos = [], currentTab = 'weekly', chartInstance = null;
+        let collectMode = false;
+        const selectedRepos = new Set();
+        const app = document.getElementById('app');
+        const searchInput = document.getElementById('searchInput');
+
+        const keywordMap = {
+            '视频生成': ['video generation', 'text-to-video', 'animate-diffusion'],
+            '工作流': ['workflow', 'comfyui'],
+            '图像生成': ['image generation', 'stable-diffusion'],
+            '控制网': ['controlnet'],
+            '提示词': ['prompt engineering', 'prompt'],
+            '适配器': ['ip-adapter'],
+            '微调': ['lora', 'finetune'],
+            '3d': ['blender', 'bpy'],
+        };
+
+        const categories = [
+            { labelZh: '全部', labelEn: 'All', tags: [] },
+            { labelZh: 'ComfyUI', labelEn: 'ComfyUI', tags: ['comfyui'] },
+            { labelZh: 'Blender', labelEn: 'Blender', tags: ['blender'] },
+            { labelZh: '视频生成', labelEn: 'Video Gen', tags: ['video generation', 'text-to-video'] },
+            { labelZh: '图像生成', labelEn: 'Image Gen', tags: ['image generation', 'stable-diffusion'] },
+            { labelZh: 'ControlNet', labelEn: 'ControlNet', tags: ['controlnet'] },
+            { labelZh: 'LoRA', labelEn: 'LoRA', tags: ['lora'] },
+        ];
+
+        let currentLang = localStorage.getItem('ai-trend-lang') || 'zh';
+        function t(key) { return (i18n[currentLang] && i18n[currentLang][key]) || key; }
+
+        function escapeHtml(text) {
+            const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
+            return String(text).replace(/[&<>"']/g, m => map[m]);
+        }
+
+        function highlightText(text, keywords) {
+            if (!keywords.length) return escapeHtml(text);
+            let escaped = escapeHtml(text);
+            const escapedKeys = keywords.map(k => escapeHtml(k));
+            const regex = new RegExp(escapedKeys.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'gi');
+            return escaped.replace(regex, match => `<mark>${match}</mark>`);
+        }
+
+        function expandKeywords(raw) {
+            if (!raw) return [];
+            const words = raw.split(/\s+/).filter(w => w);
+            let expanded = new Set(words.map(w => w.toLowerCase()));
+            words.forEach(w => {
+                const lower = w.toLowerCase();
+                for (let cn in keywordMap) {
+                    if (w === cn || lower === cn.toLowerCase()) {
+                        keywordMap[cn].forEach(en => expanded.add(en.toLowerCase()));
+                    }
+                }
+            });
+            return Array.from(expanded);
+        }
+
+        function renderCard(r, keywords) {
+            const nameHtml = highlightText(r.name, keywords);
+            const descHtml = highlightText(r.description || '', keywords);
+            const checked = selectedRepos.has(r.name) ? 'checked' : '';
+            const selectedClass = selectedRepos.has(r.name) ? ' selected' : '';
+            return `
+                <div class="card${selectedClass}" data-repo="${escapeHtml(r.name)}">
+                    <div class="card-actions">
+                        <button onclick="showTrend('${r.id}','${escapeHtml(r.name)}')" title="${t('trendBtn')}">📈</button>
+                        <button onclick="shareCard('${escapeHtml(r.name)}','${escapeHtml(r.url)}','${escapeHtml(r.description||'')}')" title="${t('shareBtn')}">🔗</button>
+                    </div>
+                    <input type="checkbox" class="collect-checkbox" ${checked} onchange="toggleRepoSelect('${escapeHtml(r.name)}', this.checked)" />
+                    <a href="${r.url}" target="_blank">⭐ ${nameHtml}</a>
+                    <p>${descHtml}</p>
+                    <p><span class="stars">🌟 ${r.stars}</span> · ${t('language')}: ${r.language || 'N/A'}</p>
+                    <div class="topics">${(r.topics || []).slice(0, 5).map(t => `<span>${escapeHtml(t)}</span>`).join('')}</div>
+                </div>`;
+        }
+
+        function filterCards() {
+            const raw = searchInput.value.trim();
+            let keywords = expandKeywords(raw);
+            const filtered = keywords.length ? currentRepos.filter(r => {
+                return keywords.every(kw => {
+                    const lw = kw.toLowerCase();
+                    return (r.name && r.name.toLowerCase().includes(lw)) ||
+                           (r.description && r.description.toLowerCase().includes(lw)) ||
+                           (r.topics && r.topics.some(t => t.toLowerCase().includes(lw)));
+                });
+            }) : currentRepos;
+            app.innerHTML = filtered.length ? filtered.map(r => renderCard(r, keywords)).join('') : `<p>${t('noResult')}</p>`;
+            updateCatActive();
+        }
+
+        function loadData(tab) {
+            currentTab = tab;
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            const activeBtn = document.querySelector(`[data-tab="${tab}"]`);
+            if (activeBtn) activeBtn.classList.add('active');
+            searchInput.value = '';
+            app.innerHTML = t('loading');
+            if (collectMode) selectedRepos.clear();
+            let url = dataFiles[tab];
+            if (tab === 'summary') {
+                app.innerHTML = '<p>加载半年报告...</p>';
+                fetch(url).then(r=>r.json()).then(renderSummary).catch(()=>app.innerHTML='<p>报告加载失败</p>');
+                return;
+            }
+            fetch(url).then(r => r.json()).then(repos => {
+                document.getElementById('updateTime').textContent = `⏱ ${new Date().toLocaleString(currentLang==='zh'?'zh-CN':'en-US')}`;
+                currentRepos = repos || [];
+                filterCards();
+            }).catch(() => { currentRepos = []; app.innerHTML = '<p style="color:#f85149">数据加载失败</p>'; });
+        }
+
+        function renderCategories() {
+            const bar = document.getElementById('categoryBar');
+            bar.innerHTML = categories.map((c, i) => {
+                const label = currentLang === 'zh' ? c.labelZh : c.labelEn;
+                return `<button class="cat-btn" data-cat="${i}" onclick="selectCategory(${i})">${label}</button>`;
+            }).join('');
+            updateCatActive();
+        }
+
+        function selectCategory(index) {
+            const cat = categories[index];
+            if (!cat.tags.length) searchInput.value = '';
+            else searchInput.value = cat.tags.join(' ');
+            filterCards();
+        }
+
+        function updateCatActive() {
+            const val = searchInput.value.trim();
+            document.querySelectorAll('.cat-btn').forEach((btn, i) => {
+                btn.classList.remove('active');
+                const cat = categories[i];
+                if (!val && cat.tags.length === 0) btn.classList.add('active');
+                else if (val && cat.tags.length && cat.tags.join(' ') === val) btn.classList.add('active');
+            });
+        }
+
+        function showTrend(repoId, repoName) {
+            fetch('./data/history.json').then(r=>r.json()).then(history => {
+                const data = history[repoId];
+                if (!data || data.length < 2) { alert(t('noTrend')); return; }
+                document.getElementById('trendTitle').textContent = repoName;
+                document.getElementById('trendModal').style.display = 'flex';
+                const ctx = document.getElementById('trendCanvas').getContext('2d');
+                if (chartInstance) chartInstance.destroy();
+                chartInstance = new Chart(ctx, {
+                    type: 'line',
+                    data: { labels: data.map(d=>d[0]), datasets: [{ label: 'Stars', data: data.map(d=>d[1]), borderColor: '#58a6ff', tension: 0.1 }] },
+                    options: { responsive: true, plugins: { legend: { display: false } } }
+                });
+            }).catch(() => alert(t('noTrend')));
+        }
+
+        function closeModal() { document.getElementById('trendModal').style.display = 'none'; if(chartInstance) chartInstance.destroy(); }
+
+        function shareCard(name, url, desc) {
+            const shareData = { title: name, text: desc, url: url };
+            if (navigator.share) { navigator.share(shareData).catch(()=>{}); }
+            else { navigator.clipboard.writeText(url); alert(t('copied')); }
+        }
+
+        function renderSummary(summary) {
+            let html = `<h3>${t('reportTitle')}</h3>`;
+            html += `<p>${t('totalRepos')}: ${summary.total_repos}</p>`;
+            html += `<p>${t('avgStars')}: ${summary.avg_stars}</p>`;
+            html += `<h4>${t('topTopics')}</h4><ul>`;
+            summary.top_topics.forEach(t => html += `<li>${t[0]} (${t[1]})</li>`);
+            html += `</ul><h4>${t('languages')}</h4><ul>`;
+            for (let lang in summary.languages) html += `<li>${lang}: ${summary.languages[lang]}</li>`;
+            html += `</ul>`;
+            app.innerHTML = html;
+        }
+
+        function toggleCollectMode() {
+            collectMode = !collectMode;
+            const btn = document.getElementById('collectToggleBtn');
+            if (collectMode) {
+                btn.textContent = '📋 导出选中';
+                document.body.classList.add('collect-mode');
+                selectedRepos.clear();
+                filterCards();
+            } else {
+                btn.textContent = '📥 收藏模式';
+                document.body.classList.remove('collect-mode');
+                if (selectedRepos.size > 0) {
+                    if (confirm('您有选中的项目，是否导出脚本？')) generateScript();
+                }
+            }
+        }
+
+        function toggleRepoSelect(repoName, checked) {
+            if (checked) selectedRepos.add(repoName);
+            else selectedRepos.delete(repoName);
+            const card = document.querySelector(`.card[data-repo="${repoName}"]`);
+            if (card) card.classList.toggle('selected', checked);
+        }
+
+        function generateScript() {
+            if (selectedRepos.size === 0) { alert('请至少勾选一个项目'); return; }
+            let script = '#!/bin/bash\n# 批量 Fork 选中项目到你的 GitHub\n\n';
+            selectedRepos.forEach(repo => { script += `gh repo fork ${repo} --clone=false\n`; });
+            script += '\necho "✅ 全部 Fork 完成！"\n';
+            document.getElementById('scriptArea').value = script;
+            document.getElementById('exportModal').style.display = 'flex';
+        }
+
+        function copyScript() {
+            const area = document.getElementById('scriptArea');
+            area.select();
+            document.execCommand('copy');
+            alert('已复制到剪贴板');
+        }
+
+        function closeExportModal() { document.getElementById('exportModal').style.display = 'none'; }
+
+        function toggleLang() {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            localStorage.setItem('ai-trend-lang', currentLang);
+            applyLanguage();
+            loadData(currentTab);
+        }
+
+        function applyLanguage() {
+            document.getElementById('pageTitle').textContent = t('pageTitle');
+            document.getElementById('mainTitle').textContent = t('mainTitle');
+            searchInput.placeholder = t('searchPlaceholder');
+            document.querySelector('.lang-btn').textContent = currentLang === 'zh' ? '🌐 EN' : '🌐 中文';
+            renderCategories();
+            renderTabs();
+        }
+
+        function renderTabs() {
+            const bar = document.getElementById('tabBar');
+            bar.innerHTML = `
+                <button class="tab-btn active" data-tab="weekly" onclick="switchTab('weekly')">📅 ${t('weekTab')}</button>
+                <button class="tab-btn" data-tab="monthly" onclick="switchTab('monthly')">📆 ${t('monthTab')}</button>
+                <button class="tab-btn" data-tab="semiannual" onclick="switchTab('semiannual')">🗓️ ${t('semiTab')}</button>
+                <button class="tab-btn" data-tab="summary" onclick="switchTab('summary')">📊 ${t('reportTab')}</button>`;
+        }
+
+        function switchTab(tab) {
+            if (collectMode && selectedRepos.size > 0) {
+                if (!confirm('切换榜单将清空当前选择，继续吗？')) return;
+                selectedRepos.clear();
+            }
+            loadData(tab);
+        }
+
+        function openRSS() { window.open('./feed.xml', '_blank'); }
+
+        applyLanguage();
+        loadData('weekly');
+        window.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    </script>
+</body>
+</html>
