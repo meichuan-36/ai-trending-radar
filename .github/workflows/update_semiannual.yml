@@ -18,7 +18,7 @@ jobs:
       - run: pip install requests urllib3
       - name: Fetch semi-annual trending repos
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/fetch_semiannual.py
       - name: Validate JSON
         run: |
