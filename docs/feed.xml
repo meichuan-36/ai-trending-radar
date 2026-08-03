@@ -5,216 +5,216 @@
     <link>https://meichuan-36.github.io/ai-trending-radar/</link>
     <description>本周热榜 · 自动更新</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 03 Aug 2026 05:33:12 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 05:34:39 GMT</lastBuildDate>
     
         <item>
             <title>sqliteai/waste - 🌟 1192</title>
             <link>https://github.com/sqliteai/waste</link>
             <description>Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/sqliteai/waste</guid>
         </item>
         <item>
             <title>gavamedia/deltafin - 🌟 628</title>
             <link>https://github.com/gavamedia/deltafin</link>
             <description>Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/gavamedia/deltafin</guid>
         </item>
         <item>
             <title>0xwilliamortiz/ponytail-improved - 🌟 580</title>
             <link>https://github.com/0xwilliamortiz/ponytail-improved</link>
             <description>Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/0xwilliamortiz/ponytail-improved</guid>
         </item>
         <item>
             <title>0xwilliamortiz/ratchet - 🌟 412</title>
             <link>https://github.com/0xwilliamortiz/ratchet</link>
             <description>Your agent reads the rules. This checks whether it followed them.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/0xwilliamortiz/ratchet</guid>
         </item>
         <item>
             <title>FareedKhan-dev/kimi-k3-in-c - 🌟 365</title>
             <link>https://github.com/FareedKhan-dev/kimi-k3-in-c</link>
             <description>A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/FareedKhan-dev/kimi-k3-in-c</guid>
         </item>
         <item>
             <title>Anionex/codex-vision-proxy - 🌟 214</title>
             <link>https://github.com/Anionex/codex-vision-proxy</link>
             <description>让纯文本模型在 Codex 中无障碍调用内置看图工具（view_image）的方案，附为纯文本 LLM 设计的视觉工具包&skill ｜  Let text-only models call Codex's built-in view_image seamlessly, plus a vision toolkit&skill designed for text-only LLMs.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/Anionex/codex-vision-proxy</guid>
         </item>
         <item>
             <title>aigclink/geolook - 🌟 187</title>
             <link>https://github.com/aigclink/geolook</link>
             <description>Open-source end-to-end GEO implementation: status analysis, diagnosis, strategy, tickets, execution, verification</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/aigclink/geolook</guid>
         </item>
         <item>
             <title>juxhinr/bindwidth - 🌟 125</title>
             <link>https://github.com/juxhinr/bindwidth</link>
             <description>Evidence-aware on-prem LLM inference sizing and TCO calculator</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/juxhinr/bindwidth</guid>
         </item>
         <item>
             <title>hardrave/NIGHTRUN - 🌟 120</title>
             <link>https://github.com/hardrave/NIGHTRUN</link>
             <description>Boot your PC straight into an LLM. Rust, UEFI-resident, no operating system underneath.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/hardrave/NIGHTRUN</guid>
         </item>
         <item>
             <title>simonlin1212/vibe-astock - 🌟 111</title>
             <link>https://github.com/simonlin1212/vibe-astock</link>
             <description>A 股短线复盘看板：涨停池·连板梯队·龙虎榜·板块资金一屏看完，赚钱效应/晋级率/梯队断层/情绪周期等派生指标纯计算直出（不经过 AI），AI 只把数据串成能读的盘面研判。全本地运行，可用 Claude/Codex 订阅免 API key。| A-share short-term daily-review dashboard: derived sentiment metrics computed locally, AI only writes the narrative. No API key needed.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/simonlin1212/vibe-astock</guid>
         </item>
         <item>
             <title>bybit-exchange/kaas - 🌟 78</title>
             <link>https://github.com/bybit-exchange/kaas</link>
             <description>Turn scattered notes, docs and transcripts into a queryable Markdown wiki — an LLM knowledge-base compiler with MCP access, no embeddings, self-hosted.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/bybit-exchange/kaas</guid>
         </item>
         <item>
             <title>patchy631/time-to-first-token - 🌟 72</title>
             <link>https://github.com/patchy631/time-to-first-token</link>
             <description>A 10-week, 30-minutes-a-day roadmap for LLM inference serving and optimization. vLLM, SGLang, quantization, speculative decoding, benchmarking.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/patchy631/time-to-first-token</guid>
         </item>
         <item>
             <title>codejunkie99/sageroute - 🌟 66</title>
             <link>https://github.com/codejunkie99/sageroute</link>
             <description>Trajectory-aware model router. An OpenAI-compatible proxy that starts every task on a cheap model, watches what the agent actually does, and escalates on real execution evidence via the Levanto Sage API.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/codejunkie99/sageroute</guid>
         </item>
         <item>
             <title>ArisuLoveASMR/ArisuLoveASMR - 🌟 64</title>
             <link>https://github.com/ArisuLoveASMR/ArisuLoveASMR</link>
             <description>Ноутбук для Гугл коллаба, в котором вы сможете к абсолютно любому медиа добавить субтитры и автоматически их первести на любой язык</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/ArisuLoveASMR/ArisuLoveASMR</guid>
         </item>
         <item>
             <title>ilindaniel/impeccable-lite - 🌟 61</title>
             <link>https://github.com/ilindaniel/impeccable-lite</link>
             <description>Stop agents from designing sloppy UI. Inspired by Impeccable, but without the plugin machinery. Just one SKILL.md file.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/ilindaniel/impeccable-lite</guid>
         </item>
         <item>
             <title>alikon-art/DeterminFlow - 🌟 61</title>
             <link>https://github.com/alikon-art/DeterminFlow</link>
             <description>A production-oriented AI workflow runtime for building, validating, recovering, and shipping complex AI workflows as dependable services. 面向生产的 AI 工作流运行时：快速开发、验证和恢复复杂 AI 工作流，并将其稳定交付为服务。</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/alikon-art/DeterminFlow</guid>
         </item>
         <item>
             <title>benchen4395/alpha_agentic_search - 🌟 59</title>
             <link>https://github.com/benchen4395/alpha_agentic_search</link>
             <description>Alpha Agentic Search — 分层记忆 RAG 检索问答系统</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/benchen4395/alpha_agentic_search</guid>
         </item>
         <item>
             <title>CoordClaw/CoordClaw - 🌟 53</title>
             <link>https://github.com/CoordClaw/CoordClaw</link>
             <description>CoordClaw: a multi-agent system that runs AI like a one-person company. Built on management & organizational theory — teams defined in natural language, collaboration driven by a message loop (not hard-coded DAGs). Auditable work logs, human god's-eye oversight.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/CoordClaw/CoordClaw</guid>
         </item>
         <item>
             <title>danielmillersr2593/3d-print-tools-editor - 🌟 51</title>
             <link>https://github.com/danielmillersr2593/3d-print-tools-editor</link>
             <description>Client-side browser toolkit for viewing, editing, inspecting, and preparing common 3D-printing files, with support generation and toolpath visualization. Use the hosted version or serve a local checkout.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/danielmillersr2593/3d-print-tools-editor</guid>
         </item>
         <item>
             <title>yu123-tqy/equipdoc-agent - 🌟 51</title>
             <link>https://github.com/yu123-tqy/equipdoc-agent</link>
             <description>Auditable AI agent for electromechanical maintenance with LangGraph, RAG, fault diagnosis and human-in-the-loop review.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/yu123-tqy/equipdoc-agent</guid>
         </item>
         <item>
             <title>Indhu27-pixel/Labour-Law-Violation-System - 🌟 50</title>
             <link>https://github.com/Indhu27-pixel/Labour-Law-Violation-System</link>
             <description>AI-powered Labour Law Violation Detection System using Weak Supervision, BiLSTM, Graph Neural Networks (GNN), and Explainable AI to identify labour law violations.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/Indhu27-pixel/Labour-Law-Violation-System</guid>
         </item>
         <item>
             <title>dacnay816y62-hub/photo-revival - 🌟 43</title>
             <link>https://github.com/dacnay816y62-hub/photo-revival</link>
             <description>Codex skill for turning everyday photos into poetic white-paper hand-drawn illustrations.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/dacnay816y62-hub/photo-revival</guid>
         </item>
         <item>
             <title>tingweiy10-pixel/codex5.6-coldbrew - 🌟 42</title>
             <link>https://github.com/tingweiy10-pixel/codex5.6-coldbrew</link>
             <description>codex5.6破甲 冷咖啡｜ENI ColdBrew v3.0.1｜QQ群：1057540028 / 1077074552</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/tingweiy10-pixel/codex5.6-coldbrew</guid>
         </item>
         <item>
             <title>cporter202/vibe-coding-with-base44 - 🌟 39</title>
             <link>https://github.com/cporter202/vibe-coding-with-base44</link>
             <description>A beginner-friendly guide to building and launching apps with Base44—using plain-English prompts, practical examples, and zero coding experience.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/cporter202/vibe-coding-with-base44</guid>
         </item>
         <item>
             <title>xbsheng/atguigu-note - 🌟 39</title>
             <link>https://github.com/xbsheng/atguigu-note</link>
             <description>尚硅谷 AI 课程笔记</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/xbsheng/atguigu-note</guid>
         </item>
         <item>
             <title>nathanoatzhughes3455/da728x-i2c-driver - 🌟 38</title>
             <link>https://github.com/nathanoatzhughes3455/da728x-i2c-driver</link>
             <description>Asynchronous no_std Rust driver library for Renesas DA7280, DA7281, and DA7282 haptic controller ICs, using I2C communication for embedded hardware applications.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/nathanoatzhughes3455/da728x-i2c-driver</guid>
         </item>
         <item>
             <title>HaD0Yun/CozyClay - 🌟 36</title>
             <link>https://github.com/HaD0Yun/CozyClay</link>
             <description>Direct Blender with an AI agent from your terminal.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/HaD0Yun/CozyClay</guid>
         </item>
         <item>
             <title>drpwchen/lecture-to-notes - 🌟 32</title>
             <link>https://github.com/drpwchen/lecture-to-notes</link>
             <description>Lecture recordings → structured grounded notes + a synced HTML viewer: video, timestamped transcript and curated summary on one page. Local GPU pipeline (Whisper ASR · slide extraction · OCR · VLM signals · capture-time alignment). Claude Code skill + plain CLI.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/drpwchen/lecture-to-notes</guid>
         </item>
         <item>
             <title>lucidrains/robo_ttt - 🌟 30</title>
             <link>https://github.com/lucidrains/robo_ttt</link>
             <description>Implementation of RoboTTT proposed by Yunfan Jiang et al. of Stanford and Nvidia</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/lucidrains/robo_ttt</guid>
         </item>
         <item>
             <title>artbyjazi/autoclip - 🌟 30</title>
             <link>https://github.com/artbyjazi/autoclip</link>
             <description>Open-source, local-first AI video clipper. Long video in, caption-burned speaker-tracked 9:16 clips out. Fully offline with Whisper + Ollama, or bring your own API key.</description>
-            <pubDate>Mon, 03 Aug 2026 05:33:12 GMT</pubDate>
+            <pubDate>Mon, 03 Aug 2026 05:34:39 GMT</pubDate>
             <guid>https://github.com/artbyjazi/autoclip</guid>
         </item>
 </channel>
