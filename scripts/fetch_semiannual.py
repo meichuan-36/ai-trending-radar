@@ -1,4 +1,4 @@
-import requests, json, os, time
+import requests, json, os
 from datetime import datetime, timedelta, timezone
 from collections import Counter
 from requests.adapters import HTTPAdapter
@@ -6,129 +6,74 @@ from urllib3.util.retry import Retry
 from record_history import record_history
 
 TOKEN = os.getenv("GITHUB_TOKEN")
-# include recommended Accept and API version headers
-HEADERS = {
-    "Accept": "application/vnd.github+json",
-    "X-GitHub-Api-Version": "2022-11-28"
-}
-if TOKEN:
-    HEADERS["Authorization"] = f"token {TOKEN}"
-
+HEADERS = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
 OUTPUT_PATH = "docs/data/semiannual.json"
-TOP_N = 20
+PER_DOMAIN = 3
 
 six_months_ago = (datetime.now(timezone.utc) - timedelta(days=180)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-queries = [
-    "topic:comfyui",
-    "topic:stable-diffusion",
-    "topic:image-generation",
-    "topic:blender",
-    "ai+video+generation",
-    "text-to-video",
-    "animate-diffusion",
-    "blender+addon",
-    "blender+python",
-    "diffusers",
-    "controlnet",
-    "ip-adapter",
-    "lora",
-    "prompt-engineering",
-    "topic:huggingface",
-    "topic:deep-learning",
-    "topic:llm",
-    "text-to-image",
-    "image-to-video",
-    "3d-generation",
-    "nerf",
-    "gaussian-splatting",
-    "ai-art",
-    "openai-api",
-    "langchain",
-    "autogen",
-    "crewai",
-    "rag",
-    "embedding",
-    "whisper",
-    "tts",
-    "voice-cloning",
-    "diffusion-models",
-    "segmentation",
-    "inpainting",
-    "super-resolution",
-    "style-transfer",
-    "ai-upscaler",
-    "vlm",
-    "multimodal",
-]
-
+domains = {
+    "ComfyUI": ["topic:comfyui", "comfyui", "comfyui-workflow"],
+    "Stable Diffusion": ["topic:stable-diffusion", "stable-diffusion-webui", "sd-webui"],
+    "图像生成": ["topic:image-generation", "text-to-image", "image-generation", "diffusers"],
+    "Blender": ["topic:blender", "blender", "blender-addon", "blender-python"],
+    "视频生成": ["ai+video+generation", "text-to-video", "animate-diffusion", "video-diffusion"],
+    "ControlNet": ["controlnet", "controlnet-aux"],
+    "LoRA/微调": ["lora", "finetune", "ip-adapter", "textual-inversion"],
+    "提示词工程": ["prompt-engineering", "prompt-generator", "prompt-optimizer"],
+    "大语言模型": ["topic:llm", "langchain", "autogen", "crewai", "rag", "embedding"],
+    "音频/语音": ["whisper", "tts", "voice-cloning", "audio-generation"],
+    "3D/NeRF": ["3d-generation", "nerf", "gaussian-splatting"],
+    "其他AI工具": ["topic:huggingface", "topic:deep-learning", "ai-art", "openai-api", "super-resolution", "style-transfer", "vlm", "multimodal"]
+}
 
 def search_github(query):
     session = requests.Session()
     retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
     session.mount('https://', HTTPAdapter(max_retries=retries))
-
     url = "https://api.github.com/search/repositories"
     full_query = f"{query} created:>={six_months_ago}"
     params = {"q": full_query, "sort": "stars", "order": "desc", "per_page": 10}
-    try:
-        resp = session.get(url, headers=HEADERS, params=params, timeout=30)
-    except Exception as e:
-        print(f"Request exception for {query}: {e}")
-        return []
-
+    resp = session.get(url, headers=HEADERS, params=params)
     if resp.status_code == 200:
         return resp.json().get("items", [])
     else:
-        # diagnostic logging for failures (especially 403 / rate-limit)
         print(f"Query failed: {query}, status {resp.status_code}")
-        try:
-            body = resp.json()
-        except Exception:
-            body = resp.text
-        print("Response body:", body)
-        # helpful headers
-        rate_rem = resp.headers.get("X-RateLimit-Remaining")
-        rate_reset = resp.headers.get("X-RateLimit-Reset")
-        if rate_rem is not None:
-            print(f"X-RateLimit-Remaining: {rate_rem}, X-RateLimit-Reset: {rate_reset}")
-            if rate_rem == "0":
-                print("Rate limit exhausted. Consider using a token with higher quota or spacing requests.")
-        if resp.status_code == 403:
-            if not TOKEN:
-                print("Warning: No GITHUB_TOKEN provided. Set GITHUB_TOKEN (preferably using the built-in secrets.GITHUB_TOKEN in Actions) to avoid 403s.")
-            else:
-                print("403 received despite token. Token may lack scopes or you're hitting abuse/rate limits.")
         return []
 
-
 all_repos = {}
-for q in queries:
-    for repo in search_github(q):
+for domain_name, queries in domains.items():
+    domain_repos = {}
+    for q in queries:
+        for repo in search_github(q):
+            rid = repo["id"]
+            if rid not in domain_repos:
+                domain_repos[rid] = {
+                    "id": repo["id"],
+                    "name": repo["full_name"],
+                    "url": repo["html_url"],
+                    "description": repo["description"],
+                    "stars": repo["stargazers_count"],
+                    "language": repo["language"],
+                    "created_at": repo["created_at"],
+                    "topics": repo.get("topics", []),
+                    "domain": domain_name
+                }
+    top_domain = sorted(domain_repos.values(), key=lambda x: x["stars"], reverse=True)[:PER_DOMAIN]
+    for repo in top_domain:
         rid = repo["id"]
         if rid not in all_repos:
-            all_repos[rid] = {
-                "id": repo["id"],
-                "name": repo["full_name"],
-                "url": repo["html_url"],
-                "description": repo["description"],
-                "stars": repo["stargazers_count"],
-                "language": repo["language"],
-                "created_at": repo["created_at"],
-                "topics": repo.get("topics", [])
-            }
-    # small sleep to reduce chance of rate-limiting/abuse triggering
-    time.sleep(0.2)
+            all_repos[rid] = repo
 
-sorted_repos = sorted(all_repos.values(), key=lambda x: x["stars"], reverse=True)[:TOP_N]
+sorted_repos = sorted(all_repos.values(), key=lambda x: x["stars"], reverse=True)
 
 os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
 with open(OUTPUT_PATH, "w") as f:
     json.dump(sorted_repos, f, indent=2, ensure_ascii=False)
 
-print(f"✅ 半年精选 Top20 已保存 {len(sorted_repos)} 个仓库到 {OUTPUT_PATH}")
+print(f"✅ 半年精选已保存 {len(sorted_repos)} 个仓库（覆盖 {len(domains)} 个领域）到 {OUTPUT_PATH}")
 
-# 生成半年总结
+# 生成半年总结（复用原有逻辑）
 summary = {
     "total_repos": len(sorted_repos),
     "avg_stars": round(sum(r['stars'] for r in sorted_repos) / len(sorted_repos), 2) if sorted_repos else 0,
@@ -140,7 +85,10 @@ with open("docs/data/summary.json", "w") as f:
 print("✅ 半年总结已生成")
 
 # 动态发现新话题
-existing_set = set(queries)
+existing_set = set()
+for qlist in domains.values():
+    for q in qlist:
+        existing_set.add(q)
 all_topics = Counter()
 for r in sorted_repos:
     for t in r.get('topics', []):
