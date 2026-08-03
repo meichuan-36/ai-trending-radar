@@ -1,46 +1,26 @@
 [
   [
-    "claude-code",
-    9
+    "ai",
+    6
   ],
   [
-    "mcp",
-    7
+    "claude-code",
+    5
   ],
   [
     "claude",
-    7
-  ],
-  [
-    "ai-agents",
-    6
-  ],
-  [
-    "python",
-    6
-  ],
-  [
-    "ai",
-    4
+    5
   ],
   [
     "ai-agent",
     4
   ],
   [
-    "codex",
+    "ai-agents",
     3
   ],
   [
-    "developer-tools",
-    3
-  ],
-  [
-    "skill",
-    3
-  ],
-  [
-    "typescript",
+    "skills",
     3
   ],
   [
@@ -48,23 +28,23 @@
     3
   ],
   [
-    "cursor",
-    2
+    "python",
+    3
   ],
   [
-    "graphrag",
-    2
+    "video-generation",
+    3
   ],
   [
-    "knowledge-graph",
-    2
+    "generative-ai",
+    3
   ],
   [
-    "openclaw",
-    2
+    "self-hosted",
+    3
   ],
   [
-    "skills",
+    "codex",
     2
   ]
 ]
