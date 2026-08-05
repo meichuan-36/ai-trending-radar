@@ -26,8 +26,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add docs/data/hf_trending.json docs/data/papers_trending.json
-          git commit -m "🌍 更新跨平台热榜 [$(date +'%Y-%m')]" || echo "No changes"
-          # 显式设置带 token 的远程地址
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git push origin HEAD:${GITHUB_REF#refs/heads/}
+        git add docs/data/*.json || true
+git diff --cached --quiet || (git commit -m "🌍 更新跨平台热榜 [$(date +'%Y-%m')]" && \
+git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git && \
+git push origin HEAD:${GITHUB_REF#refs/heads/})
