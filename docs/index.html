@@ -81,7 +81,7 @@
         </div>
     </div>
 
-    <!-- 项目详情模态框（增加了活跃度数据） -->
+    <!-- 项目详情模态框 -->
     <div class="modal" id="detailModal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeDetailModal()">✕</button>
@@ -89,7 +89,6 @@
             <p><strong>描述：</strong><span id="detailDesc"></span></p>
             <p><strong>星标：</strong><span id="detailStars"></span> | <strong>语言：</strong><span id="detailLang"></span></p>
             <p><strong>标签：</strong><span id="detailTopics"></span></p>
-            <!-- 活跃度指标 -->
             <hr>
             <h4>📊 项目活跃度</h4>
             <p><strong>最近更新：</strong><span id="detailPushed"></span></p>
@@ -100,7 +99,7 @@
             <p id="detailAudience"></p>
             <h4>🚀 使用方式 / 案例</h4>
             <p id="detailUsage"></p>
-            <p><a id="detailLink" href="#" target="_blank">在 GitHub 上查看 →</a></p>
+            <p><a id="detailLink" href="#" target="_blank">在源站查看 →</a></p>
         </div>
     </div>
 
@@ -136,7 +135,9 @@
             semiannual: './data/semiannual.json',
             summary: './data/summary.json',
             history_weekly: './data/history_weekly.json',
-            history_monthly: './data/history_monthly.json'
+            history_monthly: './data/history_monthly.json',
+            huggingface: './data/hf_trending.json',
+            papers: './data/papers_trending.json'
         };
         let currentRepos = [], currentTab = 'weekly', chartInstance = null;
         let collectMode = false;
@@ -181,9 +182,7 @@
             document.getElementById('prefModal').style.display = 'flex';
         }
 
-        function closePrefModal() {
-            document.getElementById('prefModal').style.display = 'none';
-        }
+        function closePrefModal() { document.getElementById('prefModal').style.display = 'none'; }
 
         function savePrefsAndClose() {
             const checked = [...document.querySelectorAll('#prefCheckboxes input:checked')].map(el => Number(el.value));
@@ -244,7 +243,7 @@
             if (t.includes('llm') || t.includes('rag')) return 'NLP 开发者、AI 应用构建者、研究人员。';
             if (t.includes('audio') || t.includes('voice')) return '音频工程师、播客制作者、语音应用开发者。';
             if (t.includes('3d') || t.includes('nerf')) return '3D 建模师、VR/AR 开发者、视觉特效师。';
-            return 'AI 开发者、对人工智能感兴趣的技术人员。';
+            return 'AI 开发者、研究人员。';
         }
 
         function inferUsage(topics, desc, name) {
@@ -254,7 +253,7 @@
             if (t.includes('video')) return '输入一段文字或一张图片，即可生成短视频，常用于社交媒体内容制作。';
             if (t.includes('controlnet')) return '配合 Stable Diffusion 使用，可精确控制人物姿态、线稿上色、风格迁移。';
             if (t.includes('lora')) return '训练轻量模型，将特定角色、画风植入大模型，实现个性化生成。';
-            return '参考 GitHub 仓库的 README 文档，通常包含安装命令和快速上手示例。';
+            return '查看源站获取详细文档和示例。';
         }
 
         function renderCard(r, keywords) {
@@ -263,10 +262,12 @@
             const checked = selectedRepos.has(r.name) ? 'checked' : '';
             const selectedClass = selectedRepos.has(r.name) ? ' selected' : '';
             const recommendBadge = isRecommended(r) ? '<span class="recommend-badge">🌟 推荐</span>' : '';
+            // 外部平台可能没有数字 id，趋势按钮只在有 id 时显示
+            const trendBtn = (r.id && r.id.toString().match(/^\d+$/)) ? `<button onclick="showTrend('${r.id}','${escapeHtml(r.name)}')" title="${t('trendBtn')}">📈</button>` : '';
             return `
                 <div class="card${selectedClass}" data-repo="${escapeHtml(r.name)}">
                     <div class="card-actions">
-                        <button onclick="showTrend('${r.id}','${escapeHtml(r.name)}')" title="${t('trendBtn')}">📈</button>
+                        ${trendBtn}
                         <button onclick="shareCard('${escapeHtml(r.name)}','${escapeHtml(r.url)}','${escapeHtml(r.description||'')}')" title="${t('shareBtn')}">🔗</button>
                     </div>
                     <input type="checkbox" class="collect-checkbox" ${checked} onchange="toggleRepoSelect('${escapeHtml(r.name)}', this.checked)" />
@@ -289,7 +290,6 @@
             document.getElementById('detailUsage').textContent = inferUsage(topics, desc, name);
             document.getElementById('detailLink').href = url;
 
-            // 活跃度数据（可能为空）
             document.getElementById('detailPushed').textContent = pushed ? new Date(pushed).toLocaleDateString() : '无数据';
             document.getElementById('detailIssues').textContent = issues !== '' ? issues : '无数据';
             document.getElementById('detailContributors').textContent = contributors !== '' ? contributors : '无数据';
@@ -297,9 +297,7 @@
             document.getElementById('detailModal').style.display = 'flex';
         }
 
-        function closeDetailModal() {
-            document.getElementById('detailModal').style.display = 'none';
-        }
+        function closeDetailModal() { document.getElementById('detailModal').style.display = 'none'; }
 
         function sortByPref(filtered) {
             return filtered.sort((a, b) => {
@@ -337,6 +335,14 @@
 
             if (tab === 'summary') {
                 fetch(dataFiles.summary).then(r=>r.json()).then(renderSummary).catch(()=>app.innerHTML='<p>报告加载失败</p>');
+                return;
+            }
+
+            // 外部平台直接加载，没有历史
+            if (tab === 'huggingface' || tab === 'papers') {
+                fetch(dataFiles[tab]).then(r=>r.json()).then(repos => {
+                    renderRepos(repos);
+                }).catch(() => { app.innerHTML = '<p style="color:#f85149">数据加载失败</p>'; });
                 return;
             }
 
@@ -523,7 +529,9 @@
                 <button class="tab-btn active" data-tab="weekly" onclick="switchTab('weekly')">📅 ${t('weekTab')}</button>
                 <button class="tab-btn" data-tab="monthly" onclick="switchTab('monthly')">📆 ${t('monthTab')}</button>
                 <button class="tab-btn" data-tab="semiannual" onclick="switchTab('semiannual')">🗓️ ${t('semiTab')}</button>
-                <button class="tab-btn" data-tab="summary" onclick="switchTab('summary')">📊 ${t('reportTab')}</button>`;
+                <button class="tab-btn" data-tab="summary" onclick="switchTab('summary')">📊 ${t('reportTab')}</button>
+                <button class="tab-btn" data-tab="huggingface" onclick="switchTab('huggingface')">🤗 HF 模型</button>
+                <button class="tab-btn" data-tab="papers" onclick="switchTab('papers')">📄 论文趋势</button>`;
         }
 
         function openRSS() { window.open('./feed.xml', '_blank'); }
