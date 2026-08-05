@@ -614,7 +614,7 @@
     "name": "facebook/opt-125m",
     "url": "https://huggingface.co/facebook/opt-125m",
     "description": "text-generation",
-    "stars": 18604659,
+    "stars": 18525212,
     "language": "text-generation",
     "topics": [
       "transformers",
