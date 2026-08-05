@@ -4,7 +4,7 @@
     "name": "FareedKhan-dev/kimi-k3-in-c",
     "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
     "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
-    "stars": 2138,
+    "stars": 2154,
     "language": "C",
     "created_at": "2026-08-01T09:29:38Z",
     "topics": [
@@ -82,7 +82,7 @@
     "name": "patchy631/time-to-first-token",
     "url": "https://github.com/patchy631/time-to-first-token",
     "description": "A 10-week, 30-minutes-a-day roadmap for LLM inference serving and optimization. vLLM, SGLang, quantization, speculative decoding, benchmarking.",
-    "stars": 296,
+    "stars": 299,
     "language": "HTML",
     "created_at": "2026-08-02T13:02:26Z",
     "topics": [
@@ -123,7 +123,7 @@
     "name": "xmarre/ComfyUI-Spectrum-MiniMax-H3",
     "url": "https://github.com/xmarre/ComfyUI-Spectrum-MiniMax-H3",
     "description": "Spectrum-based acceleration for ComfyUI’s native MiniMax H3 audio-video model. Forecasts post-transformer features with Chebyshev ridge regression to skip selected transformer evaluations, with adaptive scheduling, sampler-aware safeguards, CPU/VRAM history storage, and native fallbacks.",
-    "stars": 161,
+    "stars": 167,
     "language": "Python",
     "created_at": "2026-08-03T20:51:37Z",
     "topics": [],
@@ -184,7 +184,7 @@
     "name": "AFan4724/clone-chat",
     "url": "https://github.com/AFan4724/clone-chat",
     "description": "用 AI 大模型复刻聊天对象的本地对话 Agent：导入真实聊天记录，LLM 学习 TA 的语气、表情和回复节奏并以人物身份延续对话，支持语音、主动联系与长期记忆，数据全在本地。 | Clone anyone's texting style from real chat history: a local-first LLM agent that learns their tone, stickers and reply rhythm, then chats as them — voice, proactive messages, long-term memory, fully private.",
-    "stars": 107,
+    "stars": 111,
     "language": "JavaScript",
     "created_at": "2026-08-01T21:19:13Z",
     "topics": [
@@ -205,7 +205,7 @@
     "name": "kijai/ComfyUI-SolAttn_triton",
     "url": "https://github.com/kijai/ComfyUI-SolAttn_triton",
     "description": null,
-    "stars": 103,
+    "stars": 104,
     "language": "Python",
     "created_at": "2026-08-03T19:58:45Z",
     "topics": [],
@@ -216,7 +216,7 @@
     "name": "dacnay816y62-hub/photo-revival",
     "url": "https://github.com/dacnay816y62-hub/photo-revival",
     "description": "Codex skill for turning everyday photos into poetic white-paper hand-drawn illustrations.",
-    "stars": 101,
+    "stars": 102,
     "language": null,
     "created_at": "2026-08-01T17:06:24Z",
     "topics": [
@@ -233,7 +233,7 @@
     "name": "Funluned/vetresearch-workbench",
     "url": "https://github.com/Funluned/vetresearch-workbench",
     "description": "Evidence-grounded veterinary research workbench with local RAG, bounded LLM agents, auditable tool use, citations, abstention, and human review.",
-    "stars": 89,
+    "stars": 91,
     "language": "Python",
     "created_at": "2026-07-29T11:43:42Z",
     "topics": [
@@ -251,6 +251,17 @@
       "veterinary-research"
     ],
     "domain": "大语言模型"
+  },
+  {
+    "id": 1322173722,
+    "name": "Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler",
+    "url": "https://github.com/Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler",
+    "description": "MiniMaxH3_LatentUpscaler for ComfyUI",
+    "stars": 87,
+    "language": "Python",
+    "created_at": "2026-08-03T19:38:33Z",
+    "topics": [],
+    "domain": "ComfyUI"
   },
   {
     "id": 1316139230,
@@ -284,22 +295,11 @@
     "domain": "大语言模型"
   },
   {
-    "id": 1322173722,
-    "name": "Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler",
-    "url": "https://github.com/Tr1dae/ComfyUI-MiniMaxH3_LatentUpscaler",
-    "description": "MiniMaxH3_LatentUpscaler for ComfyUI",
-    "stars": 84,
-    "language": "Python",
-    "created_at": "2026-08-03T19:38:33Z",
-    "topics": [],
-    "domain": "ComfyUI"
-  },
-  {
     "id": 1322825368,
     "name": "huangserva/ComfyUI_MiniMaxH3_Director",
     "url": "https://github.com/huangserva/ComfyUI_MiniMaxH3_Director",
     "description": "ComfyUI MiniMax H3 Director workflow",
-    "stars": 76,
+    "stars": 80,
     "language": null,
     "created_at": "2026-08-04T10:39:02Z",
     "topics": [],
@@ -310,7 +310,7 @@
     "name": "HM-RunningHub/ComfyUI_RH_MinMaxH3",
     "url": "https://github.com/HM-RunningHub/ComfyUI_RH_MinMaxH3",
     "description": "This is a ComfyUI plug-in for MinMaxH3",
-    "stars": 67,
+    "stars": 68,
     "language": "Python",
     "created_at": "2026-08-01T18:36:12Z",
     "topics": [],
@@ -321,7 +321,7 @@
     "name": "Evianis/travel-photo-abstraction",
     "url": "https://github.com/Evianis/travel-photo-abstraction",
     "description": "A source-available Codex skill for distilling photographs into sparse editorial abstractions.",
-    "stars": 64,
+    "stars": 65,
     "language": "Python",
     "created_at": "2026-08-02T14:37:39Z",
     "topics": [
@@ -386,7 +386,7 @@
     "name": "AIMixer/ComfyUI_MiniMaxH3_Director",
     "url": "https://github.com/AIMixer/ComfyUI_MiniMaxH3_Director",
     "description": "Multi-segment MiniMax H3 Director for official ComfyUI MiniMax-H3",
-    "stars": 58,
+    "stars": 60,
     "language": "JavaScript",
     "created_at": "2026-08-04T04:20:36Z",
     "topics": [],
@@ -546,6 +546,17 @@
     "domain": "ComfyUI"
   },
   {
+    "id": 1322312035,
+    "name": "lihaoyun6/ComfyUI-MiniMaxH3-Cache",
+    "url": "https://github.com/lihaoyun6/ComfyUI-MiniMaxH3-Cache",
+    "description": "A better cache node for MiniMax H3 / 专为 MiniMax H3 优化的缓存加速节点",
+    "stars": 38,
+    "language": "Python",
+    "created_at": "2026-08-03T23:20:36Z",
+    "topics": [],
+    "domain": "ComfyUI"
+  },
+  {
     "id": 1321773119,
     "name": "KingGore/ComfyUI_sol-attn_Blackwell",
     "url": "https://github.com/KingGore/ComfyUI_sol-attn_Blackwell",
@@ -553,17 +564,6 @@
     "stars": 37,
     "language": "Python",
     "created_at": "2026-08-03T12:45:43Z",
-    "topics": [],
-    "domain": "ComfyUI"
-  },
-  {
-    "id": 1322312035,
-    "name": "lihaoyun6/ComfyUI-MiniMaxH3-Cache",
-    "url": "https://github.com/lihaoyun6/ComfyUI-MiniMaxH3-Cache",
-    "description": "A better cache node for MiniMax H3 / 专为 MiniMax H3 优化的缓存加速节点",
-    "stars": 37,
-    "language": "Python",
-    "created_at": "2026-08-03T23:20:36Z",
     "topics": [],
     "domain": "ComfyUI"
   },
@@ -630,7 +630,7 @@
     "name": "BeatAPI/awesome-minimax-h3-prompts",
     "url": "https://github.com/BeatAPI/awesome-minimax-h3-prompts",
     "description": "🎬 Curated MiniMax H3 video generation prompts — cinematic, ads, anime, UGC, product videos, and more. Includes playable examples and creator attribution.",
-    "stars": 25,
+    "stars": 26,
     "language": "JavaScript",
     "created_at": "2026-07-31T11:45:07Z",
     "topics": [
@@ -766,7 +766,7 @@
     "name": "PipeNetwork/minimax-h3-mlx",
     "url": "https://github.com/PipeNetwork/minimax-h3-mlx",
     "description": "MLX (Apple Silicon) port of MiniMax-H3 — 33B joint video+audio diffusion. Validated against the diffusers reference; AdaLN precompute drops 13B at inference.",
-    "stars": 17,
+    "stars": 18,
     "language": "Python",
     "created_at": "2026-08-03T05:19:49Z",
     "topics": [],
@@ -859,6 +859,17 @@
     "domain": "图像生成"
   },
   {
+    "id": 1318894931,
+    "name": "GenshinmasterJinHang/Miku-Material-Converter-Blender-to-Unity-",
+    "url": "https://github.com/GenshinmasterJinHang/Miku-Material-Converter-Blender-to-Unity-",
+    "description": null,
+    "stars": 12,
+    "language": "Python",
+    "created_at": "2026-08-01T02:17:21Z",
+    "topics": [],
+    "domain": "Blender"
+  },
+  {
     "id": 1321167585,
     "name": "pascalorg/pascal-blender",
     "url": "https://github.com/pascalorg/pascal-blender",
@@ -875,17 +886,6 @@
       "import",
       "pascal"
     ],
-    "domain": "Blender"
-  },
-  {
-    "id": 1318894931,
-    "name": "GenshinmasterJinHang/Miku-Material-Converter-Blender-to-Unity-",
-    "url": "https://github.com/GenshinmasterJinHang/Miku-Material-Converter-Blender-to-Unity-",
-    "description": null,
-    "stars": 10,
-    "language": "Python",
-    "created_at": "2026-08-01T02:17:21Z",
-    "topics": [],
     "domain": "Blender"
   },
   {
@@ -1077,13 +1077,13 @@
     "domain": "LoRA/微调"
   },
   {
-    "id": 1319516139,
-    "name": "idimetrix/voice-to-text",
-    "url": "https://github.com/idimetrix/voice-to-text",
-    "description": "Transcribe any audio or video to text offline with Whisper, then translate it automatically. Handles WhatsApp .opus voice notes, wrong extensions, folders, globs and URLs.",
+    "id": 1322206857,
+    "name": "onigirikiller/minimax-h3-webui",
+    "url": "https://github.com/onigirikiller/minimax-h3-webui",
+    "description": "A friendly web UI for MiniMax H3 video generation (text-to-video, image-to-video, reference-to-video) with a job queue and last-frame chaining. Drives ComfyUI over its HTTP API.",
     "stars": 4,
     "language": "Python",
-    "created_at": "2026-08-01T18:01:57Z",
+    "created_at": "2026-08-03T20:22:38Z",
     "topics": [],
     "domain": "视频生成"
   },
