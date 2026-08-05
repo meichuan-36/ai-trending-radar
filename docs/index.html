@@ -81,7 +81,7 @@
         </div>
     </div>
 
-    <!-- 项目详情模态框 -->
+    <!-- 项目详情模态框（增加了活跃度数据） -->
     <div class="modal" id="detailModal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeDetailModal()">✕</button>
@@ -89,6 +89,12 @@
             <p><strong>描述：</strong><span id="detailDesc"></span></p>
             <p><strong>星标：</strong><span id="detailStars"></span> | <strong>语言：</strong><span id="detailLang"></span></p>
             <p><strong>标签：</strong><span id="detailTopics"></span></p>
+            <!-- 活跃度指标 -->
+            <hr>
+            <h4>📊 项目活跃度</h4>
+            <p><strong>最近更新：</strong><span id="detailPushed"></span></p>
+            <p><strong>开放问题：</strong><span id="detailIssues"></span></p>
+            <p><strong>贡献者：</strong><span id="detailContributors"></span></p>
             <hr>
             <h4>🧑‍💻 适用人群</h4>
             <p id="detailAudience"></p>
@@ -184,10 +190,9 @@
             localStorage.setItem('ai-radar-prefs', JSON.stringify(checked));
             userPrefs = checked;
             closePrefModal();
-            filterCards(); // 立即生效
+            filterCards();
         }
 
-        // 判断项目是否匹配偏好
         function isRecommended(repo) {
             if (!userPrefs.length) return false;
             return userPrefs.some(idx => {
@@ -269,11 +274,11 @@
                     <p>${descHtml}</p>
                     <p><span class="stars">🌟 ${r.stars}</span> · ${t('language')}: ${r.language || 'N/A'}</p>
                     <div class="topics">${(r.topics || []).slice(0, 5).map(t => `<span>${escapeHtml(t)}</span>`).join('')}</div>
-                    <button class="detail-btn rss-btn" style="margin-top:8px;" onclick="showDetail('${escapeHtml(r.name)}','${escapeHtml(r.url)}','${escapeHtml(r.description||'')}', '${r.stars}', '${escapeHtml(r.language||'')}', '${escapeHtml(JSON.stringify(r.topics||[]))}')">📖 详情</button>
+                    <button class="detail-btn rss-btn" style="margin-top:8px;" onclick="showDetail('${escapeHtml(r.name)}','${escapeHtml(r.url)}','${escapeHtml(r.description||'')}', '${r.stars}', '${escapeHtml(r.language||'')}', '${escapeHtml(JSON.stringify(r.topics||[]))}', '${r.pushed_at||''}', '${r.open_issues||''}', '${r.contributors_count||''}')">📖 详情</button>
                 </div>`;
         }
 
-        function showDetail(name, url, desc, stars, lang, topicsStr) {
+        function showDetail(name, url, desc, stars, lang, topicsStr, pushed, issues, contributors) {
             const topics = JSON.parse(topicsStr);
             document.getElementById('detailName').textContent = name;
             document.getElementById('detailDesc').textContent = desc;
@@ -283,6 +288,12 @@
             document.getElementById('detailAudience').textContent = inferAudience(topics, desc);
             document.getElementById('detailUsage').textContent = inferUsage(topics, desc, name);
             document.getElementById('detailLink').href = url;
+
+            // 活跃度数据（可能为空）
+            document.getElementById('detailPushed').textContent = pushed ? new Date(pushed).toLocaleDateString() : '无数据';
+            document.getElementById('detailIssues').textContent = issues !== '' ? issues : '无数据';
+            document.getElementById('detailContributors').textContent = contributors !== '' ? contributors : '无数据';
+
             document.getElementById('detailModal').style.display = 'flex';
         }
 
@@ -290,7 +301,6 @@
             document.getElementById('detailModal').style.display = 'none';
         }
 
-        // 排序：推荐项目置顶，再按星星降序
         function sortByPref(filtered) {
             return filtered.sort((a, b) => {
                 const aRec = isRecommended(a) ? 1 : 0;
