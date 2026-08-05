@@ -122,7 +122,7 @@
     "name": "BAAI/bge-small-en-v1.5",
     "url": "https://huggingface.co/BAAI/bge-small-en-v1.5",
     "description": "feature-extraction",
-    "stars": 72855959,
+    "stars": 72352442,
     "language": "feature-extraction",
     "topics": [
       "sentence-transformers",
@@ -274,7 +274,7 @@
     "name": "BAAI/bge-m3",
     "url": "https://huggingface.co/BAAI/bge-m3",
     "description": "sentence-similarity",
-    "stars": 35231255,
+    "stars": 34991851,
     "language": "sentence-similarity",
     "topics": [
       "sentence-transformers",
@@ -706,7 +706,7 @@
     "name": "nomic-ai/nomic-embed-text-v1.5",
     "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
     "description": "sentence-similarity",
-    "stars": 15695999,
+    "stars": 15688935,
     "language": "sentence-similarity",
     "topics": [
       "sentence-transformers",
