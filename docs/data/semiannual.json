@@ -4,7 +4,7 @@
     "name": "Graphify-Labs/graphify",
     "url": "https://github.com/Graphify-Labs/graphify",
     "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-    "stars": 102640,
+    "stars": 102661,
     "language": "Python",
     "created_at": "2026-04-03T15:49:07Z",
     "topics": [
@@ -35,7 +35,7 @@
     "name": "DietrichGebert/ponytail",
     "url": "https://github.com/DietrichGebert/ponytail",
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-    "stars": 96117,
+    "stars": 96141,
     "language": "JavaScript",
     "created_at": "2026-06-12T00:52:37Z",
     "topics": [
@@ -57,7 +57,7 @@
     "name": "JuliusBrussee/caveman",
     "url": "https://github.com/JuliusBrussee/caveman",
     "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
-    "stars": 95865,
+    "stars": 95880,
     "language": "JavaScript",
     "created_at": "2026-04-04T10:03:00Z",
     "topics": [
@@ -79,7 +79,7 @@
     "name": "calesthio/OpenMontage",
     "url": "https://github.com/calesthio/OpenMontage",
     "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
-    "stars": 45160,
+    "stars": 45168,
     "language": "Python",
     "created_at": "2026-03-29T15:23:22Z",
     "topics": [
@@ -110,7 +110,7 @@
     "name": "Imbad0202/academic-research-skills",
     "url": "https://github.com/Imbad0202/academic-research-skills",
     "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
-    "stars": 40931,
+    "stars": 40936,
     "language": "Python",
     "created_at": "2026-02-26T06:31:01Z",
     "topics": [
@@ -130,7 +130,7 @@
     "name": "op7418/guizang-ppt-skill",
     "url": "https://github.com/op7418/guizang-ppt-skill",
     "description": "AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime.",
-    "stars": 23211,
+    "stars": 23214,
     "language": "HTML",
     "created_at": "2026-04-23T13:23:07Z",
     "topics": [
@@ -171,7 +171,7 @@
     "name": "Forget-C/Jellyfish",
     "url": "https://github.com/Forget-C/Jellyfish",
     "description": "An end-to-end production workspace for AI-generated short dramas. From script input to structured storyboarding, consistency management, shot preparation, video generation, and export.",
-    "stars": 5842,
+    "stars": 5843,
     "language": "Python",
     "created_at": "2026-03-06T09:20:08Z",
     "topics": [
@@ -185,7 +185,7 @@
     "name": "wiltodelta/remove-ai-watermarks",
     "url": "https://github.com/wiltodelta/remove-ai-watermarks",
     "description": "AI watermark remover. CLI and Python library to strip visible and invisible AI watermarks (Gemini / Nano Banana sparkle, SynthID) and provenance metadata (C2PA, EXIF, IPTC) from images.",
-    "stars": 4433,
+    "stars": 4438,
     "language": "Python",
     "created_at": "2026-03-25T18:15:24Z",
     "topics": [
@@ -217,7 +217,7 @@
     "name": "Osmantic/ODS",
     "url": "https://github.com/Osmantic/ODS",
     "description": "Turn your PC, Mac, or Linux box into an AI server.  LLM inference, chat UI, voice, agents, workflows, RAG, and image generation.",
-    "stars": 3966,
+    "stars": 3974,
     "language": "Python",
     "created_at": "2026-02-09T13:14:58Z",
     "topics": [
@@ -270,7 +270,7 @@
     "name": "dramaclaw/dramaclaw",
     "url": "https://github.com/dramaclaw/dramaclaw",
     "description": "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos, otome games, and more. | 通用 AIGC 视频引擎 —— 从剧本到成片一条流水线，漫剧、广告、电商、乙游皆可",
-    "stars": 3240,
+    "stars": 3241,
     "language": "TypeScript",
     "created_at": "2026-03-27T04:34:30Z",
     "topics": [
@@ -301,7 +301,7 @@
     "name": "orailnoor/DroidDesk",
     "url": "https://github.com/orailnoor/DroidDesk",
     "description": "DroidDesk turns your Android phone into a real Linux desktop using Termux, Termux X11, TUR, and Proot. Run VS Code, Firefox, LibreOffice, Blender, and more with X11 or VNC support for monitor setup.",
-    "stars": 3058,
+    "stars": 3059,
     "language": "Kotlin",
     "created_at": "2026-04-20T14:17:25Z",
     "topics": [],
@@ -312,7 +312,7 @@
     "name": "hero8152/Infinite-Canvas",
     "url": "https://github.com/hero8152/Infinite-Canvas",
     "description": "Supports comfyui/API calls/modelscope calls",
-    "stars": 2610,
+    "stars": 2611,
     "language": "Python",
     "created_at": "2026-05-11T01:58:39Z",
     "topics": [],
