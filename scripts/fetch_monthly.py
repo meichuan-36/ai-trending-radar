@@ -7,9 +7,13 @@ from record_history import record_history
 TOKEN = os.getenv("GITHUB_TOKEN")
 HEADERS = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
 OUTPUT_PATH = "docs/data/monthly.json"
+HISTORY_PATH = "docs/data/history_monthly.json"
 PER_DOMAIN = 5
 
 thirty_days_ago = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+# 历史记录用当前月份第一天
+today = datetime.now(timezone.utc)
+date_key = today.strftime("%Y-%m")
 
 domains = {
     "ComfyUI": ["topic:comfyui", "comfyui", "comfyui-workflow"],
@@ -70,5 +74,20 @@ os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
 with open(OUTPUT_PATH, "w") as f:
     json.dump(sorted_repos, f, indent=2, ensure_ascii=False)
 
-print(f"✅ 月度 Top 已保存 {len(sorted_repos)} 个仓库（覆盖 {len(domains)} 个领域）到 {OUTPUT_PATH}")
+print(f"✅ 月度热榜已保存 {len(sorted_repos)} 个仓库")
+
+# 历史存档
+history = {}
+if os.path.exists(HISTORY_PATH):
+    with open(HISTORY_PATH, "r") as f:
+        try:
+            history = json.load(f)
+        except:
+            pass
+history[date_key] = sorted_repos
+history = dict(sorted(history.items())[-12:])
+with open(HISTORY_PATH, "w") as f:
+    json.dump(history, f, indent=2, ensure_ascii=False)
+print(f"📅 历史月榜已更新，当前共 {len(history)} 个月记录")
+
 record_history(sorted_repos, "docs/data/history.json")
