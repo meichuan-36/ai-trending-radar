@@ -1,4 +1,4 @@
-import requests, json, os
+import requests, json, os, time
 from datetime import datetime, timedelta, timezone
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
@@ -11,7 +11,6 @@ HISTORY_PATH = "docs/data/history_monthly.json"
 PER_DOMAIN = 5
 
 thirty_days_ago = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
-# 历史记录用当前月份第一天
 today = datetime.now(timezone.utc)
 date_key = today.strftime("%Y-%m")
 
@@ -44,6 +43,7 @@ def search_github(query):
         print(f"Query failed: {query}, status {resp.status_code}")
         return []
 
+# 抓取所有仓库
 all_repos = {}
 for domain_name, queries in domains.items():
     domain_repos = {}
@@ -70,11 +70,45 @@ for domain_name, queries in domains.items():
 
 sorted_repos = sorted(all_repos.values(), key=lambda x: x["stars"], reverse=True)
 
+# ---- 增加仓库活跃度信息 ----
+def enrich_repo(repo):
+    """调用 GitHub API 获取仓库详情，添加 pushed_at, open_issues, contributors_count"""
+    full_name = repo['name']
+    api_url = f"https://api.github.com/repos/{full_name}"
+    try:
+        resp = requests.get(api_url, headers=HEADERS)
+        if resp.status_code == 200:
+            data = resp.json()
+            repo['pushed_at'] = data.get('pushed_at')
+            repo['open_issues'] = data.get('open_issues_count')
+
+            # 贡献者数量（API 可能分页，我们只取前30个）
+            contrib_url = data.get('contributors_url')
+            if contrib_url:
+                contrib_resp = requests.get(contrib_url + "?per_page=30", headers=HEADERS)
+                if contrib_resp.status_code == 200:
+                    repo['contributors_count'] = len(contrib_resp.json())
+                else:
+                    repo['contributors_count'] = None
+            else:
+                repo['contributors_count'] = None
+        else:
+            print(f"获取仓库详情失败 {full_name}: {resp.status_code}")
+    except Exception as e:
+        print(f"获取仓库详情异常 {full_name}: {e}")
+    time.sleep(0.5)  # 温和限速，避免触发二级速率限制
+    return repo
+
+print("正在获取仓库活跃度数据...")
+sorted_repos = [enrich_repo(r) for r in sorted_repos]
+print("活跃度数据获取完成。")
+
+# 保存
 os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
 with open(OUTPUT_PATH, "w") as f:
     json.dump(sorted_repos, f, indent=2, ensure_ascii=False)
 
-print(f"✅ 月度热榜已保存 {len(sorted_repos)} 个仓库")
+print(f"✅ 月度热榜已保存 {len(sorted_repos)} 个仓库（含活跃度数据）")
 
 # 历史存档
 history = {}
