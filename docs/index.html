@@ -32,6 +32,7 @@
         .card-actions button { background: none; border: none; color: #8b949e; cursor: pointer; font-size: 16px; padding: 2px 4px; }
         .card-actions button:hover { color: #58a6ff; }
         .detail-btn { position: absolute; bottom: 16px; right: 16px; }
+        .recommend-badge { background: #f2cc60; color: #000; padding: 2px 8px; border-radius: 12px; font-size: 0.8em; font-weight: bold; margin-left: 10px; }
         mark { background: #f2cc60; color: #000; padding: 0 2px; border-radius: 2px; }
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 1000; }
         .modal-content { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; max-width: 600px; width: 90%; position: relative; max-height: 80vh; overflow-y: auto; }
@@ -58,6 +59,7 @@
         <div class="toolbar">
             <button class="rss-btn" onclick="openRSS()" title="RSS">📡 RSS</button>
             <button class="lang-btn" onclick="toggleLang()">🌐 EN</button>
+            <button class="rss-btn" onclick="openPrefModal()" title="个性化">⚙️ 个性化</button>
             <button id="collectToggleBtn" class="rss-btn" onclick="toggleCollectMode()">📥 收藏模式</button>
         </div>
     </div>
@@ -93,6 +95,17 @@
             <h4>🚀 使用方式 / 案例</h4>
             <p id="detailUsage"></p>
             <p><a id="detailLink" href="#" target="_blank">在 GitHub 上查看 →</a></p>
+        </div>
+    </div>
+
+    <!-- 个性化设置模态框 -->
+    <div class="modal" id="prefModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closePrefModal()">✕</button>
+            <h3>选择你感兴趣的领域</h3>
+            <p>勾选后，相关项目会置顶显示并标记🌟推荐</p>
+            <div id="prefCheckboxes"></div>
+            <button onclick="savePrefsAndClose()" class="rss-btn" style="margin-top:10px;">保存并关闭</button>
         </div>
     </div>
 
@@ -149,6 +162,44 @@
         let currentLang = localStorage.getItem('ai-trend-lang') || 'zh';
         function t(key) { return (i18n[currentLang] && i18n[currentLang][key]) || key; }
 
+        // ---- 个性化偏好 ----
+        let userPrefs = JSON.parse(localStorage.getItem('ai-radar-prefs') || '[]');
+
+        function openPrefModal() {
+            const container = document.getElementById('prefCheckboxes');
+            container.innerHTML = categories.filter(c => c.tags.length > 0).map((c, i) => {
+                const label = currentLang === 'zh' ? c.labelZh : c.labelEn;
+                const checked = userPrefs.includes(i) ? 'checked' : '';
+                return `<label style="display:block;margin:4px 0;"><input type="checkbox" value="${i}" ${checked}> ${label}</label>`;
+            }).join('');
+            document.getElementById('prefModal').style.display = 'flex';
+        }
+
+        function closePrefModal() {
+            document.getElementById('prefModal').style.display = 'none';
+        }
+
+        function savePrefsAndClose() {
+            const checked = [...document.querySelectorAll('#prefCheckboxes input:checked')].map(el => Number(el.value));
+            localStorage.setItem('ai-radar-prefs', JSON.stringify(checked));
+            userPrefs = checked;
+            closePrefModal();
+            filterCards(); // 立即生效
+        }
+
+        // 判断项目是否匹配偏好
+        function isRecommended(repo) {
+            if (!userPrefs.length) return false;
+            return userPrefs.some(idx => {
+                const cat = categories[idx];
+                if (!cat || !cat.tags.length) return false;
+                return cat.tags.some(tag =>
+                    (repo.topics && repo.topics.some(t => t.toLowerCase().includes(tag))) ||
+                    (repo.description && repo.description.toLowerCase().includes(tag))
+                );
+            });
+        }
+
         function escapeHtml(text) {
             const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
             return String(text).replace(/[&<>"']/g, m => map[m]);
@@ -177,7 +228,6 @@
             return Array.from(expanded);
         }
 
-        // 根据标签推断适用人群
         function inferAudience(topics, desc) {
             const t = (topics || []).join(' ').toLowerCase() + ' ' + (desc||'').toLowerCase();
             if (t.includes('comfyui') || t.includes('workflow')) return 'AI 艺术家、设计师，喜欢可视化节点式工作流的创作者。';
@@ -192,7 +242,6 @@
             return 'AI 开发者、对人工智能感兴趣的技术人员。';
         }
 
-        // 根据标签推断使用案例
         function inferUsage(topics, desc, name) {
             const t = (topics || []).join(' ').toLowerCase() + ' ' + (desc||'').toLowerCase();
             if (t.includes('comfyui')) return '通过拖拽节点搭建图像生成流程，可自动化批量出图，适合电商设计、概念图创作。';
@@ -208,6 +257,7 @@
             const descHtml = highlightText(r.description || '', keywords);
             const checked = selectedRepos.has(r.name) ? 'checked' : '';
             const selectedClass = selectedRepos.has(r.name) ? ' selected' : '';
+            const recommendBadge = isRecommended(r) ? '<span class="recommend-badge">🌟 推荐</span>' : '';
             return `
                 <div class="card${selectedClass}" data-repo="${escapeHtml(r.name)}">
                     <div class="card-actions">
@@ -215,7 +265,7 @@
                         <button onclick="shareCard('${escapeHtml(r.name)}','${escapeHtml(r.url)}','${escapeHtml(r.description||'')}')" title="${t('shareBtn')}">🔗</button>
                     </div>
                     <input type="checkbox" class="collect-checkbox" ${checked} onchange="toggleRepoSelect('${escapeHtml(r.name)}', this.checked)" />
-                    <a href="${r.url}" target="_blank">⭐ ${nameHtml}</a>
+                    <a href="${r.url}" target="_blank">⭐ ${nameHtml}</a> ${recommendBadge}
                     <p>${descHtml}</p>
                     <p><span class="stars">🌟 ${r.stars}</span> · ${t('language')}: ${r.language || 'N/A'}</p>
                     <div class="topics">${(r.topics || []).slice(0, 5).map(t => `<span>${escapeHtml(t)}</span>`).join('')}</div>
@@ -240,22 +290,32 @@
             document.getElementById('detailModal').style.display = 'none';
         }
 
+        // 排序：推荐项目置顶，再按星星降序
+        function sortByPref(filtered) {
+            return filtered.sort((a, b) => {
+                const aRec = isRecommended(a) ? 1 : 0;
+                const bRec = isRecommended(b) ? 1 : 0;
+                if (aRec !== bRec) return bRec - aRec;
+                return b.stars - a.stars;
+            });
+        }
+
         function filterCards() {
             const raw = searchInput.value.trim();
             let keywords = expandKeywords(raw);
-            const filtered = keywords.length ? currentRepos.filter(r => {
+            let filtered = keywords.length ? currentRepos.filter(r => {
                 return keywords.every(kw => {
                     const lw = kw.toLowerCase();
                     return (r.name && r.name.toLowerCase().includes(lw)) ||
                            (r.description && r.description.toLowerCase().includes(lw)) ||
                            (r.topics && r.topics.some(t => t.toLowerCase().includes(lw)));
                 });
-            }) : currentRepos;
+            }) : [...currentRepos];
+            filtered = sortByPref(filtered);
             app.innerHTML = filtered.length ? filtered.map(r => renderCard(r, keywords)).join('') : `<p>${t('noResult')}</p>`;
             updateCatActive();
         }
 
-        // 加载普通榜单或历史数据
         function loadData(tab, historyDate = null) {
             currentTab = tab;
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -265,13 +325,11 @@
             app.innerHTML = t('loading');
             if (collectMode) selectedRepos.clear();
 
-            // 如果是 summary
             if (tab === 'summary') {
                 fetch(dataFiles.summary).then(r=>r.json()).then(renderSummary).catch(()=>app.innerHTML='<p>报告加载失败</p>');
                 return;
             }
 
-            // 历史选择器逻辑
             let url = dataFiles[tab];
             if (historyDate && (tab === 'weekly' || tab === 'monthly')) {
                 const historyFile = tab === 'weekly' ? dataFiles.history_weekly : dataFiles.history_monthly;
@@ -285,7 +343,6 @@
                 return;
             }
 
-            // 加载当前数据
             fetch(url).then(r => r.json()).then(repos => {
                 renderRepos(repos);
             }).catch(() => { currentRepos = []; app.innerHTML = '<p style="color:#f85149">数据加载失败</p>'; });
@@ -297,7 +354,6 @@
             filterCards();
         }
 
-        // 历史日期选择器显示
         function showDateSelector() {
             const sel = document.getElementById('dateSelector');
             if (currentTab === 'weekly' || currentTab === 'monthly') {
@@ -322,7 +378,6 @@
             }
         }
 
-        // 切换标签时刷新日期选择器
         function switchTab(tab) {
             if (collectMode && selectedRepos.size > 0) {
                 if (!confirm('切换榜单将清空当前选择，继续吗？')) return;
@@ -332,7 +387,6 @@
             showDateSelector();
         }
 
-        // 其他原有函数
         function renderCategories() {
             const bar = document.getElementById('categoryBar');
             bar.innerHTML = categories.map((c, i) => {
@@ -468,7 +522,13 @@
         applyLanguage();
         loadData('weekly');
         showDateSelector();
-        window.addEventListener('keydown', e => { if (e.key === 'Escape') { closeTrendModal(); closeDetailModal(); } });
+        window.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                closeTrendModal();
+                closeDetailModal();
+                closePrefModal();
+            }
+        });
     </script>
 </body>
 </html>
