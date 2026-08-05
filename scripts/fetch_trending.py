@@ -7,11 +7,15 @@ from record_history import record_history
 TOKEN = os.getenv("GITHUB_TOKEN")
 HEADERS = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
 OUTPUT_PATH = "docs/data/trending.json"
-PER_DOMAIN = 10   # 每个领域保留数量
+HISTORY_PATH = "docs/data/history_weekly.json"
+PER_DOMAIN = 10
 
 one_week_ago = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ")
+# 用于历史记录的日期（本周六的日期，方便统一）
+today = datetime.now(timezone.utc)
+this_saturday = today + timedelta(days=(5 - today.weekday() + 7) % 7)
+date_key = this_saturday.strftime("%Y-%m-%d")
 
-# 领域分组（你可以自由增删改）
 domains = {
     "ComfyUI": ["topic:comfyui", "comfyui", "comfyui-workflow"],
     "Stable Diffusion": ["topic:stable-diffusion", "stable-diffusion-webui", "sd-webui"],
@@ -42,7 +46,6 @@ def search_github(query):
         return []
 
 all_repos = {}
-# 按领域抓取
 for domain_name, queries in domains.items():
     domain_repos = {}
     for q in queries:
@@ -60,19 +63,34 @@ for domain_name, queries in domains.items():
                     "topics": repo.get("topics", []),
                     "domain": domain_name
                 }
-    # 该领域内按星标排序，取前 PER_DOMAIN
     top_domain = sorted(domain_repos.values(), key=lambda x: x["stars"], reverse=True)[:PER_DOMAIN]
     for repo in top_domain:
         rid = repo["id"]
         if rid not in all_repos:
             all_repos[rid] = repo
 
-# 总体按星标排序（保证整体热度顺序，但每个领域已有代表）
 sorted_repos = sorted(all_repos.values(), key=lambda x: x["stars"], reverse=True)
 
 os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
 with open(OUTPUT_PATH, "w") as f:
     json.dump(sorted_repos, f, indent=2, ensure_ascii=False)
 
-print(f"✅ 保存了 {len(sorted_repos)} 个热门仓库（覆盖 {len(domains)} 个领域）到 {OUTPUT_PATH}")
+print(f"✅ 本周热榜已保存 {len(sorted_repos)} 个仓库")
+
+# ---------- 历史存档 ----------
+history = {}
+if os.path.exists(HISTORY_PATH):
+    with open(HISTORY_PATH, "r") as f:
+        try:
+            history = json.load(f)
+        except:
+            pass
+# 保存当前周
+history[date_key] = sorted_repos
+# 只保留最近 12 个条目
+history = dict(sorted(history.items())[-12:])
+with open(HISTORY_PATH, "w") as f:
+    json.dump(history, f, indent=2, ensure_ascii=False)
+print(f"📅 历史周榜已更新，当前共 {len(history)} 周记录")
+
 record_history(sorted_repos, "docs/data/history.json")
