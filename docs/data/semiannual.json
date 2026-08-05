@@ -4,7 +4,7 @@
     "name": "Graphify-Labs/graphify",
     "url": "https://github.com/Graphify-Labs/graphify",
     "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-    "stars": 101265,
+    "stars": 102640,
     "language": "Python",
     "created_at": "2026-04-03T15:49:07Z",
     "topics": [
@@ -31,33 +31,11 @@
     "domain": "大语言模型"
   },
   {
-    "id": 1201173969,
-    "name": "JuliusBrussee/caveman",
-    "url": "https://github.com/JuliusBrussee/caveman",
-    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
-    "stars": 95342,
-    "language": "JavaScript",
-    "created_at": "2026-04-04T10:03:00Z",
-    "topics": [
-      "ai",
-      "anthropic",
-      "caveman",
-      "claude",
-      "claude-code",
-      "llm",
-      "meme",
-      "prompt-engineering",
-      "skill",
-      "tokens"
-    ],
-    "domain": "提示词工程"
-  },
-  {
     "id": 1266797999,
     "name": "DietrichGebert/ponytail",
     "url": "https://github.com/DietrichGebert/ponytail",
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-    "stars": 94294,
+    "stars": 96117,
     "language": "JavaScript",
     "created_at": "2026-06-12T00:52:37Z",
     "topics": [
@@ -75,11 +53,33 @@
     "domain": "提示词工程"
   },
   {
+    "id": 1201173969,
+    "name": "JuliusBrussee/caveman",
+    "url": "https://github.com/JuliusBrussee/caveman",
+    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+    "stars": 95865,
+    "language": "JavaScript",
+    "created_at": "2026-04-04T10:03:00Z",
+    "topics": [
+      "ai",
+      "anthropic",
+      "caveman",
+      "claude",
+      "claude-code",
+      "llm",
+      "meme",
+      "prompt-engineering",
+      "skill",
+      "tokens"
+    ],
+    "domain": "提示词工程"
+  },
+  {
     "id": 1195360525,
     "name": "calesthio/OpenMontage",
     "url": "https://github.com/calesthio/OpenMontage",
     "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
-    "stars": 44746,
+    "stars": 45160,
     "language": "Python",
     "created_at": "2026-03-29T15:23:22Z",
     "topics": [
@@ -110,7 +110,7 @@
     "name": "Imbad0202/academic-research-skills",
     "url": "https://github.com/Imbad0202/academic-research-skills",
     "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
-    "stars": 40624,
+    "stars": 40931,
     "language": "Python",
     "created_at": "2026-02-26T06:31:01Z",
     "topics": [
@@ -130,7 +130,7 @@
     "name": "op7418/guizang-ppt-skill",
     "url": "https://github.com/op7418/guizang-ppt-skill",
     "description": "AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime.",
-    "stars": 23025,
+    "stars": 23211,
     "language": "HTML",
     "created_at": "2026-04-23T13:23:07Z",
     "topics": [
@@ -153,7 +153,7 @@
     "name": "ConardLi/garden-skills",
     "url": "https://github.com/ConardLi/garden-skills",
     "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
-    "stars": 10009,
+    "stars": 10057,
     "language": "CSS",
     "created_at": "2026-04-21T11:56:17Z",
     "topics": [
@@ -171,7 +171,7 @@
     "name": "Forget-C/Jellyfish",
     "url": "https://github.com/Forget-C/Jellyfish",
     "description": "An end-to-end production workspace for AI-generated short dramas. From script input to structured storyboarding, consistency management, shot preparation, video generation, and export.",
-    "stars": 5826,
+    "stars": 5842,
     "language": "Python",
     "created_at": "2026-03-06T09:20:08Z",
     "topics": [
@@ -185,7 +185,7 @@
     "name": "wiltodelta/remove-ai-watermarks",
     "url": "https://github.com/wiltodelta/remove-ai-watermarks",
     "description": "AI watermark remover. CLI and Python library to strip visible and invisible AI watermarks (Gemini / Nano Banana sparkle, SynthID) and provenance metadata (C2PA, EXIF, IPTC) from images.",
-    "stars": 4400,
+    "stars": 4433,
     "language": "Python",
     "created_at": "2026-03-25T18:15:24Z",
     "topics": [
@@ -217,7 +217,7 @@
     "name": "Osmantic/ODS",
     "url": "https://github.com/Osmantic/ODS",
     "description": "Turn your PC, Mac, or Linux box into an AI server.  LLM inference, chat UI, voice, agents, workflows, RAG, and image generation.",
-    "stars": 3851,
+    "stars": 3966,
     "language": "Python",
     "created_at": "2026-02-09T13:14:58Z",
     "topics": [
@@ -245,7 +245,7 @@
     "name": "aiming-lab/MetaClaw",
     "url": "https://github.com/aiming-lab/MetaClaw",
     "description": "🦞 Just talk to your agent — it learns and EVOLVES 🧬.",
-    "stars": 3511,
+    "stars": 3515,
     "language": "Python",
     "created_at": "2026-03-09T13:47:13Z",
     "topics": [
@@ -266,22 +266,11 @@
     "domain": "LoRA/微调"
   },
   {
-    "id": 1216054784,
-    "name": "orailnoor/DroidDesk",
-    "url": "https://github.com/orailnoor/DroidDesk",
-    "description": "DroidDesk turns your Android phone into a real Linux desktop using Termux, Termux X11, TUR, and Proot. Run VS Code, Firefox, LibreOffice, Blender, and more with X11 or VNC support for monitor setup.",
-    "stars": 3020,
-    "language": "Kotlin",
-    "created_at": "2026-04-20T14:17:25Z",
-    "topics": [],
-    "domain": "Blender"
-  },
-  {
     "id": 1193300953,
     "name": "dramaclaw/dramaclaw",
     "url": "https://github.com/dramaclaw/dramaclaw",
     "description": "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos, otome games, and more. | 通用 AIGC 视频引擎 —— 从剧本到成片一条流水线，漫剧、广告、电商、乙游皆可",
-    "stars": 2958,
+    "stars": 3240,
     "language": "TypeScript",
     "created_at": "2026-03-27T04:34:30Z",
     "topics": [
@@ -308,11 +297,22 @@
     "domain": "视频生成"
   },
   {
+    "id": 1216054784,
+    "name": "orailnoor/DroidDesk",
+    "url": "https://github.com/orailnoor/DroidDesk",
+    "description": "DroidDesk turns your Android phone into a real Linux desktop using Termux, Termux X11, TUR, and Proot. Run VS Code, Firefox, LibreOffice, Blender, and more with X11 or VNC support for monitor setup.",
+    "stars": 3058,
+    "language": "Kotlin",
+    "created_at": "2026-04-20T14:17:25Z",
+    "topics": [],
+    "domain": "Blender"
+  },
+  {
     "id": 1235082631,
     "name": "hero8152/Infinite-Canvas",
     "url": "https://github.com/hero8152/Infinite-Canvas",
     "description": "Supports comfyui/API calls/modelscope calls",
-    "stars": 2569,
+    "stars": 2610,
     "language": "Python",
     "created_at": "2026-05-11T01:58:39Z",
     "topics": [],
@@ -323,7 +323,7 @@
     "name": "PurpleDoubleD/locally-uncensored",
     "url": "https://github.com/PurpleDoubleD/locally-uncensored",
     "description": "Plug-and-play local AI studio: uncensored chat, image & video generation, coding agent. Runs abliterated LLMs + ComfyUI 100% offline. One installer, no Docker, no cloud.",
-    "stars": 992,
+    "stars": 1005,
     "language": "TypeScript",
     "created_at": "2026-03-24T21:52:47Z",
     "topics": [
@@ -410,7 +410,7 @@
     "name": "microsoft/Resource2Skill",
     "url": "https://github.com/microsoft/Resource2Skill",
     "description": "A general framework for distilling human-created multimodal resources into reusable, executable skills that AI agents can browse, compose, and run, validated across diverse domains including web, PowerPoint, Excel, Blender, CAD, Unreal Engine 5, and REAPER-based music production.",
-    "stars": 350,
+    "stars": 357,
     "language": "Python",
     "created_at": "2026-05-12T18:31:15Z",
     "topics": [],
@@ -421,7 +421,7 @@
     "name": "adriflex/autoremesher-blender-bridge",
     "url": "https://github.com/adriflex/autoremesher-blender-bridge",
     "description": "Blender bridge for AutoRemesher",
-    "stars": 253,
+    "stars": 254,
     "language": "Python",
     "created_at": "2026-07-07T07:36:26Z",
     "topics": [
@@ -438,7 +438,7 @@
     "name": "inlineresearch/Inline-Studio",
     "url": "https://github.com/inlineresearch/Inline-Studio",
     "description": "AI filmmaking on a node canvas. Build your whole visual pipeline from moodboard to final cut, and keep every render as a versioned take so you never lose the good version. Free and open source. Renders on your own GPU with the Inline Core engine (Z-Image, Krea 2, FLUX.2) or hosted models with no GPU. Train your own LoRAs on the same canvas.",
-    "stars": 184,
+    "stars": 185,
     "language": "Python",
     "created_at": "2026-06-11T07:13:32Z",
     "topics": [
@@ -470,7 +470,7 @@
     "name": "facok/comfyui-krea2-controlnet",
     "url": "https://github.com/facok/comfyui-krea2-controlnet",
     "description": null,
-    "stars": 155,
+    "stars": 157,
     "language": "Python",
     "created_at": "2026-07-03T18:59:50Z",
     "topics": [],
