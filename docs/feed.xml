@@ -5,588 +5,546 @@
     <link>https://meichuan-36.github.io/ai-trending-radar/</link>
     <description>本周热榜 · 自动更新</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 22 Aug 2026 14:25:57 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 17:36:34 GMT</lastBuildDate>
     
         <item>
-            <title>s1dashu/ip-as-logo-skill - 🌟 3668</title>
-            <link>https://github.com/s1dashu/ip-as-logo-skill</link>
-            <description>A compact Agent Skill for highly simplified, rounded, subtly neo-skeuomorphic IP mascot logos.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/s1dashu/ip-as-logo-skill</guid>
+            <title>wide-trace/open-higgsfield - 🌟 1054</title>
+            <link>https://github.com/wide-trace/open-higgsfield</link>
+            <description>A studio for image and video generation — one prompt bar, each model’s own settings, and every finished run in one gallery.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/wide-trace/open-higgsfield</guid>
         </item>
         <item>
-            <title>Spielewoy/autoprompt-skill - 🌟 661</title>
-            <link>https://github.com/Spielewoy/autoprompt-skill</link>
-            <description>Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/Spielewoy/autoprompt-skill</guid>
+            <title>Nanako0129/sepia - 🌟 589</title>
+            <link>https://github.com/Nanako0129/sepia</link>
+            <description>De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Nanako0129/sepia</guid>
         </item>
         <item>
-            <title>LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler - 🌟 257</title>
-            <link>https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler</link>
-            <description>Neural latent upscaler for Minimax H3 (24ch). Bypasses costly 5B-param VAE decode/encode. Upscale low-res latents directly, then refine. Accelerates high-res video gen, outperforms naive interp.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler</guid>
+            <title>rome-os/rome - 🌟 384</title>
+            <link>https://github.com/rome-os/rome</link>
+            <description>Rome is the agentic OS.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/rome-os/rome</guid>
         </item>
         <item>
-            <title>LeonQ8/ComfyUI-ALLinONE-MinimaxH3 - 🌟 253</title>
-            <link>https://github.com/LeonQ8/ComfyUI-ALLinONE-MinimaxH3</link>
-            <description>All-in-one MiniMax H3 node for ComfyUI - T2V, T2I, I2V, R2V, Masking, audio drive, keyframes, extend & Motion Context chains in a single node.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/LeonQ8/ComfyUI-ALLinONE-MinimaxH3</guid>
+            <title>OnlyTerp/opengrok - 🌟 356</title>
+            <link>https://github.com/OnlyTerp/opengrok</link>
+            <description>Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming you.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/OnlyTerp/opengrok</guid>
         </item>
         <item>
-            <title>disler/fixing-smartass-opus-5 - 🌟 219</title>
-            <link>https://github.com/disler/fixing-smartass-opus-5</link>
-            <description>Lean how ONE system prompt turns Opus 5 from a 'load-bearing' smartass into a precise CRACKED senior engineering partner.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/disler/fixing-smartass-opus-5</guid>
+            <title>KKKKhazix/sun-style-writing - 🌟 325</title>
+            <link>https://github.com/KKKKhazix/sun-style-writing</link>
+            <description>从孙割19年白月光的痛彻心扉中蒸馏出来的无上心法</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/KKKKhazix/sun-style-writing</guid>
         </item>
         <item>
-            <title>amitshekhariitbhu/llm-inference-engineering - 🌟 214</title>
-            <link>https://github.com/amitshekhariitbhu/llm-inference-engineering</link>
-            <description>Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/amitshekhariitbhu/llm-inference-engineering</guid>
+            <title>S1N6H/pentest-harness - 🌟 272</title>
+            <link>https://github.com/S1N6H/pentest-harness</link>
+            <description>Pentest Harness — Heaven for Hackers. A self-hosted AI agent harness for authorized pentests, bug bounty, security labs, and CTFs. Bring your own AI model API; sessions stay local.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/S1N6H/pentest-harness</guid>
         </item>
         <item>
-            <title>LB623/no-negative-echo - 🌟 165</title>
-            <link>https://github.com/LB623/no-negative-echo</link>
-            <description>让 Codex 根据最终结果生成标题、注释、commit 和 PR，减少被否决方案在交付中的残留。</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/LB623/no-negative-echo</guid>
+            <title>GENEXIS-AI/gpt-image-skill - 🌟 148</title>
+            <link>https://github.com/GENEXIS-AI/gpt-image-skill</link>
+            <description>Generate GPT images from Codex or Claude Code using a ChatGPT subscription, without the Images API.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/GENEXIS-AI/gpt-image-skill</guid>
         </item>
         <item>
-            <title>squall01337/mixamo-llm-mocap - 🌟 142</title>
-            <link>https://github.com/squall01337/mixamo-llm-mocap</link>
-            <description>Turn any video into a Mixamo-rig animation - GVHMR estimator, spec-driven retarget, FK apply in Blender via MCP. Works with any Mixamo character; built to be operated end-to-end by an AI agent.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/squall01337/mixamo-llm-mocap</guid>
+            <title>itshen/source-reading-methodology - 🌟 127</title>
+            <link>https://github.com/itshen/source-reading-methodology</link>
+            <description>带 AI 精读大型开源仓库的方法论：四阶段流程、可复用模板、28 条踩坑清单，核心是让每个技术论断都可回溯到源码具体行</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/itshen/source-reading-methodology</guid>
         </item>
         <item>
-            <title>3641397194-wq/gpt5.6-claude-grok4.6-deepseekv4pro - 🌟 137</title>
-            <link>https://github.com/3641397194-wq/gpt5.6-claude-grok4.6-deepseekv4pro</link>
-            <description>冷咖啡 ColdBrew 四合一破甲正式版 — GPT-5.6 / Claude / Grok 4.6 / DeepSeek v4 Pro 一键部署 · 启动 · 恢复 · 打包发布 | QQ 群 1057540028 / 1077074552</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/3641397194-wq/gpt5.6-claude-grok4.6-deepseekv4pro</guid>
+            <title>JordyZomer/lemmalog - 🌟 114</title>
+            <link>https://github.com/JordyZomer/lemmalog</link>
+            <description>A Datalog engine for LLM agent memory: stratified rules, provenance-tracked facts, incremental derivation, and an MCP server that lets your harness use it as a shared brain.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/JordyZomer/lemmalog</guid>
         </item>
         <item>
-            <title>shanliuling/dsh-image-gen - 🌟 130</title>
-            <link>https://github.com/shanliuling/dsh-image-gen</link>
-            <description>Generate images directly in DeepSeek Harness chats</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/shanliuling/dsh-image-gen</guid>
+            <title>UditAkhourii/cdaf - 🌟 99</title>
+            <link>https://github.com/UditAkhourii/cdaf</link>
+            <description>CDAF (Cached Descriptive Asset Files) - open sidecar format for video so AI agents stop re-analyzing the same footage. Spec, CLI, agent skill, reproducible benchmark.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/UditAkhourii/cdaf</guid>
         </item>
         <item>
-            <title>only-cli/oc - 🌟 117</title>
-            <link>https://github.com/only-cli/oc</link>
-            <description>Turn any website into a compact CLI tailored for AI agents. Browse the web in hundreds of tokens, not tens of thousands.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/only-cli/oc</guid>
+            <title>usedotai/dot-reflex - 🌟 97</title>
+            <link>https://github.com/usedotai/dot-reflex</link>
+            <description>Open-source agent execution-recovery controller for coding and tool-using AI agents.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/usedotai/dot-reflex</guid>
         </item>
         <item>
-            <title>elie222/botdirectory.ai - 🌟 105</title>
-            <link>https://github.com/elie222/botdirectory.ai</link>
-            <description>Open-source directory of agent-bot prompts for Grok Bot, Rakazo, and any agent — botdirectory.ai</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/elie222/botdirectory.ai</guid>
+            <title>karuvanan/MiniMax-H3-Director-Cut-Studio - 🌟 81</title>
+            <link>https://github.com/karuvanan/MiniMax-H3-Director-Cut-Studio</link>
+            <description>Premiere-inspired PySide6 director studio for MiniMax H3 Ref2VA with AI shot planning, semantic media enrichment, timeline prompt reconciliation and shot-aware long-video rendering through ComfyUI.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/karuvanan/MiniMax-H3-Director-Cut-Studio</guid>
         </item>
         <item>
-            <title>Jordanwei1/jiaojie-skill - 🌟 103</title>
-            <link>https://github.com/Jordanwei1/jiaojie-skill</link>
-            <description>交接 Skill（Jiaojie）：跨窗口、跨模型、跨设备、跨语言的 AI 上下文交接工具。换窗口，不失忆；换模型，不重来。Open-source AI context handoff.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/Jordanwei1/jiaojie-skill</guid>
+            <title>forcewake/hermes-conductor - 🌟 69</title>
+            <link>https://github.com/forcewake/hermes-conductor</link>
+            <description>One Hermes conductor. Many coding CLIs. Zero trust in self-reports. Production multi-harness orchestration patterns: worktree lanes, verification gates, recovery playbooks — from 18 kanban boards and every incident that tried to ruin them.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/forcewake/hermes-conductor</guid>
         </item>
         <item>
-            <title>Vendredi218/awesome-ai-harness - 🌟 102</title>
-            <link>https://github.com/Vendredi218/awesome-ai-harness</link>
-            <description>The model is the engine; the harness is the car. Curated knowledge on harness engineering — context management, tool design, agent loops, memory, sandboxing, evals. EN/中文</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/Vendredi218/awesome-ai-harness</guid>
+            <title>nevertoday/xxd-panel-028 - 🌟 67</title>
+            <link>https://github.com/nevertoday/xxd-panel-028</link>
+            <description>Turn photographs into quiet source-colour isometric paper miniatures with four combinable output modes.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/nevertoday/xxd-panel-028</guid>
         </item>
         <item>
-            <title>ZSeven-W/dsh-crew - 🌟 98</title>
-            <link>https://github.com/ZSeven-W/dsh-crew</link>
-            <description>DeepSeek Harness (DSH) plugin: dispatch work to DSH agents from Claude Code / Codex — native subagent progress, in-host worker sessions with per-tier presets, and a multimodal bridge that lends the text-only harness vision and image generation.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/ZSeven-W/dsh-crew</guid>
+            <title>Cripacx/mediagen - 🌟 56</title>
+            <link>https://github.com/Cripacx/mediagen</link>
+            <description>AI image and video generation skill for Claude Code and other coding agents — Gemini, OpenAI and Kie AI behind one CLI and MCP server, with EU AI Act content marking.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Cripacx/mediagen</guid>
         </item>
         <item>
-            <title>zorost/AI-Engineering-Lab - 🌟 98</title>
-            <link>https://github.com/zorost/AI-Engineering-Lab</link>
-            <description>A free, self-paced 24-week AI engineering course: Python, machine learning, LLMs, RAG, fine-tuning, agents and MCP, Azure and Vertex and Bedrock, and Databricks. 43 runnable notebooks, one continuous case study. MIT licensed, no signup. By Zorost Intelligence AI Lab.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/zorost/AI-Engineering-Lab</guid>
+            <title>Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc - 🌟 53</title>
+            <link>https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc</link>
+            <description>Official MiniMax-H3 8-step PDD Acc LoRAs (alibaba-pai) in ComfyUI: LoRA + parallel-decoding head bank, euler on trained sigmas, audio+video in 8 steps</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc</guid>
         </item>
         <item>
-            <title>six-nut/PocketMen-with-you - 🌟 86</title>
-            <link>https://github.com/six-nut/PocketMen-with-you</link>
-            <description>Create high-fidelity Codex companions from 2+ photos with local open-weight neural editing and no OpenAI API key.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/six-nut/PocketMen-with-you</guid>
+            <title>YoungBao-WHU-FDU/ai-intelligence-agent - 🌟 44</title>
+            <link>https://github.com/YoungBao-WHU-FDU/ai-intelligence-agent</link>
+            <description>AI 科技情报 Agent：聚合论文、GitHub、企业官网与网络信号，基于 LangChain 实现结构化理解、事件核验、个性化推荐与主动提醒。</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/YoungBao-WHU-FDU/ai-intelligence-agent</guid>
         </item>
         <item>
-            <title>abligail/narralume - 🌟 78</title>
-            <link>https://github.com/abligail/narralume</link>
-            <description>Open-source AI-assisted writing studio for long-form fiction. 故事设定、正文版本、AI 协作、审稿与交付一体化的长篇小说写作工具。</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/abligail/narralume</guid>
+            <title>glossycannon/Claude-Codex-Cursor-Token-Saver - 🌟 40</title>
+            <link>https://github.com/glossycannon/Claude-Codex-Cursor-Token-Saver</link>
+            <description>AI Coding Token Saver for Windows — optimize prompts and repository context before sending it to Claude, Codex, Cursor and similar tools using local filtering, file prioritization, context compression, token budgets and reversible profiles.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/glossycannon/Claude-Codex-Cursor-Token-Saver</guid>
         </item>
         <item>
-            <title>LoveRain1997/h3-prompt-journal - 🌟 77</title>
-            <link>https://github.com/LoveRain1997/h3-prompt-journal</link>
-            <description>Case-study journal of MiniMax H3 prompt engineering experiments</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/LoveRain1997/h3-prompt-journal</guid>
+            <title>Work-Fisher/reference-first-motion-director - 🌟 39</title>
+            <link>https://github.com/Work-Fisher/reference-first-motion-director</link>
+            <description>Reference-first Codex workflow for edit planning, keyframe approval, and MiniMax H3 prompts.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Work-Fisher/reference-first-motion-director</guid>
         </item>
         <item>
-            <title>adambenhassen/minimax-music-ui - 🌟 71</title>
-            <link>https://github.com/adambenhassen/minimax-music-ui</link>
-            <description>Suno-style web UI for a self-hosted MiniMax-Music3 inference server</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/adambenhassen/minimax-music-ui</guid>
+            <title>Ltamann/ComfyUI-H3-Motion-Context-Auto-Chain-addon - 🌟 32</title>
+            <link>https://github.com/Ltamann/ComfyUI-H3-Motion-Context-Auto-Chain-addon</link>
+            <description>ComfyUI-H3-Motion-Context-Auto-Chain-addon</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Ltamann/ComfyUI-H3-Motion-Context-Auto-Chain-addon</guid>
         </item>
         <item>
-            <title>agents-universe/agents-universe - 🌟 70</title>
-            <link>https://github.com/agents-universe/agents-universe</link>
-            <description>让智能体像人一样学习和工作，共享智能体和项目记忆</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/agents-universe/agents-universe</guid>
+            <title>Saganaki22/ComfyUI-Breeze-TTS-2 - 🌟 29</title>
+            <link>https://github.com/Saganaki22/ComfyUI-Breeze-TTS-2</link>
+            <description>Breeze TTS 2 nodes for ComfyUI: voice clone, voice design, and voice direction with bilingual (EN/ZH) speech, inline vocal events, INT8 ConvRot quantized builds, and full ComfyUI / AIMDO dynamic-VRAM integration.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Saganaki22/ComfyUI-Breeze-TTS-2</guid>
         </item>
         <item>
-            <title>wtfzambo/speak-like-you-eat - 🌟 67</title>
-            <link>https://github.com/wtfzambo/speak-like-you-eat</link>
-            <description>Translate AI garbage to human language. A Pi package for plain-language rewrites.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/wtfzambo/speak-like-you-eat</guid>
+            <title>GuiYi-Xi/infinite-atelier - 🌟 29</title>
+            <link>https://github.com/GuiYi-Xi/infinite-atelier</link>
+            <description>AI visual workspace for multi-provider model configuration, image generation, prompts, canvas and local assets</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/GuiYi-Xi/infinite-atelier</guid>
         </item>
         <item>
-            <title>StanLukuvka/ComfyUI-MiniMax-H3-SPEED - 🌟 65</title>
-            <link>https://github.com/StanLukuvka/ComfyUI-MiniMax-H3-SPEED</link>
+            <title>ChenShuo2004/cs-xiaohuang-skill - 🌟 28</title>
+            <link>https://github.com/ChenShuo2004/cs-xiaohuang-skill</link>
+            <description>小黄（有温度）统一 Skill：品牌 IP 延展、中文轻手绘 PPT、文章封面与正文配图；先规划，再生成可交付 PNG。</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/ChenShuo2004/cs-xiaohuang-skill</guid>
+        </item>
+        <item>
+            <title>Mr-funny/hbg-rubber-stamp-field-note - 🌟 26</title>
+            <link>https://github.com/Mr-funny/hbg-rubber-stamp-field-note</link>
+            <description>Turn travel photos into archival photo-and-rubber-stamp field note posters.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Mr-funny/hbg-rubber-stamp-field-note</guid>
+        </item>
+        <item>
+            <title>GeekatplayStudio/ComfyUI-Asset-Vault - 🌟 24</title>
+            <link>https://github.com/GeekatplayStudio/ComfyUI-Asset-Vault</link>
             <description>None</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/StanLukuvka/ComfyUI-MiniMax-H3-SPEED</guid>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/GeekatplayStudio/ComfyUI-Asset-Vault</guid>
         </item>
         <item>
-            <title>Greninja9257/LabLLM - 🌟 62</title>
-            <link>https://github.com/Greninja9257/LabLLM</link>
-            <description>A native macOS lab for teaching tiny language models to think — build the architecture, train the weights, and watch a small LLM emerge from scratch, locally on Apple Silicon with custom data, tokenizers, checkpoints, and MLX acceleration.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/Greninja9257/LabLLM</guid>
+            <title>Miint-Sunny/nai5-prompting - 🌟 23</title>
+            <link>https://github.com/Miint-Sunny/nai5-prompting</link>
+            <description>教 AI 写 NovelAI Diffusion V5 提示词的方法 skill：构思＋写法两件套，基于 2226 张实测图库 / 962 条真实提示词。Agent Skills 标准封装。</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Miint-Sunny/nai5-prompting</guid>
         </item>
         <item>
-            <title>GraySilver/dsh-evolve-modes - 🌟 55</title>
-            <link>https://github.com/GraySilver/dsh-evolve-modes</link>
-            <description>让 Agent 的工作方式可组合、可审查、可持续改进，最终实现 Agent Self Evoling。 DeepSeek Harness Web plugin with composable task controls and isolated, human-reviewed self-evolution.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/GraySilver/dsh-evolve-modes</guid>
+            <title>chengyansen-ai/h3-multimodal-lora-training - 🌟 21</title>
+            <link>https://github.com/chengyansen-ai/h3-multimodal-lora-training</link>
+            <description>MiniMax H3 多模态 LoRA 训练、审计与交付技能：Ref2VA、联合音视频、低显存后端与十步证据链。</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/chengyansen-ai/h3-multimodal-lora-training</guid>
         </item>
         <item>
-            <title>DandreYang/local-image-gen - 🌟 46</title>
-            <link>https://github.com/DandreYang/local-image-gen</link>
-            <description>Generate images from local Grok, Antigravity, Cursor, or Codex logins, with official API keys as fallback.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/DandreYang/local-image-gen</guid>
+            <title>tl2012tl/TE-Speed-FlashVSR - 🌟 20</title>
+            <link>https://github.com/tl2012tl/TE-Speed-FlashVSR</link>
+            <description>极快的ComfyUI内FlashVSR视频超分放大节点.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/tl2012tl/TE-Speed-FlashVSR</guid>
         </item>
         <item>
-            <title>jing-hy/picturereader - 🌟 33</title>
-            <link>https://github.com/jing-hy/picturereader</link>
-            <description>DSH plugin: pixel-to-text image reading for text-only models. image_scan/image_ocr/image_sample tools + image-reading skill (34-image trained methodology). Pure local, optional PaddleOCR.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/jing-hy/picturereader</guid>
+            <title>SagarBiswas-MultiHAT/promptVault - 🌟 20</title>
+            <link>https://github.com/SagarBiswas-MultiHAT/promptVault</link>
+            <description>The private, offline-first prompt manager for AI power users. Features AES-256 encrypted local storage, a built-in AI Librarian to evaluate & refine prompts with Gemini & Groq fallback, dynamic {{variable}} templates, Supabase cloud sync, analytics, and instant ⌘K search.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/SagarBiswas-MultiHAT/promptVault</guid>
         </item>
         <item>
-            <title>chflame163/ComfyUI_Qwen_H3_Prompt - 🌟 32</title>
-            <link>https://github.com/chflame163/ComfyUI_Qwen_H3_Prompt</link>
-            <description>Use local Qwen3.8-27B and official MiniMax-H3 Skills in ComfyUI to generate H3 prompts. Runs a standalone local llama-server , inference operates fully offline with no internet access.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/chflame163/ComfyUI_Qwen_H3_Prompt</guid>
+            <title>agent-clinic/claude-md-doctor - 🌟 20</title>
+            <link>https://github.com/agent-clinic/claude-md-doctor</link>
+            <description>Give your CLAUDE.md / AGENTS.md a checkup — audit size vitals, dead references, drifted claims, and backtest every rule against your own session history to see which rules get followed, ignored, or never used. A doctor-style report that cites its evidence.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/agent-clinic/claude-md-doctor</guid>
         </item>
         <item>
-            <title>SeanEllyJames/deep-research-skill - 🌟 30</title>
-            <link>https://github.com/SeanEllyJames/deep-research-skill</link>
-            <description>让AI Agent 做真正会思考，有判断的深度调研，而不是会摆信息的汇总报告。一个即插即用的 skill 文件。</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/SeanEllyJames/deep-research-skill</guid>
+            <title>ruashots/ComfyUI-OpenH3-IR - 🌟 19</title>
+            <link>https://github.com/ruashots/ComfyUI-OpenH3-IR</link>
+            <description>Four ComfyUI nodes for MiniMax H3: name your media with @, lock exact dialogue, and get the structured brief H3 wants. No <Picture 1> bookkeeping, no second service to start.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/ruashots/ComfyUI-OpenH3-IR</guid>
         </item>
         <item>
-            <title>doofzoff/pagedMark - 🌟 28</title>
-            <link>https://github.com/doofzoff/pagedMark</link>
-            <description>AI watermark removal built for Apple Silicon. SynthID-class pixel regeneration, visible vendor labels and provenance metadata, with every pipeline decision measured on Metal.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/doofzoff/pagedMark</guid>
+            <title>newbmechanix-ship-it/ALPHA-T1 - 🌟 18</title>
+            <link>https://github.com/newbmechanix-ship-it/ALPHA-T1</link>
+            <description>Single-pass MiniMax H3 image-to-video for ComfyUI (~166s/7s at 704x384 on one RTX 4060 Ti 16GB).</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/newbmechanix-ship-it/ALPHA-T1</guid>
         </item>
         <item>
-            <title>unburdened-jackinthebox365/qwen38-uncensored - 🌟 27</title>
-            <link>https://github.com/unburdened-jackinthebox365/qwen38-uncensored</link>
-            <description>Uncensor Qwen 3.8 27B with a pre-baked system pack for Ollama, plus GGUF download links.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/unburdened-jackinthebox365/qwen38-uncensored</guid>
+            <title>LalaGa-1119/jiazuo-atelier - 🌟 18</title>
+            <link>https://github.com/LalaGa-1119/jiazuo-atelier</link>
+            <description>甲作 Atelier：手机端 AI 美甲推荐与虚拟试戴；仓库公开其中的轻量评测工作台。</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/LalaGa-1119/jiazuo-atelier</guid>
         </item>
         <item>
-            <title>JYE-HC/Director-WebUI - 🌟 26</title>
-            <link>https://github.com/JYE-HC/Director-WebUI</link>
-            <description>Director WebUI for MiniMax H3 long-form workflows with ComfyUI</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/JYE-HC/Director-WebUI</guid>
+            <title>andy7076/image_prompt - 🌟 17</title>
+            <link>https://github.com/andy7076/image_prompt</link>
+            <description>A curated GPT image prompt gallery with masonry browsing, source-aware discovery, editable prompts, reference images, and OpenAI-compatible generation.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/andy7076/image_prompt</guid>
         </item>
         <item>
-            <title>b3b41020/free-multimodal-proxy - 🌟 24</title>
-            <link>https://github.com/b3b41020/free-multimodal-proxy</link>
-            <description>OpenAI-compatible reverse proxy for free multimodal AI APIs (chat / images / videos / audio / 3d)</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/b3b41020/free-multimodal-proxy</guid>
+            <title>MajoorWaldi/ComfyUI-Majoor-H3-GuideMaster - 🌟 16</title>
+            <link>https://github.com/MajoorWaldi/ComfyUI-Majoor-H3-GuideMaster</link>
+            <description>H3 GuideMaster makes it easy to place images and audio on a MiniMax H3 timeline.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/MajoorWaldi/ComfyUI-Majoor-H3-GuideMaster</guid>
         </item>
         <item>
-            <title>iltaen/spider_walker - 🌟 24</title>
-            <link>https://github.com/iltaen/spider_walker</link>
-            <description>Blender addon: Procedural walking for spider-like armatures</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/iltaen/spider_walker</guid>
+            <title>SamG-Coder/ThreeBrowserStudio - 🌟 15</title>
+            <link>https://github.com/SamG-Coder/ThreeBrowserStudio</link>
+            <description>LLM-first Three.js WebGPU scene and animation authoring with a persistent native viewport and typed MCP editing</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/SamG-Coder/ThreeBrowserStudio</guid>
         </item>
         <item>
-            <title>qiukaihui/comfyui-auto-drama - 🌟 21</title>
-            <link>https://github.com/qiukaihui/comfyui-auto-drama</link>
-            <description>基于 ComfyUI + MiniMax H3 的自动化短剧生产流水线</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/qiukaihui/comfyui-auto-drama</guid>
+            <title>dughogan/comfy_workflow_audit - 🌟 14</title>
+            <link>https://github.com/dughogan/comfy_workflow_audit</link>
+            <description>A tool to evaluate whether a ComfyUI workflow can be used in production.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/dughogan/comfy_workflow_audit</guid>
         </item>
         <item>
-            <title>liyupi/niulai-video-generator - 🌟 21</title>
-            <link>https://github.com/liyupi/niulai-video-generator</link>
-            <description>🐮 牛来动画生成器 —— 输入一段小故事，一条命令产出还原电影《牛来》风格的抽象动画：无厘头台词、严格同步的字幕与配音、粗糙低模的直立牛。Three.js 程序化 3D 渲染 + DeepSeek 剧本生成 + TTS 配音 + FFmpeg 合成，不依赖视频大模型。AI video generator that turns any short story into a Niulai-style absurd 3D animation with lip-synced subtitles.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/liyupi/niulai-video-generator</guid>
+            <title>zidniryi/open-source-ai-models - 🌟 14</title>
+            <link>https://github.com/zidniryi/open-source-ai-models</link>
+            <description>A curated directory of open-source & open-weight AI models — compare params, VRAM, context length, and license before picking a model for coding, OCR, vision, image generation, speech, reasoning, and RAG.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/zidniryi/open-source-ai-models</guid>
         </item>
         <item>
-            <title>AlonAshken/ComfyUI-MiniMaxH3-FlowDirector - 🌟 18</title>
-            <link>https://github.com/AlonAshken/ComfyUI-MiniMaxH3-FlowDirector</link>
-            <description>Director flow for ComfyUI, custom node that enalbes generation of long videos without OOM by using the last frame of each generation as initial for a new one.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/AlonAshken/ComfyUI-MiniMaxH3-FlowDirector</guid>
+            <title>njgymb/diffusers-sculptor - 🌟 13</title>
+            <link>https://github.com/njgymb/diffusers-sculptor</link>
+            <description>Efficient Stable Diffusion Fine-Tuning Framework 2026: Lightweight Config-Driven Pipeline</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/njgymb/diffusers-sculptor</guid>
         </item>
         <item>
-            <title>1710831321/ComfyUI-PromptRandomizer - 🌟 18</title>
-            <link>https://github.com/1710831321/ComfyUI-PromptRandomizer</link>
+            <title>R0650N/spirit-flux-refiner - 🌟 13</title>
+            <link>https://github.com/R0650N/spirit-flux-refiner</link>
+            <description>Ultimate Flux1-LoRA Training Toolkit 2026: Smart Simplicity for AI Creators</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/R0650N/spirit-flux-refiner</guid>
+        </item>
+        <item>
+            <title>nrodriguez1997/lora-docker-aliyun-pipeline - 🌟 13</title>
+            <link>https://github.com/nrodriguez1997/lora-docker-aliyun-pipeline</link>
+            <description>Automated LoRA Training Docker Builds for Alibaba Cloud 2026</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/nrodriguez1997/lora-docker-aliyun-pipeline</guid>
+        </item>
+        <item>
+            <title>godtiza/nebula-forge-studio - 🌟 13</title>
+            <link>https://github.com/godtiza/nebula-forge-studio</link>
+            <description>AI Ecosystem Platform 2026: Train Models & Generate Images Seamlessly</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/godtiza/nebula-forge-studio</guid>
+        </item>
+        <item>
+            <title>abdelkhalk93-star/audiocraft-finetune-lab - 🌟 13</title>
+            <link>https://github.com/abdelkhalk93-star/audiocraft-finetune-lab</link>
+            <description>MusicGen Pro Trainer 2026: The Ultimate AI Music Studio Guide</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/abdelkhalk93-star/audiocraft-finetune-lab</guid>
+        </item>
+        <item>
+            <title>TTheuPP/NLP-LLM-Orchestrator-FineTuner - 🌟 13</title>
+            <link>https://github.com/TTheuPP/NLP-LLM-Orchestrator-FineTuner</link>
+            <description>Master LLM Fine-Tuning Trainer 2026: Advanced NLP Optimization Toolkit</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/TTheuPP/NLP-LLM-Orchestrator-FineTuner</guid>
+        </item>
+        <item>
+            <title>StudioFoysal/RiddleGen-FineTuned-GPT2 - 🌟 13</title>
+            <link>https://github.com/StudioFoysal/RiddleGen-FineTuned-GPT2</link>
+            <description>Math Riddle Generation 2026: Fine-Tuned GPT-2 for Automated Puzzle Solving</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/StudioFoysal/RiddleGen-FineTuned-GPT2</guid>
+        </item>
+        <item>
+            <title>KingHsp/vram-sage-training - 🌟 12</title>
+            <link>https://github.com/KingHsp/vram-sage-training</link>
+            <description>The 2026 VRAM-Smart Fine-Tuning Suite for SDXL and ANIMA on 12GB GPUs</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/KingHsp/vram-sage-training</guid>
+        </item>
+        <item>
+            <title>wyzborrero/ComfyUI-H3-FunControl - 🌟 12</title>
+            <link>https://github.com/wyzborrero/ComfyUI-H3-FunControl</link>
+            <description>MiniMax-H3 Fun ControlNet for ComfyUI. Depth, canny, pose, HED or MLSD video driving H3 frame by frame, built on ComfyUI's own H3 blocks.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/wyzborrero/ComfyUI-H3-FunControl</guid>
+        </item>
+        <item>
+            <title>MarkSlusar/DEALORA - 🌟 12</title>
+            <link>https://github.com/MarkSlusar/DEALORA</link>
+            <description>Darwinian Evolved Antennas For LoRa Devices including Meshtastic and Meshcore</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/MarkSlusar/DEALORA</guid>
+        </item>
+        <item>
+            <title>lovablemento/Krea-Desktop---Krea-AI-Realtime-Canvas-2026 - 🌟 10</title>
+            <link>https://github.com/lovablemento/Krea-Desktop---Krea-AI-Realtime-Canvas-2026</link>
+            <description>Krea-Desktop - AI real-time image generation canvas with live drawing, upscaling, and video effects.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/lovablemento/Krea-Desktop---Krea-AI-Realtime-Canvas-2026</guid>
+        </item>
+        <item>
+            <title>limptrench/Immersity-Desktop---Immersity-AI-3D-Photo-2026 - 🌟 10</title>
+            <link>https://github.com/limptrench/Immersity-Desktop---Immersity-AI-3D-Photo-2026</link>
+            <description>Immersity-Desktop - AI 2D-to-3D photo converter with depth map generation and spatial video export.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/limptrench/Immersity-Desktop---Immersity-AI-3D-Photo-2026</guid>
+        </item>
+        <item>
+            <title>nearrhubarb/RunwayGen3-Turbo---Runway-Gen-3-Turbo-2026 - 🌟 10</title>
+            <link>https://github.com/nearrhubarb/RunwayGen3-Turbo---Runway-Gen-3-Turbo-2026</link>
+            <description>RunwayGen3-Turbo - fast AI video generation with Gen-3 Turbo model, 10s clips, and style presets.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/nearrhubarb/RunwayGen3-Turbo---Runway-Gen-3-Turbo-2026</guid>
+        </item>
+        <item>
+            <title>disguiseddeco/Luma-Desktop---Luma-Dream-Machine-2026 - 🌟 10</title>
+            <link>https://github.com/disguiseddeco/Luma-Desktop---Luma-Dream-Machine-2026</link>
+            <description>Luma-Desktop - Luma AI Dream Machine with text-to-video, 3D scene generation, and camera control.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/disguiseddeco/Luma-Desktop---Luma-Dream-Machine-2026</guid>
+        </item>
+        <item>
+            <title>commonmarsh/Runway-Desktop---Runway-ML-Video-Editor-2026 - 🌟 10</title>
+            <link>https://github.com/commonmarsh/Runway-Desktop---Runway-ML-Video-Editor-2026</link>
+            <description>Runway-Desktop - AI video editor with Gen-3 Alpha, text-to-video, and unlimited renders.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/commonmarsh/Runway-Desktop---Runway-ML-Video-Editor-2026</guid>
+        </item>
+        <item>
+            <title>theisegoria/game-development-studio - 🌟 9</title>
+            <link>https://github.com/theisegoria/game-development-studio</link>
+            <description>Local-first game asset production, vendoring, visual debugging, and performance tooling for Codex and Claude.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/theisegoria/game-development-studio</guid>
+        </item>
+        <item>
+            <title>alphaparkinc/genpark-latent-diffusion-checkpoint-controlnet-pipeline-skill - 🌟 8</title>
+            <link>https://github.com/alphaparkinc/genpark-latent-diffusion-checkpoint-controlnet-pipeline-skill</link>
+            <description>Latent diffusion checkpoint pipeline and ControlNet adapter scheduler (SD WebUI style)</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/alphaparkinc/genpark-latent-diffusion-checkpoint-controlnet-pipeline-skill</guid>
+        </item>
+        <item>
+            <title>alphaparkinc/genpark-memory-efficient-lora-kernel-gradient-optimizer-skill - 🌟 8</title>
+            <link>https://github.com/alphaparkinc/genpark-memory-efficient-lora-kernel-gradient-optimizer-skill</link>
+            <description>Memory-efficient LoRA kernel gradient optimizer saving 80% VRAM (Unsloth style)</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/alphaparkinc/genpark-memory-efficient-lora-kernel-gradient-optimizer-skill</guid>
+        </item>
+        <item>
+            <title>andrewwoan/blender-to-threejs-sketchy-shader-and-demo-portfolios - 🌟 7</title>
+            <link>https://github.com/andrewwoan/blender-to-threejs-sketchy-shader-and-demo-portfolios</link>
+            <description>Blender to Threejs Sketchy Shader</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/andrewwoan/blender-to-threejs-sketchy-shader-and-demo-portfolios</guid>
+        </item>
+        <item>
+            <title>rigidcurricu/Blender-Pro-Addon-Pack-2026 - 🌟 7</title>
+            <link>https://github.com/rigidcurricu/Blender-Pro-Addon-Pack-2026</link>
+            <description>Download Blender Pro Addon Pack 2026 — free, working, updated for 2026.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/rigidcurricu/Blender-Pro-Addon-Pack-2026</guid>
+        </item>
+        <item>
+            <title>MarcelloMorettoni/opensew-2 - 🌟 7</title>
+            <link>https://github.com/MarcelloMorettoni/opensew-2</link>
+            <description>Opensource plugin for clothing and garment design on Blender</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/MarcelloMorettoni/opensew-2</guid>
+        </item>
+        <item>
+            <title>xixihhhh/ai-short-drama-skill - 🌟 7</title>
+            <link>https://github.com/xixihhhh/ai-short-drama-skill</link>
+            <description>Dramake：面向 Codex、Claude Code、WorkBuddy 的文字转 AI 短剧 Skill；串起剧本、分镜、Wan 3/Seedance/MiniMax H3、配音、剪辑与质检，适配抖音、红果短剧和横竖屏。</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/xixihhhh/ai-short-drama-skill</guid>
+        </item>
+        <item>
+            <title>GZT2023/ComfyUI-MiniMax-H3-Fun-Controlnet - 🌟 7</title>
+            <link>https://github.com/GZT2023/ComfyUI-MiniMax-H3-Fun-Controlnet</link>
             <description>None</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/1710831321/ComfyUI-PromptRandomizer</guid>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/GZT2023/ComfyUI-MiniMax-H3-Fun-Controlnet</guid>
         </item>
         <item>
-            <title>yinhcao/ComfyUI-YinChao - 🌟 16</title>
-            <link>https://github.com/yinhcao/ComfyUI-YinChao</link>
-            <description>ComfyUI V3 nodes for YinChao AI music generation: lyrics, prompt-to-song, reference generation, and song extension.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/yinhcao/ComfyUI-YinChao</guid>
+            <title>Yzw202011/OmniSpace - 🌟 6</title>
+            <link>https://github.com/Yzw202011/OmniSpace</link>
+            <description>AIGC短剧全流程创作平台 - 剧本/分镜/角色/配音/视频生成一站式，本地GPU推理，数据不出机器，从创意到成片一条龙（v2.3.1版，存在多种bug，需要大神帮帮忙）</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Yzw202011/OmniSpace</guid>
         </item>
         <item>
-            <title>miserablecarr/kling-2-crack-2026 - 🌟 16</title>
-            <link>https://github.com/miserablecarr/kling-2-crack-2026</link>
-            <description>Kling AI 2.0 cracked — unlimited high-quality video generation up to 2 minutes.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/miserablecarr/kling-2-crack-2026</guid>
-        </item>
-        <item>
-            <title>aipulsedaily/f1-round2 - 🌟 13</title>
-            <link>https://github.com/aipulsedaily/f1-round2</link>
-            <description>A 124-second 4K film of an F1 car in one unbroken take, where every model, material and sound is generated by code — no downloaded assets, no HDRIs, no photo textures, nothing AI-generated. Ships its own engineering log: ~1,300 entries recording what was measured and what turned out to be wrong.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/aipulsedaily/f1-round2</guid>
-        </item>
-        <item>
-            <title>xintu1314/lead-gen-video-script - 🌟 13</title>
-            <link>https://github.com/xintu1314/lead-gen-video-script</link>
-            <description>AI skill for diagnosing, structuring, writing, and evaluating Chinese lead-generation short-video scripts.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/xintu1314/lead-gen-video-script</guid>
-        </item>
-        <item>
-            <title>knowinggym/capcut-pro-crack-2026 - 🌟 13</title>
-            <link>https://github.com/knowinggym/capcut-pro-crack-2026</link>
-            <description>CapCut Pro fully activated — AI remover, text to video, auto captions, and templates.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/knowinggym/capcut-pro-crack-2026</guid>
-        </item>
-        <item>
-            <title>carefulfounta/sora-jailbreak-2026 - 🌟 12</title>
-            <link>https://github.com/carefulfounta/sora-jailbreak-2026</link>
-            <description>OpenAI Sora jailbreak — generate any video without content restrictions.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/carefulfounta/sora-jailbreak-2026</guid>
-        </item>
-        <item>
-            <title>excitedflanke/stable-diffusion-crack-2026 - 🌟 12</title>
-            <link>https://github.com/excitedflanke/stable-diffusion-crack-2026</link>
-            <description>Stable Diffusion 3.5 Large local — all models, LoRAs, and NSFW filter removed.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/excitedflanke/stable-diffusion-crack-2026</guid>
-        </item>
-        <item>
-            <title>MARK42IRPC/MMD-Mouth-BlenderScript - 🌟 9</title>
-            <link>https://github.com/MARK42IRPC/MMD-Mouth-BlenderScript</link>
-            <description>A blender Script to help you Sound to mouth Shape auto.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/MARK42IRPC/MMD-Mouth-BlenderScript</guid>
-        </item>
-        <item>
-            <title>tainguyen07/local-llm-lora - 🌟 9</title>
-            <link>https://github.com/tainguyen07/local-llm-lora</link>
-            <description>Fine-tune local LLMs with LoRA/QLoRA: PEFT training scripts, dataset formatting, 4-bit quantization, Ollama/GGUF export and an inference server.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/tainguyen07/local-llm-lora</guid>
-        </item>
-        <item>
-            <title>Zane-ZYQiu/entry-point-umm - 🌟 8</title>
-            <link>https://github.com/Zane-ZYQiu/entry-point-umm</link>
-            <description>Code and evaluations for "Where a New Concept Must Enter: Entry Point Gates Cross-Task Usability in Unified Multimodal Models"</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/Zane-ZYQiu/entry-point-umm</guid>
-        </item>
-        <item>
-            <title>KoLt-Real/ComfyUI-ModelFetcher - 🌟 6</title>
-            <link>https://github.com/KoLt-Real/ComfyUI-ModelFetcher</link>
-            <description>ComfyUI top-bar button that reads a workflow's Markdown notes, downloads the models it needs into the right folder, and relinks loader nodes to copies you already own.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/KoLt-Real/ComfyUI-ModelFetcher</guid>
-        </item>
-        <item>
-            <title>shin131002/ComfyUI-Anima29B-Remap - 🌟 6</title>
-            <link>https://github.com/shin131002/ComfyUI-Anima29B-Remap</link>
-            <description>Auto block-index remapping for applying old-Anima LoRAs and merging models with Anima-2.9B (28-to-40-block layer expansion)</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/shin131002/ComfyUI-Anima29B-Remap</guid>
-        </item>
-        <item>
-            <title>ankhzw1876/llm-training-notes - 🌟 6</title>
-            <link>https://github.com/ankhzw1876/llm-training-notes</link>
-            <description>从 AI 产品经理视角整理的 LLM 微调、LoRA、RAG 与训练数据学习笔记</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/ankhzw1876/llm-training-notes</guid>
-        </item>
-        <item>
-            <title>ccd775/BlenderSafeAvatarFbxExporter - 🌟 5</title>
-            <link>https://github.com/ccd775/BlenderSafeAvatarFbxExporter</link>
-            <description>Export Modular Avatar Manual Bake VRChat avatars from Unity to Blender-compatible FBX while preserving pose, BlendShapes, skin weights, and embedded textures.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/ccd775/BlenderSafeAvatarFbxExporter</guid>
-        </item>
-        <item>
-            <title>bo961386926/manga-studio - 🌟 5</title>
-            <link>https://github.com/bo961386926/manga-studio</link>
-            <description>MangaStudio (漫剧工场) — AI-powered short-drama / manga / motion-comic video workbench with Script->Asset->Keyframe workflow</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/bo961386926/manga-studio</guid>
-        </item>
-        <item>
-            <title>bman654/macos-screensavers - 🌟 4</title>
-            <link>https://github.com/bman654/macos-screensavers</link>
-            <description>Screensavers for macOS 26 (Tahoe), generated in real time rather than played back. Aquarium: a reef tank built fresh on every launch.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/bman654/macos-screensavers</guid>
-        </item>
-        <item>
-            <title>Calix-L/Kimodo-SOMA-RP-final-showcase - 🌟 4</title>
-            <link>https://github.com/Calix-L/Kimodo-SOMA-RP-final-showcase</link>
-            <description>金山青训营结题项目：Kimodo-SOMA-RP 游戏动作域后训练、评测与 Blender 可视化</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/Calix-L/Kimodo-SOMA-RP-final-showcase</guid>
-        </item>
-        <item>
-            <title>zhangliang2714-ui/scientific-schematic-reconstruction - 🌟 4</title>
-            <link>https://github.com/zhangliang2714-ui/scientific-schematic-reconstruction</link>
-            <description>use blender mcp and python to reconstruction scientific schematic</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/zhangliang2714-ui/scientific-schematic-reconstruction</guid>
-        </item>
-        <item>
-            <title>feyzilim/clipfactory - 🌟 4</title>
-            <link>https://github.com/feyzilim/clipfactory</link>
-            <description>Topic + template → short vertical video from your own B-roll: AI script, voice, scene plan, captions, FFmpeg render. Multi-persona, AI shot lists, AI B-roll, batch generation. Source-available (Elastic 2.0).</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/feyzilim/clipfactory</guid>
-        </item>
-        <item>
-            <title>47thtechcorner/RayCodes_Wan2GP - 🌟 3</title>
-            <link>https://github.com/47thtechcorner/RayCodes_Wan2GP</link>
-            <description>Wan2GP: High Quality Local AI Video Generation on Old GPUs! Open-source local video generator for GPU-poor hardware.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/47thtechcorner/RayCodes_Wan2GP</guid>
-        </item>
-        <item>
-            <title>UgurInanc12/ltx25-prompt-writing - 🌟 3</title>
-            <link>https://github.com/UgurInanc12/ltx25-prompt-writing</link>
-            <description>Prompt-writing skill for LTX-2.5 text-to-video generation (6-element method)</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/UgurInanc12/ltx25-prompt-writing</guid>
-        </item>
-        <item>
-            <title>ecomyseo/generador-de-contenido - 🌟 3</title>
-            <link>https://github.com/ecomyseo/generador-de-contenido</link>
-            <description>Turn a book, a URL or just an idea into a finished YouTube episode: AI writes the script, generates the images, clones your voice and assembles the MP4 with ffmpeg. Runs entirely on your machine. Windows, macOS and Linux.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/ecomyseo/generador-de-contenido</guid>
-        </item>
-        <item>
-            <title>BlackAtlas-Tech/GridDown-Secure-Messenger - 🌟 3</title>
-            <link>https://github.com/BlackAtlas-Tech/GridDown-Secure-Messenger</link>
-            <description>Encrypted off-grid LoRa radio firmware for the LILYGO T-Deck (drone scanning, 2.4GHz/BLE RemoteID, Walkie Talkie, images, and more!)</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/BlackAtlas-Tech/GridDown-Secure-Messenger</guid>
-        </item>
-        <item>
-            <title>yuvrajnode/LLM-Fine-Tuning-Evaluation-Pipeline - 🌟 3</title>
-            <link>https://github.com/yuvrajnode/LLM-Fine-Tuning-Evaluation-Pipeline</link>
-            <description>Fine-tuned an open-source LLM using LoRA/PEFT and RLHF on 10,000+ training examples, improving downstream task accuracy 25%.  Benchmarked 15+ model checkpoints via an automated Hugging Face Transformers evaluation workflow, accelerating iteration turnaround 60%.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/yuvrajnode/LLM-Fine-Tuning-Evaluation-Pipeline</guid>
-        </item>
-        <item>
-            <title>Narmatha1812/Search_Rescue_robort - 🌟 3</title>
-            <link>https://github.com/Narmatha1812/Search_Rescue_robort</link>
-            <description>RESQBOT (S.A.R.A.) is an AI-enabled smart search-and-rescue ground robot designed to assist rescue teams in disaster environments. It integrates ESP32, ESP32-CAM, ultrasonic sensing, GPS, gas detection, LoRa communication, and a servo-operated robotic arm, with Python, OpenCV, and YOLO for AI-based human detection and real-time monitoring.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/Narmatha1812/Search_Rescue_robort</guid>
-        </item>
-        <item>
-            <title>ImLunaHey/image.cpp - 🌟 2</title>
-            <link>https://github.com/ImLunaHey/image.cpp</link>
-            <description>Native C/C++ runtime for local image generation, editing, understanding, restoration, and composable workflows—no Python required.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/ImLunaHey/image.cpp</guid>
-        </item>
-        <item>
-            <title>framethrower-ai/comfyui-framethrower - 🌟 2</title>
-            <link>https://github.com/framethrower-ai/comfyui-framethrower</link>
-            <description>Search the FrameThrower film-still library from inside ComfyUI — cinematography reference from 5,489 films, as an IMAGE node.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/framethrower-ai/comfyui-framethrower</guid>
-        </item>
-        <item>
-            <title>XliuXjianX/Blender_AR_Camera - 🌟 2</title>
-            <link>https://github.com/XliuXjianX/Blender_AR_Camera</link>
-            <description>Android AR 虚拟摄像机与 Blender 远程控制插件，支持 ARCore 6DoF、IMU 兼容模式、空间缩放、移动倍率同步和摄像机录制</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/XliuXjianX/Blender_AR_Camera</guid>
-        </item>
-        <item>
-            <title>nicbugeac-ship-it/supernova-slapstick-blender - 🌟 2</title>
-            <link>https://github.com/nicbugeac-ship-it/supernova-slapstick-blender</link>
-            <description>A universal, open-source Blender toolset by Supernova Labs—starting with instant slapstick squash & stretch physics, with more animation add-ons coming soon!</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/nicbugeac-ship-it/supernova-slapstick-blender</guid>
-        </item>
-        <item>
-            <title>fiedoruk/biper-lora - 🌟 2</title>
-            <link>https://github.com/fiedoruk/biper-lora</link>
-            <description>Biper: a radio cube a scared person can use. MeshCore fork for M5Stack Unit C6L — phone panel from the cube's own flash, PL-first.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/fiedoruk/biper-lora</guid>
-        </item>
-        <item>
-            <title>RazorEdge-wyh/StyleSnap - 🌟 1</title>
-            <link>https://github.com/RazorEdge-wyh/StyleSnap</link>
-            <description>照片 + 提示词 → 百种风格 · One photo + a prompt → any style. 23 hand-tuned style prompts, InstantID identity preservation, bilingual web UI, demo mode included.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/RazorEdge-wyh/StyleSnap</guid>
-        </item>
-        <item>
-            <title>Lacquervii/archive-print-lab - 🌟 1</title>
-            <link>https://github.com/Lacquervii/archive-print-lab</link>
-            <description>AI 生图 Skill：复古博物档案风编辑海报提示词编译器（巨型标题+居中标本+印刷质感）· Image-generation prompt compiler</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/Lacquervii/archive-print-lab</guid>
-        </item>
-        <item>
-            <title>jaisurya-dev-art/ComfyUI-ModelRouter - 🌟 1</title>
-            <link>https://github.com/jaisurya-dev-art/ComfyUI-ModelRouter</link>
-            <description>Automatically detects, downloads, and routes missing workflow models into the correct ComfyUI model directories.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/jaisurya-dev-art/ComfyUI-ModelRouter</guid>
-        </item>
-        <item>
-            <title>AmazingDraw/AmazingDraw - 🌟 1</title>
-            <link>https://github.com/AmazingDraw/AmazingDraw</link>
-            <description>本地 ComfyUI 抽卡引擎，带 WebUI / CLI。macOS 与 Windows。</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/AmazingDraw/AmazingDraw</guid>
-        </item>
-        <item>
-            <title>ralksta/ComfyUI-Photoshoot - 🌟 1</title>
-            <link>https://github.com/ralksta/ComfyUI-Photoshoot</link>
-            <description>Build a person once, then shoot a whole series: framing, pose, placement, expression and aspect ratio vary while the person stays the same. ComfyUI nodes.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/ralksta/ComfyUI-Photoshoot</guid>
-        </item>
-        <item>
-            <title>uno-km/termux-diffusion - 🌟 1</title>
-            <link>https://github.com/uno-km/termux-diffusion</link>
-            <description>🎨 Production On-Device AI Image Generation Framework for Android Termux. Dual-Engine (Python & Node.js), Bionic ARM NEON SIMD, Vulkan GPU acceleration.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/uno-km/termux-diffusion</guid>
-        </item>
-        <item>
-            <title>Castillo2785/LocalVoiceStudio - 🌟 1</title>
-            <link>https://github.com/Castillo2785/LocalVoiceStudio</link>
-            <description>Create natural multilingual voiceovers offline with VoiceStudio—no account needed, free TTS for 13+ languages, MP3/WAV/AAC export.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/Castillo2785/LocalVoiceStudio</guid>
-        </item>
-        <item>
-            <title>90cube/Comfyui_Custom_Preprocess_for_pixelart - 🌟 1</title>
-            <link>https://github.com/90cube/Comfyui_Custom_Preprocess_for_pixelart</link>
-            <description>Lightweight ControlNet preprocessors for pixel-art / sprite workflows in ComfyUI (zero pip deps, manual weights)</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/90cube/Comfyui_Custom_Preprocess_for_pixelart</guid>
-        </item>
-        <item>
-            <title>s-adhit/krea2-pose-controlnet - 🌟 0</title>
-            <link>https://github.com/s-adhit/krea2-pose-controlnet</link>
+            <title>Wanderson-Magalhaes/blender_for_android - 🌟 6</title>
+            <link>https://github.com/Wanderson-Magalhaes/blender_for_android</link>
             <description>None</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/s-adhit/krea2-pose-controlnet</guid>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Wanderson-Magalhaes/blender_for_android</guid>
         </item>
         <item>
-            <title>wayne1359/EdgeStyle-ControlNet - 🌟 0</title>
-            <link>https://github.com/wayne1359/EdgeStyle-ControlNet</link>
+            <title>shootthesound/tensorvillage - 🌟 5</title>
+            <link>https://github.com/shootthesound/tensorvillage</link>
+            <description>One organized drive for every AI model you own - however many disks they are scattered across. Windows.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/shootthesound/tensorvillage</guid>
+        </item>
+        <item>
+            <title>AkagawaTsurunaki/ba-toolkit-for-blender - 🌟 5</title>
+            <link>https://github.com/AkagawaTsurunaki/ba-toolkit-for-blender</link>
+            <description>Blue Archive model import, texture fix and auto mouth rigging.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/AkagawaTsurunaki/ba-toolkit-for-blender</guid>
+        </item>
+        <item>
+            <title>Lakeside529/ComfyUI-Anima-3.8B-LoRA-Bridge - 🌟 4</title>
+            <link>https://github.com/Lakeside529/ComfyUI-Anima-3.8B-LoRA-Bridge</link>
+            <description>ComfyUI nodes for applying Anima Base and Anima 2.9B LoRAs to Anima 3.8B.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/Lakeside529/ComfyUI-Anima-3.8B-LoRA-Bridge</guid>
+        </item>
+        <item>
+            <title>RemakeBench/skills - 🌟 4</title>
+            <link>https://github.com/RemakeBench/skills</link>
+            <description>Evidence-driven Claude Code skills for building and verifying playable 3D worlds.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/RemakeBench/skills</guid>
+        </item>
+        <item>
+            <title>PotionUI/PotionUI - 🌟 2</title>
+            <link>https://github.com/PotionUI/PotionUI</link>
+            <description>A self-hosted studio for generating images, video, and audio with diffusion models.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/PotionUI/PotionUI</guid>
+        </item>
+        <item>
+            <title>skywa1keri7/Local-Material-Resolver - 🌟 2</title>
+            <link>https://github.com/skywa1keri7/Local-Material-Resolver</link>
+            <description>Local-first Blender PBR resolver with batch processing and AssetPort-CN bridge for Unreal Engine 5</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/skywa1keri7/Local-Material-Resolver</guid>
+        </item>
+        <item>
+            <title>MaddogBerlin/FS25-UV-Position-Tool - 🌟 2</title>
+            <link>https://github.com/MaddogBerlin/FS25-UV-Position-Tool</link>
+            <description>UV positioning helper for Blender and Farming Simulator 25</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/MaddogBerlin/FS25-UV-Position-Tool</guid>
+        </item>
+        <item>
+            <title>jiayuding866-spec/ControlNet-Project - 🌟 2</title>
+            <link>https://github.com/jiayuding866-spec/ControlNet-Project</link>
             <description>None</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/wayne1359/EdgeStyle-ControlNet</guid>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/jiayuding866-spec/ControlNet-Project</guid>
         </item>
         <item>
-            <title>bencoster/Krea-2-pose-controlnet - 🌟 0</title>
-            <link>https://github.com/bencoster/Krea-2-pose-controlnet</link>
-            <description>Fork/mirror of thedeoxen/Krea-2-pose-controlnet — Krea-2-Turbo OpenPose ControlNet (Apache-2.0). Pose-driven i2i/i2v + character cards for BC_LocalLLM.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/bencoster/Krea-2-pose-controlnet</guid>
+            <title>ChrisColeTech/ComfyUI-ControlNet-Nodes - 🌟 2</title>
+            <link>https://github.com/ChrisColeTech/ComfyUI-ControlNet-Nodes</link>
+            <description>🤖 ControlNet-aux-style preprocessor nodes for ComfyUI — Depth/Normal/Soft-Edge/Line/Pose map estimation, ported as real architecture code from Fannovel16/comfyui_controlnet_aux</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/ChrisColeTech/ComfyUI-ControlNet-Nodes</guid>
         </item>
         <item>
-            <title>gaojunfei-sys/StructControlNet - 🌟 0</title>
-            <link>https://github.com/gaojunfei-sys/StructControlNet</link>
-            <description>Physics-prior guided ControlNet for RPLAN layout generation</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/gaojunfei-sys/StructControlNet</guid>
+            <title>lucaspedrodonatotabelli-cmyk/SD-Desktop---Stable-Diffusion-Desktop-2026 - 🌟 1</title>
+            <link>https://github.com/lucaspedrodonatotabelli-cmyk/SD-Desktop---Stable-Diffusion-Desktop-2026</link>
+            <description>One-click Stable Diffusion installer for Windows with auto CUDA setup, built-in model manager, ControlNet, LoRA, and real-time preview.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/lucaspedrodonatotabelli-cmyk/SD-Desktop---Stable-Diffusion-Desktop-2026</guid>
         </item>
         <item>
-            <title>OblivionsPeak/livery-forge - 🌟 0</title>
-            <link>https://github.com/OblivionsPeak/livery-forge</link>
-            <description>Generate iRacing base liveries from a text prompt — procedural motifs and ControlNet diffusion, both ranked by CLIP</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/OblivionsPeak/livery-forge</guid>
+            <title>oxanuragofficial/AI-Image-Generator - 🌟 1</title>
+            <link>https://github.com/oxanuragofficial/AI-Image-Generator</link>
+            <description>A ready-to-use Windows AI Image Generator with multiple AI models, ControlNet, CivitAI Browser+, SDXL support, and a preconfigured generation environment.</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/oxanuragofficial/AI-Image-Generator</guid>
         </item>
         <item>
-            <title>DDDDDanielle/Spatial-Gene-Driven-Facade-Generation-System-SGFGS- - 🌟 0</title>
-            <link>https://github.com/DDDDDanielle/Spatial-Gene-Driven-Facade-Generation-System-SGFGS-</link>
-            <description>Repository for spatial‑gene‑driven generation of Jiangnan facades. Modules: U‑Net segmentation, rule extraction (order, proportion, scale, spacing), and ControlNet+SD generation of multi‑style streetscapes. Supports reproducible training and batch generation for historic conservation.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/DDDDDanielle/Spatial-Gene-Driven-Facade-Generation-System-SGFGS-</guid>
+            <title>NivredG/controlnet_aux - 🌟 0</title>
+            <link>https://github.com/NivredG/controlnet_aux</link>
+            <description>None</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/NivredG/controlnet_aux</guid>
         </item>
         <item>
-            <title>priyanshsoni096-blip/PlanTo3D - 🌟 0</title>
-            <link>https://github.com/priyanshsoni096-blip/PlanTo3D</link>
-            <description>Automated pipeline that converts 2D architectural floor plans into geometrically accurate, photoreal-enhanced 3D house models. U-Net+ResNet segmentation (CubiCasa5K), OpenCV+OCR geometry extraction, trimesh/Open3D mesh generation, Three.js viewer, Blender+ControlNet photoreal pass.</description>
-            <pubDate>Sat, 22 Aug 2026 14:25:57 GMT</pubDate>
-            <guid>https://github.com/priyanshsoni096-blip/PlanTo3D</guid>
+            <title>g3n3rativ3/wan2gp-qwen-2512-controlnet - 🌟 0</title>
+            <link>https://github.com/g3n3rativ3/wan2gp-qwen-2512-controlnet</link>
+            <description>Controlnet for Qwen 2512 in WanGP</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/g3n3rativ3/wan2gp-qwen-2512-controlnet</guid>
+        </item>
+        <item>
+            <title>dangkhoi3107/Agentic-ControlNet-Planning-and-Optimization - 🌟 0</title>
+            <link>https://github.com/dangkhoi3107/Agentic-ControlNet-Planning-and-Optimization</link>
+            <description>None</description>
+            <pubDate>Sat, 29 Aug 2026 17:36:34 GMT</pubDate>
+            <guid>https://github.com/dangkhoi3107/Agentic-ControlNet-Planning-and-Optimization</guid>
         </item>
 </channel>
 </rss>
